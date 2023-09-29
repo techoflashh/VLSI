@@ -1,13 +1,13 @@
-`include "comparator.v"
+`include "Comparator.v"
 
 module tb_comparator;
     reg [3:0] A;
     reg [3:0] B;
     wire Equal, Greater, Less;
-    comparator DUT(Greater,Equal,Less,A,B);
+    Comparator DUT(Greater,Equal,Less,A,B);
     initial begin
-        $dumpfile("tb_comparator.vcd");
-        $dumpvars(0,tb_comparator);
+        $dumpfile("tb_Comparator.vcd");
+        $dumpvars(0,tb_Comparator);
         $monitor ($time, " A=%b, B=%b, Equal=%b, Greater=%b, Less=%b", A, B, Equal, Greater, Less);
         A = 4'b1001;
         B = 4'b0101;

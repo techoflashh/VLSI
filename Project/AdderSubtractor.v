@@ -21,8 +21,8 @@ module AdderSubtractor(Sum,Carry,A,B,M);
     xor g2(B1,M,B[1]);
     xor g3(B3,M,B[3]);
     xor g4(B0,M,B[0]);
-    fullAdder ins1(Cout0,Sum[0],A[0],B0,M);
-    fullAdder ins2(Cout1,Sum[1],A[1],B1,Cout0);
-    fullAdder ins3(Cout2,Sum[2],A[2],B2,Cout1);
-    fullAdder ins4(Carry,Sum[3],A[3],B3,Cout2);
+    fullAdder S0(Cout0,Sum[0],A[0],B0,M);
+    fullAdder S1(Cout1,Sum[1],A[1],B1,Cout0);
+    fullAdder S2(Cout2,Sum[2],A[2],B2,Cout1);
+    fullAdder S3(Carry,Sum[3],A[3],B3,Cout2);
 endmodule

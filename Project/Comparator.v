@@ -1,4 +1,4 @@
-module comparator(Greater,Equal,Less,A,B);
+module Comparator(Greater,Equal,Less,A,B);
     input [3:0] A;
     input [3:0] B;
     output Greater,Equal,Less;

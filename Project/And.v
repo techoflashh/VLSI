@@ -1,4 +1,4 @@
-module comparator(Out,A,B);
+module And(Out,A,B);
     input [3:0] A;
     input [3:0] B;
     output [3:0] Out;

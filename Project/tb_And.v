@@ -1,13 +1,13 @@
-`include "and.v"
+`include "And.v"
 
-module tb_and;
+module tb_And;
     reg [3:0] A;
     reg [3:0] B;
     wire [3:0] Out;
-    comparator DUT(Out,A,B);
+    And DUT(Out,A,B);
     initial begin
-        $dumpfile("tb_and.vcd");
-        $dumpvars(0,tb_and);
+        $dumpfile("tb_And.vcd");
+        $dumpvars(0,tb_And);
         $monitor ($time, " A=%b, B=%b, A.B=%b", A, B, Out);
         A = 4'b1001;
         B = 4'b0101;
