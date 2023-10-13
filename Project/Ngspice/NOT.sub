@@ -1,0 +1,5 @@
+.include NAND2IN.sub
+
+.subckt NOT node_out node_a vdd gnd
+    X1 node_out node_a node_a vdd gnd NAND2IN
+.ends NOT
