@@ -49,7 +49,7 @@ module tb_AdderSubractor;
         #10
         A = 4'b0000;
         B = 4'b1111;
-        M = 0;
+        M = 1;
         #10
         $finish;
     end

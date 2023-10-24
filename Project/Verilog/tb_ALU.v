@@ -4,11 +4,9 @@ module tb_ALU;
     reg [3:0] A;
     reg [3:0] B;
     reg [1:0] S;
-    wire [3:0] SumAdd;
-    wire [3:0] SumSub;
-    wire [3:0] OutAnd;
-    wire CarryAdd,CarrySub,Greater,Less,Equal;
-    ALU DUT(SumAdd,CarryAdd,SumSub,CarrySub,Greater,Equal,Less,OutAnd,A,B,S);
+    wire [3:0] Out;
+    wire CarryOut;
+    ALU DUT(CarryOut,Out,A,B,S);
     initial begin
         $dumpfile("tb_ALU.vcd");
         $dumpvars(0,tb_ALU);
