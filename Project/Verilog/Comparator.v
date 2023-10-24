@@ -1,9 +1,11 @@
-module Comparator(Greater,Equal,Less,A,B);
+module Comparator(Greater,Equal,Less,A,B,En);
     input [3:0] A;
     input [3:0] B;
+    input En;
     output Greater,Equal,Less;
     wire gt3,gt2,gt1,gt0,eq3,eq2,eq1,eq0,ls3,ls,ls1,ls0;
     wire b3c,b2c,b1c,b0c;
+    wire tempLess;
     xnor g1(eq3,A[3],B[3]);
     xnor g2(eq2,A[2],B[2]);
     xnor g3(eq1,A[1],B[1]);
@@ -17,6 +19,7 @@ module Comparator(Greater,Equal,Less,A,B);
     and g11(gt1,A[1],b1c,eq3,eq2);
     and g12(gt0,A[0],b0c,eq3,eq2,eq1);
     or g13(Greater,gt0,gt1,gt2,gt3);
-    and g14(Equal,eq0,eq1,eq2,eq3);
-    nor g15(Less,Greater,Equal);
+    and g14(Equal,eq0,eq1,eq2,eq3,En);
+    nor g15(tempLess,Greater,Equal);
+    and g16(Less,tempLess,En);
 endmodule
