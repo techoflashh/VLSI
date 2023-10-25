@@ -6,6 +6,7 @@ and gate implementation using NAND2IN gates
 .include NOT.sub
 .include Comparator.sub
 .include AdderSubtractor.sub
+.include XOR2IN.sub
 
 .param SUPPLY = 1.8
 .param LAMBDA = 0.18u
@@ -53,6 +54,7 @@ V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 10ns 70ns)
 
 * hardcopy image.ps v(node_a0) v(node_b0)+2 v(node_out0)+4 v(node_a1)+6 v(node_b1)+8 v(node_out1)+10 v(node_a2)+12 v(node_b2)+14 v(node_out2)+16 v(node_a3)+18 v(node_b3)+20 v(node_out3)+22
 * .end
+* .endc
 
 * ------------------------------------comparator test--------------------------------------
 
@@ -80,13 +82,14 @@ V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 10ns 70ns)
 * -----------------------------------Adder Subtractor Test---------------------------------
 V_in_en node_M gnd PULSE(0 1.8 0ns 100ps 100ps 400ns 800ns)
 
-X_adder node_out3 node_out2 node_out1 node_out0 Carry node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 node_M node_x gnd AdderSubtractor
+X_add node_out3 node_out2 node_out1 node_out0 Carry node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 node_M node_x gnd AdderSubtractor
+
 
 C1 node_out0 gnd 100f
 C2 node_out1 gnd 100f
 C3 node_out2 gnd 100f
 C4 node_out3 gnd 100f
-c5 Carry gnd 100f
+C5 Carry gnd 100f
 
 .tran 1n 800n
 
@@ -98,3 +101,4 @@ plot v(node_a0) v(node_b0)+2 v(node_out0)+4 v(node_a1)+6 v(node_b1)+8 v(node_out
 
 hardcopy image.ps v(node_a0) v(node_b0)+2 v(node_out0)+4 v(node_a1)+6 v(node_b1)+8 v(node_out1)+10 v(node_a2)+12 v(node_b2)+14 v(node_out2)+16 v(node_a3)+18 v(node_b3)+20 v(node_out3)+22
 .end
+.endc
