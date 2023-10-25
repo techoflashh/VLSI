@@ -1,0 +1,22 @@
+.include XOR2IN.sub
+.include AND2IN.sub
+.include OR2IN.sub
+
+.subckt fullAdder Cout S A B Cin vdd gnd
+    X1 S1out A B vdd gnd XOR2IN
+    X2 S S1out Cin vdd gnd XOR2IN
+    X3 C1out A B vdd gnd AND2IN
+    X4 C2out S1out Cin vdd gnd AND2IN
+    X5 Cout C1out C2out vdd gnd OR2IN
+.ends fullAdder
+
+.subckt AdderSubtractor s3 s2 s1 s0 Carry node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 M vdd gnd
+    X1 B0 M node_b0 vdd gnd XOR2IN
+    X2 B1 M node_b1 vdd gnd XOR2IN
+    X3 B2 M node_b2 vdd gnd XOR2IN
+    X4 B3 M node_b3 vdd gnd XOR2IN
+    S0 Cout0 s0 node_a0 node_b0 M vdd gnd fullAdder
+    S1 Cout1 s1 node_a1 node_b1 M vdd gnd fullAdder
+    S2 Cout2 s2 node_a2 node_b2 M vdd gnd fullAdder
+    S3 Carry s3 node_a3 node_b3 M vdd gnd fullAdder
+.ends AdderSubtractor 

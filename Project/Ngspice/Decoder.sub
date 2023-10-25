@@ -1,0 +1,8 @@
+.include NOT.sub
+.include AND.sub
+
+.subckt Decoder node_d3 node_d2 node_d1 node_d0 node_s1 node_s0 vdd gnd
+    X1 Sc1 node_s1 vdd gnd NOT
+    X2 Sc0 node_s0 vdd gnd NOT
+    X3 node_d3 node_d2 node_d1 node_d0 node_s0 Sc0 node_s0 Sc0 node_s1 node_s1 Sc1 Sc1 vdd gnd AND
+.ends Decoder

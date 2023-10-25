@@ -1,0 +1,28 @@
+.include XNOR2IN.sub
+.include NOT.sub
+.include AND2IN.sub
+.include AND3IN.sub
+.include AND4IN.sub
+.include AND5IN.sub
+.include OR4IN.sub
+.include NOR2IN.sub
+
+
+.subckt Comparator Greater Equal Less node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 En vdd gnd
+    X1 eq3 node_a3 node_b3 vdd gnd XNOR2IN
+    X2 eq2 node_a2 node_b2 vdd gnd XNOR2IN
+    X3 eq1 node_a1 node_b1 vdd gnd XNOR2IN
+    X4 eq0 node_a0 node_b0 vdd gnd XNOR2IN
+    X5 b3c node_b3 vdd gnd NOT
+    X6 b2c node_b2 vdd gnd NOT
+    X7 b1c node_b1 vdd gnd NOT
+    X8 b0c node_b0 vdd gnd NOT
+    X9 gt3 node_a3 b3c vdd gnd AND2IN
+    X10 gt2 node_a2 b2c eq3 vdd gnd AND3IN
+    X11 gt1 node_a1 b1c eq3 eq2 vdd gnd AND4IN
+    X12 gt0 node_a0 b0c eq3 eq2 eq1 vdd gnd AND5IN
+    X13 Greater gt0 gt1 gt2 gt3 vdd gnd OR4IN
+    X14 Equal eq0 eq1 eq2 eq3 En vdd gnd AND5IN
+    X15 tempLess Greater Equal vdd gnd NOR2IN
+    x16 Less tempLess En vdd gnd AND2IN
+.ends Comparator
