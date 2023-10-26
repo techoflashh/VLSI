@@ -1,9 +1,20 @@
+.include NAND2IN.sub
+.include NOR2IN.sub
+.include NOT.sub
+.include AND2IN.sub
+.include AND3IN.sub
+.include AND4IN.sub
+.include AND5IN.sub
+.include OR2IN.sub
+.include OR3IN.sub
+.include OR4IN.sub
+.include XOR2IN.sub
+.include XNOR2IN.sub
+.include And.sub
 .include Enable.sub
+.include Decoder.sub
 .include AdderSubtractor.sub
 .include Comparator.sub
-.include And.sub
-.include Decoder.v
-.include OR3IN.sub
 
 .subckt ALU CarryOut Out3 Out2 Out1 Out0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 Sel1 Sel0 vdd gnd
     X1 D3 D2 D1 D0 Sel1 Sel0 vdd gnd Decoder
@@ -11,9 +22,9 @@
     X3 AinAnd3 AinAnd2 AinAnd1 AinAnd0 BinAnd3 BinAnd2 BinAnd1 BinAnd0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 D3 vdd gnd Enable
     X4 AinAdd3 AinAdd2 AinAdd1 AinAdd0 BinAdd3 BinAdd2 BinAdd1 BinAdd0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 t1 vdd gnd Enable
     X5 AinComp3 AinComp2 AinComp1 AinComp0 BinComp3 BinComp2 BinComp1 BinComp0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 D2 vdd gnd Enable
-    X6 s3 s2 s1 s0 CarryOut node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 D1 vdd gnd AdderSubtractor
-    X7 Greater Equal Less node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 D2 vdd gnd Comparator
-    X8 OutAnd3 OutAnd2 OutAnd1 OutAnd0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 vdd gnd And
+    X6 s3 s2 s1 s0 CarryOut AinAdd3 AinAdd2 AinAdd1 AinAdd0 BinAdd3 BinAdd2 BinAdd1 BinAdd0 D1 vdd gnd AdderSubtractor
+    X7 Greater Equal Less AinComp3 AinComp2 AinComp1 AinComp0 BinComp3 BinComp2 BinComp1 BinComp0 D2 vdd gnd Comparator
+    X8 OutAnd3 OutAnd2 OutAnd1 OutAnd0 AinAnd3 AinAnd2 AinAnd1 AinAnd0 BinAnd3 BinAnd2 BinAnd1 BinAnd0 vdd gnd And
     X9 Out0 s0 Equal OutAnd0 vdd gnd OR3IN
     X10 Out1 s1 Less OutAnd1 vdd gnd OR3IN
     X11 Out2 s2 Greater OutAnd2 vdd gnd OR3IN
