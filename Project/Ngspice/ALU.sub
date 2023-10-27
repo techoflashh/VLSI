@@ -1,15 +1,4 @@
-.include NAND2IN.sub
-.include NOR2IN.sub
-.include NOT.sub
-.include AND2IN.sub
-.include AND3IN.sub
-.include AND4IN.sub
-.include AND5IN.sub
-.include OR2IN.sub
-.include OR3IN.sub
-.include OR4IN.sub
-.include XOR2IN.sub
-.include XNOR2IN.sub
+.include All_Gates.sub
 .include And.sub
 .include Enable.sub
 .include Decoder.sub

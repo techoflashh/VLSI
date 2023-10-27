@@ -1,7 +1,10 @@
-4-Bit ALU
+Testbench for all individual components
+
+*temperature
 
 .include TSMC_180nm.txt
-.include ALU.sub
+.include And.sub
+
 
 
 .param SUPPLY = 1.8
@@ -30,26 +33,28 @@ V_in_b1 node_b1 gnd PULSE(0 1.8 0ns 100ps 100ps 30ns 50ns)
 V_in_a0 node_a0 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 50ns)
 V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 10ns 70ns)
 
-V_in_s1 Sel1 gnd PULSE(1.8 0 0ns 100ps 100ps 400ns 800ns)
-V_in_s0 Sel0 gnd PULSE(1.8 0 0ns 100ps 100ps 200ns 400ns)
-
-X_ALU CarryOut node_out3 node_out2 node_out1 node_out0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 Sel1 Sel0 node_x gnd ALU
-
+X_AND node_out3 node_out2 node_out1 node_out0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 node_x gnd And
 
 C1 node_out0 gnd 100f
 C2 node_out1 gnd 100f
 C3 node_out2 gnd 100f
 C4 node_out3 gnd 100f
-C5 CarryOut gnd 100f
 
 .tran 1n 800n
 
+.measure tran trise
++ TRIG v(node_a0) VAL = 'SUPPLY/2' RISE = 1
++ TARG v(node_out0) VAL = 'SUPPLY/2' FALL =1
+
+.measure tran tfall
++ TRIG v(node_a0) VAL = 'SUPPLY/2' FALL = 1
++ TARG v(node_out0) VAL = 'SUPPLY/2' RISE =1
+
+.measure tran tpd param = '(trise + tfall)/2' goal = 0 
+
 .control
 run
-set color0 = rgb:f/f/e
-set color1 = black
-plot v(Sel0)-4 v(Sel1)-2 v(node_a0) v(node_b0)+2 v(node_out0)+4 v(node_a1)+6 v(node_b1)+8 v(node_out1)+10 v(node_a2)+12 v(node_b2)+14 v(node_out2)+16 v(node_a3)+18 v(node_b3)+20 v(node_out3)+22 v(CarryOut)+24
 
-hardcopy image.ps v(Sel0)-4 v(Sel1)-2 v(node_a0) v(node_b0)+2 v(node_out0)+4 v(node_a1)+6 v(node_b1)+8 v(node_out1)+10 v(node_a2)+12 v(node_b2)+14 v(node_out2)+16 v(node_a3)+18 v(node_b3)+20 v(node_out3)+22 v(CarryOut)+24
+quit
 .end
 .endc

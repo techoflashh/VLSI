@@ -1,4 +1,0 @@
-.subckt AND2IN node_out node_a node_b vdd gnd
-    X1 node_c node_a node_b vdd gnd NAND2IN
-    X2 node_out node_c vdd gnd NOT
-.ends AND2IN

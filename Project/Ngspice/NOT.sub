@@ -1,7 +1,0 @@
-.subckt NOT node_out node_a vdd gnd
-    Mn1 node_out node_a gnd gnd CMOSN W = {wn1} L = {ln1}
-    + AS = {5*wn1*LAMBDA} PS = {10*LAMBDA + 2*wn1} AD = {5*wn1*LAMBDA} PD = {10*LAMBDA + 2*wn1}
-
-    Mp1 node_out node_a vdd vdd CMOSP W = {wn2} L = {ln2}
-    + AS = {5*wn2*LAMBDA} PS = {10*LAMBDA + 2*wn2} AD = {5*wn2*LAMBDA} PD = {10*LAMBDA + 2*wn2}
-.ends NOT

@@ -1,4 +1,4 @@
-and gate implementation using NAND2IN gates
+Testbench for all individual components
 
 .include TSMC_180nm.txt
 .include NAND2IN.sub
