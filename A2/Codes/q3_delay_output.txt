@@ -1,0 +1,250 @@
+
+Temperature = 0.3894077451402289
+tpd                 =  4.08115e-08 input = node_a0 output = node_out
+tpd                 =  2.08115e-08 input = node_a1 output = node_out
+tpd                 =  -1.91885e-08 input = node_a2 output = node_out
+
+Temperature = 2.249741792532136
+tpd                 =  4.08182e-08 input = node_a0 output = node_out
+tpd                 =  2.08182e-08 input = node_a1 output = node_out
+tpd                 =  -1.91818e-08 input = node_a2 output = node_out
+
+Temperature = 4.492157943282091
+tpd                 =  4.08262e-08 input = node_a0 output = node_out
+tpd                 =  2.08262e-08 input = node_a1 output = node_out
+tpd                 =  -1.91738e-08 input = node_a2 output = node_out
+
+Temperature = 5.818546717677782
+tpd                 =  4.08309e-08 input = node_a0 output = node_out
+tpd                 =  2.08309e-08 input = node_a1 output = node_out
+tpd                 =  -1.91691e-08 input = node_a2 output = node_out
+
+Temperature = 6.93195781229397
+tpd                 =  4.08349e-08 input = node_a0 output = node_out
+tpd                 =  2.08349e-08 input = node_a1 output = node_out
+tpd                 =  -1.91651e-08 input = node_a2 output = node_out
+
+Temperature = 7.759659453411185
+tpd                 =  4.08379e-08 input = node_a0 output = node_out
+tpd                 =  2.08379e-08 input = node_a1 output = node_out
+tpd                 =  -1.91621e-08 input = node_a2 output = node_out
+
+Temperature = 9.910960105238535
+tpd                 =  4.08457e-08 input = node_a0 output = node_out
+tpd                 =  2.08457e-08 input = node_a1 output = node_out
+tpd                 =  -1.91543e-08 input = node_a2 output = node_out
+
+Temperature = 12.117562802826676
+tpd                 =  4.08516e-08 input = node_a0 output = node_out
+tpd                 =  2.08516e-08 input = node_a1 output = node_out
+tpd                 =  -1.91484e-08 input = node_a2 output = node_out
+
+Temperature = 14.615846145445888
+tpd                 =  4.08607e-08 input = node_a0 output = node_out
+tpd                 =  2.08607e-08 input = node_a1 output = node_out
+tpd                 =  -1.91393e-08 input = node_a2 output = node_out
+
+Temperature = 16.093109622558828
+tpd                 =  4.08661e-08 input = node_a0 output = node_out
+tpd                 =  2.08661e-08 input = node_a1 output = node_out
+tpd                 =  -1.91339e-08 input = node_a2 output = node_out
+
+Temperature = 18.40442193905715
+tpd                 =  4.08727e-08 input = node_a0 output = node_out
+tpd                 =  2.08727e-08 input = node_a1 output = node_out
+tpd                 =  -1.91273e-08 input = node_a2 output = node_out
+
+Temperature = 19.993765448807316
+tpd                 =  4.08785e-08 input = node_a0 output = node_out
+tpd                 =  2.08785e-08 input = node_a1 output = node_out
+tpd                 =  -1.91215e-08 input = node_a2 output = node_out
+
+Temperature = 21.02037177307171
+tpd                 =  4.08823e-08 input = node_a0 output = node_out
+tpd                 =  2.08823e-08 input = node_a1 output = node_out
+tpd                 =  -1.91177e-08 input = node_a2 output = node_out
+
+Temperature = 22.038696214850972
+tpd                 =  4.08861e-08 input = node_a0 output = node_out
+tpd                 =  2.08861e-08 input = node_a1 output = node_out
+tpd                 =  -1.91139e-08 input = node_a2 output = node_out
+
+Temperature = 23.797049260631944
+tpd                 =  4.08933e-08 input = node_a0 output = node_out
+tpd                 =  2.08933e-08 input = node_a1 output = node_out
+tpd                 =  -1.91067e-08 input = node_a2 output = node_out
+
+Temperature = 24.825205675596784
+tpd                 =  4.08972e-08 input = node_a0 output = node_out
+tpd                 =  2.08972e-08 input = node_a1 output = node_out
+tpd                 =  -1.91028e-08 input = node_a2 output = node_out
+
+Temperature = 25.401165634275102
+tpd                 =  4.08993e-08 input = node_a0 output = node_out
+tpd                 =  2.08993e-08 input = node_a1 output = node_out
+tpd                 =  -1.91007e-08 input = node_a2 output = node_out
+
+Temperature = 26.828453822754483
+tpd                 =  4.09050e-08 input = node_a0 output = node_out
+tpd                 =  2.09050e-08 input = node_a1 output = node_out
+tpd                 =  -1.90950e-08 input = node_a2 output = node_out
+
+Temperature = 27.675350385101616
+tpd                 =  4.09081e-08 input = node_a0 output = node_out
+tpd                 =  2.09081e-08 input = node_a1 output = node_out
+tpd                 =  -1.90919e-08 input = node_a2 output = node_out
+
+Temperature = 29.052448594856088
+tpd                 =  4.09132e-08 input = node_a0 output = node_out
+tpd                 =  2.09132e-08 input = node_a1 output = node_out
+tpd                 =  -1.90868e-08 input = node_a2 output = node_out
+
+Temperature = 30.54312121547696
+tpd                 =  4.09187e-08 input = node_a0 output = node_out
+tpd                 =  2.09187e-08 input = node_a1 output = node_out
+tpd                 =  -1.90813e-08 input = node_a2 output = node_out
+
+Temperature = 31.960274841572467
+tpd                 =  4.09240e-08 input = node_a0 output = node_out
+tpd                 =  2.09240e-08 input = node_a1 output = node_out
+tpd                 =  -1.90760e-08 input = node_a2 output = node_out
+
+Temperature = 33.19691301114208
+tpd                 =  4.09286e-08 input = node_a0 output = node_out
+tpd                 =  2.09286e-08 input = node_a1 output = node_out
+tpd                 =  -1.90714e-08 input = node_a2 output = node_out
+
+Temperature = 34.818961283575334
+tpd                 =  4.09347e-08 input = node_a0 output = node_out
+tpd                 =  2.09347e-08 input = node_a1 output = node_out
+tpd                 =  -1.90653e-08 input = node_a2 output = node_out
+
+Temperature = 36.7920790269298
+tpd                 =  4.09422e-08 input = node_a0 output = node_out
+tpd                 =  2.09422e-08 input = node_a1 output = node_out
+tpd                 =  -1.90578e-08 input = node_a2 output = node_out
+
+Temperature = 38.04374530419929
+tpd                 =  4.09480e-08 input = node_a0 output = node_out
+tpd                 =  2.09480e-08 input = node_a1 output = node_out
+tpd                 =  -1.90520e-08 input = node_a2 output = node_out
+
+Temperature = 39.33104057467753
+tpd                 =  4.09529e-08 input = node_a0 output = node_out
+tpd                 =  2.09529e-08 input = node_a1 output = node_out
+tpd                 =  -1.90471e-08 input = node_a2 output = node_out
+
+Temperature = 40.7895166197038
+tpd                 =  4.09584e-08 input = node_a0 output = node_out
+tpd                 =  2.09584e-08 input = node_a1 output = node_out
+tpd                 =  -1.90416e-08 input = node_a2 output = node_out
+
+Temperature = 42.08982942946304
+tpd                 =  4.09632e-08 input = node_a0 output = node_out
+tpd                 =  2.09632e-08 input = node_a1 output = node_out
+tpd                 =  -1.90368e-08 input = node_a2 output = node_out
+
+Temperature = 44.44118676555502
+tpd                 =  4.09719e-08 input = node_a0 output = node_out
+tpd                 =  2.09719e-08 input = node_a1 output = node_out
+tpd                 =  -1.90281e-08 input = node_a2 output = node_out
+
+Temperature = 46.02081245493687
+tpd                 =  4.09818e-08 input = node_a0 output = node_out
+tpd                 =  2.09818e-08 input = node_a1 output = node_out
+tpd                 =  -1.90182e-08 input = node_a2 output = node_out
+
+Temperature = 49.12576642052004
+tpd                 =  4.09933e-08 input = node_a0 output = node_out
+tpd                 =  2.09933e-08 input = node_a1 output = node_out
+tpd                 =  -1.90067e-08 input = node_a2 output = node_out
+
+Temperature = 51.29920833738731
+tpd                 =  4.10017e-08 input = node_a0 output = node_out
+tpd                 =  2.10017e-08 input = node_a1 output = node_out
+tpd                 =  -1.89983e-08 input = node_a2 output = node_out
+
+Temperature = 52.811348201507045
+tpd                 =  4.10047e-08 input = node_a0 output = node_out
+tpd                 =  2.10047e-08 input = node_a1 output = node_out
+tpd                 =  -1.89953e-08 input = node_a2 output = node_out
+
+Temperature = 54.768501483783155
+tpd                 =  4.10121e-08 input = node_a0 output = node_out
+tpd                 =  2.10121e-08 input = node_a1 output = node_out
+tpd                 =  -1.89879e-08 input = node_a2 output = node_out
+
+Temperature = 55.560162453000515
+tpd                 =  4.10152e-08 input = node_a0 output = node_out
+tpd                 =  2.10152e-08 input = node_a1 output = node_out
+tpd                 =  -1.89848e-08 input = node_a2 output = node_out
+
+Temperature = 57.85970710567071
+tpd                 =  4.10242e-08 input = node_a0 output = node_out
+tpd                 =  2.10242e-08 input = node_a1 output = node_out
+tpd                 =  -1.89758e-08 input = node_a2 output = node_out
+
+Temperature = 59.3333635071665
+tpd                 =  4.10303e-08 input = node_a0 output = node_out
+tpd                 =  2.10303e-08 input = node_a1 output = node_out
+tpd                 =  -1.89697e-08 input = node_a2 output = node_out
+
+Temperature = 60.558160130183374
+tpd                 =  4.10388e-08 input = node_a0 output = node_out
+tpd                 =  2.10388e-08 input = node_a1 output = node_out
+tpd                 =  -1.89612e-08 input = node_a2 output = node_out
+
+Temperature = 61.69594077881543
+tpd                 =  4.10429e-08 input = node_a0 output = node_out
+tpd                 =  2.10429e-08 input = node_a1 output = node_out
+tpd                 =  -1.89571e-08 input = node_a2 output = node_out
+
+Temperature = 63.25491626441632
+tpd                 =  4.10531e-08 input = node_a0 output = node_out
+tpd                 =  2.10531e-08 input = node_a1 output = node_out
+tpd                 =  -1.89469e-08 input = node_a2 output = node_out
+
+Temperature = 64.8729170586696
+tpd                 =  4.10600e-08 input = node_a0 output = node_out
+tpd                 =  2.10600e-08 input = node_a1 output = node_out
+tpd                 =  -1.89400e-08 input = node_a2 output = node_out
+
+Temperature = 67.00811235093842
+tpd                 =  4.10680e-08 input = node_a0 output = node_out
+tpd                 =  2.10680e-08 input = node_a1 output = node_out
+tpd                 =  -1.89320e-08 input = node_a2 output = node_out
+
+Temperature = 68.00778144708508
+tpd                 =  4.10715e-08 input = node_a0 output = node_out
+tpd                 =  2.10715e-08 input = node_a1 output = node_out
+tpd                 =  -1.89285e-08 input = node_a2 output = node_out
+
+Temperature = 70.40659563569135
+tpd                 =  4.10814e-08 input = node_a0 output = node_out
+tpd                 =  2.10814e-08 input = node_a1 output = node_out
+tpd                 =  -1.89186e-08 input = node_a2 output = node_out
+
+Temperature = 72.35681405029388
+tpd                 =  4.10901e-08 input = node_a0 output = node_out
+tpd                 =  2.10901e-08 input = node_a1 output = node_out
+tpd                 =  -1.89099e-08 input = node_a2 output = node_out
+
+Temperature = 73.43430379101177
+tpd                 =  4.10930e-08 input = node_a0 output = node_out
+tpd                 =  2.10930e-08 input = node_a1 output = node_out
+tpd                 =  -1.89070e-08 input = node_a2 output = node_out
+
+Temperature = 75.49438227849421
+tpd                 =  4.10994e-08 input = node_a0 output = node_out
+tpd                 =  2.10994e-08 input = node_a1 output = node_out
+tpd                 =  -1.89006e-08 input = node_a2 output = node_out
+
+Temperature = 76.75925215614184
+tpd                 =  4.11045e-08 input = node_a0 output = node_out
+tpd                 =  2.11045e-08 input = node_a1 output = node_out
+tpd                 =  -1.88955e-08 input = node_a2 output = node_out
+
+Temperature = 78.00146471156816
+tpd                 =  4.11110e-08 input = node_a0 output = node_out
+tpd                 =  2.11110e-08 input = node_a1 output = node_out
+tpd                 =  -1.88890e-08 input = node_a2 output = node_out
