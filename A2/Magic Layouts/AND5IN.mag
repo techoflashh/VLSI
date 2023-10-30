@@ -1,0 +1,106 @@
+magic
+tech scmos
+timestamp 1698591752
+<< nwell >>
+rect -26 1 65 33
+<< ntransistor >>
+rect -14 -32 -12 -28
+rect 2 -32 4 -28
+rect 18 -32 20 -28
+rect 34 -32 36 -28
+rect 50 -32 52 -28
+<< ptransistor >>
+rect -14 14 -12 18
+rect 2 14 4 18
+rect 18 14 20 18
+rect 34 14 36 18
+rect 50 14 52 18
+<< ndiffusion >>
+rect -15 -32 -14 -28
+rect -12 -32 2 -28
+rect 4 -32 18 -28
+rect 20 -32 34 -28
+rect 36 -32 50 -28
+rect 52 -32 53 -28
+<< pdiffusion >>
+rect -15 14 -14 18
+rect -12 14 -11 18
+rect 1 14 2 18
+rect 4 14 5 18
+rect 17 14 18 18
+rect 20 14 21 18
+rect 33 14 34 18
+rect 36 14 37 18
+rect 49 14 50 18
+rect 52 14 53 18
+<< ndcontact >>
+rect -19 -32 -15 -28
+rect 53 -32 57 -28
+<< pdcontact >>
+rect -19 14 -15 18
+rect -11 14 -7 18
+rect -3 14 1 18
+rect 5 14 9 18
+rect 13 14 17 18
+rect 21 14 25 18
+rect 29 14 33 18
+rect 37 14 41 18
+rect 45 14 49 18
+rect 53 14 57 18
+<< polysilicon >>
+rect -14 18 -12 23
+rect 2 18 4 23
+rect 18 18 20 23
+rect 34 18 36 23
+rect 50 18 52 23
+rect -14 -28 -12 14
+rect 2 -28 4 14
+rect 18 -28 20 14
+rect 34 -28 36 14
+rect 50 -28 52 14
+rect -14 -35 -12 -32
+rect 2 -35 4 -32
+rect 18 -35 20 -32
+rect 34 -35 36 -32
+rect 50 -35 52 -32
+<< polycontact >>
+rect -15 -40 -10 -35
+rect 1 -40 6 -35
+rect 17 -40 22 -35
+rect 33 -40 38 -35
+rect 49 -40 54 -35
+<< metal1 >>
+rect -26 33 65 36
+rect -19 18 -16 33
+rect -3 18 0 33
+rect 13 18 16 33
+rect 29 18 32 33
+rect 45 18 48 33
+rect -10 -15 -7 14
+rect 6 -15 9 14
+rect 22 -15 25 14
+rect 38 -15 41 14
+rect 54 -15 57 14
+rect -10 -18 79 -15
+rect 54 -28 57 -18
+rect 99 -19 121 -16
+rect -31 -32 -19 -28
+rect -14 -46 -11 -40
+rect 2 -46 5 -40
+rect 18 -46 21 -40
+rect 34 -46 37 -40
+rect 50 -46 53 -40
+use not  not_0
+timestamp 1698475750
+transform 1 0 82 0 1 -9
+box -7 -26 25 19
+<< labels >>
+rlabel metal1 116 -18 117 -17 7 vout
+rlabel metal1 -13 -44 -12 -43 1 vin1
+rlabel metal1 3 -44 4 -43 1 vin2
+rlabel metal1 19 -44 20 -43 1 vin3
+rlabel metal1 35 -44 36 -43 1 vin4
+rlabel metal1 51 -44 52 -43 1 vin5
+rlabel metal1 -27 -31 -26 -30 3 gnd
+rlabel metal1 2 34 3 35 5 vdd
+<< end >>

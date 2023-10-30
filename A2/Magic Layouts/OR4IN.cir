@@ -1,0 +1,84 @@
+* SPICE3 file created from OR4IN.ext - technology: scmos
+
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+
+.param SUPPLY = 1.8
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_4 vin4 gnd PULSE(0 1.8 0ns 100ps 100ps 160ns 320ns)
+V_in_3 vin3 gnd PULSE(0 1.8 0ns 100ps 100ps 80ns 160ns)
+V_in_2 vin2 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_1 vin1 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+
+M1000 out not_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=20 ps=18
+M1001 out not_0/in vdd vdd CMOSP w=5 l=2
++  ad=30 pd=22 as=30 ps=22
+M1002 a_6_1# vin2 a_0_1# w_n19_n9# CMOSP w=12 l=2
++  ad=48 pd=32 as=48 ps=32
+M1003 a_0_1# vin1 vdd w_n19_n9# CMOSP w=12 l=2
++  ad=0 pd=0 as=72 ps=36
+M1004 not_0/in vin1 gnd Gnd CMOSN w=4 l=2
++  ad=112 pd=88 as=80 ps=72
+M1005 not_0/in vin3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 not_0/in vin4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 not_0/in vin4 a_12_1# w_n19_n9# CMOSP w=12 l=2
++  ad=120 pd=44 as=48 ps=32
+M1008 a_12_1# vin3 a_6_1# w_n19_n9# CMOSP w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 not_0/in vin2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 gnd vin3 0.12fF
+C1 vdd not_0/in 0.07fF
+C2 vin4 vin3 0.12fF
+C3 vin2 w_n19_n9# 0.12fF
+C4 not_0/in w_n19_n9# 0.05fF
+C5 gnd out 0.07fF
+C6 vdd w_n19_n9# 0.11fF
+C7 vin2 gnd 0.12fF
+C8 not_0/in gnd 0.35fF
+C9 vin2 vin3 0.14fF
+C10 not_0/in vin3 0.09fF
+C11 vdd vdd 0.06fF
+C12 vin4 not_0/in 0.13fF
+C13 not_0/in gnd 0.01fF
+C14 vin1 w_n19_n9# 0.16fF
+C15 vin1 gnd 0.12fF
+C16 vin2 not_0/in 0.08fF
+C17 vdd out 0.03fF
+C18 vin1 vin2 0.14fF
+C19 vin3 w_n19_n9# 0.12fF
+C20 vin4 w_n19_n9# 0.12fF
+C21 out vdd 0.06fF
+C22 gnd Gnd 0.29fF
+C23 vdd Gnd 0.10fF
+C24 vin4 Gnd 0.35fF
+C25 vin3 Gnd 0.28fF
+C26 vin2 Gnd 0.31fF
+C27 vin1 Gnd 0.32fF
+C28 w_n19_n9# Gnd 1.95fF
+C29 gnd Gnd 0.06fF
+C30 out Gnd 0.10fF
+C31 vdd Gnd 0.04fF
+C32 not_0/in Gnd 0.51fF
+C33 vdd Gnd 0.61fF
+
+
+.tran 1n 320n
+
+.control
+run
+
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vin1) v(vin2)+2 v(vin3)+4 v(vin4)+6 v(out)+8
+
+hardcopy image.ps v(vin1) v(vin2)+2 v(vin3)+4 v(vin4)+6 v(out)+8
+.end
+.endc

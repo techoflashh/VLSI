@@ -12,9 +12,9 @@ node "w_n7_n3#" 1565 610.675 -7 -3 nw 0 0 0 0 608 102 0 0 0 0 0 0 0 0 0 0 0 0 0 
 cap "out" "w_n7_n3#" 30.6819
 cap "in" "gnd" 6.873
 cap "vdd" "out" 57.9296
+cap "in" "w_n7_n3#" 70.58
 cap "vdd" "w_n7_n3#" 59.7399
 cap "out" "gnd" 74.2284
-cap "w_n7_n3#" "in" 70.58
 fet nfet 8 -19 9 -18 8 12 "Gnd!" "in" 4 0 "gnd" 4 0 "out" 4 0
 fet pfet 8 4 9 5 10 14 "w_n7_n3#" "in" 4 0 "vdd" 5 0 "out" 5 0
 subcap "gnd" -6.4266

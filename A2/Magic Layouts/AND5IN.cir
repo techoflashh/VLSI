@@ -1,0 +1,86 @@
+* SPICE3 file created from AND5IN.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+
+.param SUPPLY = 1.8
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_5 vin5 gnd PULSE(0 1.8 0ns 100ps 100ps 320ns 640ns)
+V_in_4 vin4 gnd PULSE(0 1.8 0ns 100ps 100ps 160ns 320ns)
+V_in_3 vin3 gnd PULSE(0 1.8 0ns 100ps 100ps 80ns 160ns)
+V_in_2 vin2 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_1 vin1 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+
+M1000 vout not_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=20 ps=18
+M1001 vout not_0/in vdd vdd CMOSP w=5 l=2
++  ad=30 pd=22 as=30 ps=22
+M1002 not_0/in vin3 vdd vdd CMOSP w=4 l=2
++  ad=100 pd=90 as=100 ps=90
+M1003 not_0/in vin5 a_36_n32# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=56 ps=36
+M1004 a_20_n32# vin3 a_4_n32# Gnd CMOSN w=4 l=2
++  ad=56 pd=36 as=56 ps=36
+M1005 not_0/in vin2 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_4_n32# vin2 a_n12_n32# Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=56 ps=36
+M1007 not_0/in vin5 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 a_n12_n32# vin1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=20 ps=18
+M1009 not_0/in vin1 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 a_36_n32# vin4 a_20_n32# Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 not_0/in vin4 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+
+C0 vdd vout 0.06fF
+C1 vin3 vdd 0.12fF
+C2 vin3 not_0/in 0.06fF
+C3 vdd vin2 0.12fF
+C4 not_0/in vin2 0.06fF
+C5 gnd vout 0.07fF
+C6 vdd vout 0.03fF
+C7 gnd not_0/in 0.01fF
+C8 vdd not_0/in 0.07fF
+C9 vin4 vdd 0.12fF
+C10 vin4 not_0/in 0.06fF
+C11 vdd vdd 0.34fF
+C12 vdd not_0/in 0.37fF
+C13 not_0/in vdd 0.24fF
+C14 vin5 vdd 0.12fF
+C15 vin1 vdd 0.12fF
+C16 vin5 not_0/in 0.08fF
+C17 vdd vdd 0.06fF
+C18 gnd Gnd 0.04fF
+C19 vdd Gnd 0.15fF
+C20 vin5 Gnd 0.28fF
+C21 vin4 Gnd 0.28fF
+C22 vin3 Gnd 0.28fF
+C23 vin2 Gnd 0.28fF
+C24 vin1 Gnd 0.28fF
+C25 vdd Gnd 2.92fF
+C26 gnd Gnd 0.06fF
+C27 vout Gnd 0.12fF
+C28 vdd Gnd 0.04fF
+C29 not_0/in Gnd 0.65fF
+C30 vdd Gnd 0.61fF
+
+.tran 1n 640n
+
+.control
+run
+
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vin1) v(vin2)+2 v(vin3)+4 v(vin4)+6 v(vin5)+8 v(vout)+10
+hardcopy image.ps v(vin1) v(vin2)+2 v(vin3)+4 v(vin4)+6 v(vin5)+8 v(vout)+10
+
+.end
+.endc
+
