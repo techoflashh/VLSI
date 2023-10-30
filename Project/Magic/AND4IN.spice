@@ -1,0 +1,50 @@
+* SPICE3 file created from AND4IN.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 vout NOT_0/in gnd Gnd nfet w=4 l=2
++  ad=24 pd=20 as=21 ps=19
+M1001 vout NOT_0/in vdd NOT_0/w_n7_n3# pfet w=5 l=2
++  ad=30 pd=22 as=31 ps=23
+M1002 NOT_0/in vin1 vdd w_n14_n10# pfet w=4 l=2
++  ad=80 pd=72 as=0 ps=0
+M1003 a_19_n30# vin2 a_2_n30# Gnd nfet w=4 l=2
++  ad=60 pd=38 as=60 ps=38
+M1004 NOT_0/in vin4 vdd w_n14_n10# pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 NOT_0/in vin2 vdd w_n14_n10# pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_36_n30# vin3 a_19_n30# Gnd nfet w=4 l=2
++  ad=60 pd=38 as=0 ps=0
+M1007 NOT_0/in vin4 a_36_n30# Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1008 a_2_n30# vin1 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 NOT_0/in vin3 vdd w_n14_n10# pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 NOT_0/w_n7_n3# vdd 0.06fF
+C1 w_n14_n10# vin3 0.15fF
+C2 NOT_0/in gnd 0.01fF
+C3 w_n14_n10# vin4 0.15fF
+C4 vdd NOT_0/in 0.26fF
+C5 w_n14_n10# NOT_0/in 0.25fF
+C6 NOT_0/in vin2 0.06fF
+C7 NOT_0/w_n7_n3# NOT_0/in 0.07fF
+C8 vin3 NOT_0/in 0.06fF
+C9 vout gnd 0.07fF
+C10 w_n14_n10# vin1 0.15fF
+C11 vdd vout 0.06fF
+C12 w_n14_n10# vdd 0.25fF
+C13 w_n14_n10# vin2 0.15fF
+C14 NOT_0/in vin4 0.06fF
+C15 NOT_0/w_n7_n3# vout 0.03fF
+C16 vin4 Gnd 0.21fF
+C17 vin3 Gnd 0.21fF
+C18 vin2 Gnd 0.21fF
+C19 vin1 Gnd 0.21fF
+C20 w_n14_n10# Gnd 2.83fF
+C21 gnd Gnd 0.07fF
+C22 vout Gnd 0.09fF
+C23 vdd Gnd 0.23fF
+C24 NOT_0/in Gnd 0.45fF
+C25 NOT_0/w_n7_n3# Gnd 0.61fF

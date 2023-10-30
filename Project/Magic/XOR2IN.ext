@@ -1,0 +1,57 @@
+timestamp 1698680491
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use NAND2IN NAND2IN_0 1 0 -59 0 1 5
+use NAND2IN NAND2IN_1 1 0 44 0 1 78
+use NAND2IN NAND2IN_2 1 0 45 0 1 -60
+use NAND2IN NAND2IN_3 1 0 158 0 1 11
+node "gnd" 0 26.6739 30 -85 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 20 0 0 0 0 0 0 0 0 0 0
+node "m1_76_n73#" 4 445.815 76 -73 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 447 304 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 26.6739 76 -40 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 20 0 0 0 0 0 0 0 0 0 0
+node "gnd" 0 26.6739 143 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 20 0 0 0 0 0 0 0 0 0 0
+node "vout" 0 59.1426 189 -2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 26.6739 189 31 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 20 0 0 0 0 0 0 0 0 0 0
+node "vin2" 5 581.593 -43 -108 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 585 396 0 0 0 0 0 0 0 0 0 0
+node "gnd" 0 26.6739 -74 -20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 20 0 0 0 0 0 0 0 0 0 0
+node "m1_n29_n8#" 7 820.681 -29 -8 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 828 558 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 29.6256 -28 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0 0 0 0
+node "m1_n38_26#" 0 4.3239 -38 26 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 4 0 0 0 0 0 0 0 0 0 0
+node "vin1" 6 759.712 -91 -37 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 838 494 0 0 0 0 0 0 0 0 0 0
+node "gnd" 0 28.9938 29 53 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22 22 0 0 0 0 0 0 0 0 0 0
+node "m1_75_65#" 5 531.415 75 65 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 534 362 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 29.6256 75 98 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0 0 0 0
+node "m1_61_99#" 0 4.3239 61 99 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 4 0 0 0 0 0 0 0 0 0 0
+cap "vin2" "m1_n29_n8#" 346.399
+subcap "m1_n29_n8#" -762.565
+subcap "m1_76_n73#" -274.508
+subcap "vout" -125.941
+subcap "m1_n29_n8#" -683.684
+subcap "m1_75_65#" -360.107
+subcap "vdd" -133.873
+subcap "m1_61_99#" -108.571
+subcap "gnd" -22.7103
+merge "NAND2IN_3/vin2" "NAND2IN_2/vout" -20.8791 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -18 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_2/vout" "m1_76_n73#"
+merge "NAND2IN_1/vin2" "NAND2IN_2/vin1" -34.7985 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -30 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_2/vin1" "NAND2IN_0/vout"
+merge "NAND2IN_0/vout" "m1_n29_n8#"
+merge "NAND2IN_1/gnd" "NAND2IN_3/gnd" -47.0199 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41 -34 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_3/gnd" "NAND2IN_2/gnd"
+merge "NAND2IN_2/gnd" "NAND2IN_0/gnd"
+merge "NAND2IN_0/gnd" "gnd"
+merge "NAND2IN_2/vin2" "NAND2IN_0/vin2" -20.8791 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -18 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_0/vin2" "vin2"
+merge "NAND2IN_3/vout" "vout" -7.0683 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -8 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_3/vdd" "NAND2IN_1/vdd" -40.3959 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -40 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_1/vdd" "m1_61_99#"
+merge "m1_61_99#" "NAND2IN_0/vdd"
+merge "NAND2IN_0/vdd" "m1_n38_26#"
+merge "m1_n38_26#" "NAND2IN_2/vdd"
+merge "NAND2IN_2/vdd" "vdd"
+merge "NAND2IN_1/vin1" "NAND2IN_0/vin1" -14.9757 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -14 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_0/vin1" "vin1"
+merge "NAND2IN_1/vout" "NAND2IN_3/vin1" -17.9274 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -16 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_3/vin1" "m1_75_65#"

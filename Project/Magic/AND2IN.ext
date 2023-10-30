@@ -1,0 +1,27 @@
+timestamp 1698685374
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use NAND2IN NAND2IN_0 1 0 16 0 1 35
+use NOT NOT_0 1 0 65 0 1 31
+node "vin2" 0 17.8188 32 -15 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0 0 0 0 0 0 0
+node "vin1" 0 17.8188 13 -15 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0 0 0 0 0 0 0
+node "gnd" 2 245.1 -2 5 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 243 168 0 0 0 0 0 0 0 0 0 0
+node "vout" 0 35.529 84 21 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 26 0 0 0 0 0 0 0 0 0 0
+node "m1_46_22#" 0 56.1909 46 22 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51 40 0 0 0 0 0 0 0 0 0 0
+node "vdd" 1 79.8045 44 55 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0 0 0 0 0 0 0 0 0
+cap "NAND2IN_0/vout" "NAND2IN_0/w_n16_n4#" -1.42109e-14
+cap "NAND2IN_0/gnd" "NAND2IN_0/vout" 41.238
+cap "NAND2IN_0/vin2" "NAND2IN_0/gnd" 63.459
+cap "NAND2IN_0/vin1" "NAND2IN_0/gnd" 63.459
+merge "NOT_0/gnd" "NAND2IN_0/gnd" -32.6859 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -18 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_0/gnd" "gnd"
+merge "NOT_0/in" "NAND2IN_0/vout" -20.8791 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -18 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_0/vout" "m1_46_22#"
+merge "NOT_0/vdd" "NAND2IN_0/vdd" -32.6859 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21 -26 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_0/vdd" "vdd"
+merge "NAND2IN_0/vin1" "vin1" -6.012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0
+merge "NAND2IN_0/vin2" "vin2" -6.012 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0
+merge "NOT_0/out" "vout" -8.9637 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -8 0 0 0 0 0 0 0 0 0 0

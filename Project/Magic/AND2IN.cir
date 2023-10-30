@@ -1,0 +1,58 @@
+* SPICE3 file created from AND2IN.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.option scale=0.09u
+
+.param SUPPLY = 1.8
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_a vin1 gnd PULSE(1.8 0 0ns 100ps 100ps 20ns 40ns)
+V_in_b vin2 gnd PULSE(1.8 0 0ns 100ps 100ps 40ns 80ns)
+
+
+M1000 NAND2IN_0/a_n1_n23# vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=40 ps=36
+M1001 NOT_0/in vin1 vdd NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=70 ps=58
+M1002 NOT_0/in vin2 NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 NOT_0/in vin2 vdd NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 vout NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1005 vout NOT_0/in vdd NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+C0 gnd vout 0.07fF
+C1 vout NOT_0/w_n7_n3# 0.03fF
+C2 NAND2IN_0/w_n16_n4# vdd 0.11fF
+C3 NOT_0/in NAND2IN_0/w_n16_n4# 0.08fF
+C4 NOT_0/in vin2 0.06fF
+C5 vout vdd 0.06fF
+C6 gnd NOT_0/in 0.01fF
+C7 NOT_0/w_n7_n3# vdd 0.06fF
+C8 NOT_0/w_n7_n3# NOT_0/in 0.07fF
+C9 NAND2IN_0/w_n16_n4# vin1 0.10fF
+C10 NOT_0/in vdd 0.08fF
+C11 NAND2IN_0/w_n16_n4# vin2 0.10fF
+C12 gnd Gnd 0.14fF
+C13 vout Gnd 0.09fF
+C14 vdd Gnd 0.19fF
+C15 NOT_0/in Gnd 0.37fF
+C16 NOT_0/w_n7_n3# Gnd 0.61fF
+C17 vin2 Gnd 0.20fF
+C18 vin1 Gnd 0.20fF
+C19 NAND2IN_0/w_n16_n4# Gnd 1.16fF
+
+
+.tran 1n 80n
+
+.control
+run
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vin1) v(vin2)+2 (vout)+4
+hardcopy image.ps v(vin1) v(vin2)+2 (vout)+4
+.end
+.endc

@@ -1,0 +1,38 @@
+* SPICE3 file created from NAND2IN.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.option scale=0.09u
+
+.param SUPPLY = 1.8
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_a vin1 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+V_in_b vin2 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+
+M1000 a_n1_n23# vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=20 ps=18
+M1001 vout vin1 vdd vdd CMOSP w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1002 vout vin2 a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 vout vin2 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 vdd vdd 0.11fF
+C1 vdd vout 0.08fF
+C2 vdd vout 0.08fF
+C3 vdd vin1 0.10fF
+C4 vdd vin2 0.10fF
+C5 vout vin2 0.06fF
+
+.tran 1n 200n
+
+.control
+run
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vin1) v(vin2)+2 (vout)+4
+hardcopy image.ps v(vin1) v(vin2)+2 (vout)+4
+.end
+.endc

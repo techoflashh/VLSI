@@ -1,0 +1,94 @@
+* SPICE3 file created from XOR2IN.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.option scale=0.09u
+
+.param SUPPLY = 1.8
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_a vin1 gnd PULSE(1.8 0 0ns 100ps 100ps 20ns 40ns)
+V_in_b vin2 gnd PULSE(1.8 0 0ns 100ps 100ps 40ns 80ns)
+
+M1000 NAND2IN_0/a_n1_n23# vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=80 ps=72
+M1001 NAND2IN_2/vin1 vin1 vdd vdd CMOSP w=4 l=2
++  ad=40 pd=36 as=160 ps=144
+M1002 NAND2IN_2/vin1 vin2 NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 NAND2IN_2/vin1 vin2 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 NAND2IN_2/a_n1_n23# NAND2IN_2/vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1005 NAND2IN_3/vin2 NAND2IN_2/vin1 vdd vdd CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1006 NAND2IN_3/vin2 vin2 NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1007 NAND2IN_3/vin2 vin2 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 NAND2IN_1/a_n1_n23# vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1009 NAND2IN_3/vin1 vin1 vdd vdd CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1010 NAND2IN_3/vin1 NAND2IN_2/vin1 NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1011 NAND2IN_3/vin1 NAND2IN_2/vin1 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 NAND2IN_3/a_n1_n23# NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1013 vout NAND2IN_3/vin1 vdd vdd CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1014 vout NAND2IN_3/vin2 NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1015 vout NAND2IN_3/vin2 vdd vdd CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+
+
+C0 vdd vdd 0.11fF
+C1 vdd NAND2IN_3/vin2 0.08fF
+C2 NAND2IN_3/vin1 vdd 0.08fF
+C3 vdd vin2 0.10fF
+C4 vin1 vdd 0.10fF
+C5 NAND2IN_3/vin1 vdd 0.10fF
+C6 vdd NAND2IN_2/vin1 0.08fF
+C7 NAND2IN_3/vin2 vdd 0.08fF
+C8 NAND2IN_3/vin1 NAND2IN_2/vin1 0.06fF
+C9 NAND2IN_3/vin2 vdd 0.10fF
+C10 NAND2IN_3/vin2 vin2 0.06fF
+C11 vout vdd 0.08fF
+C12 vout vdd 0.08fF
+C13 vdd vdd 0.11fF
+C14 vdd vdd 0.11fF
+C15 vdd vin2 0.10fF
+C16 vdd vin1 0.10fF
+C17 vdd NAND2IN_2/vin1 0.10fF
+C18 NAND2IN_2/vin1 vdd 0.10fF
+C19 vdd vdd 0.11fF
+C20 vdd NAND2IN_2/vin1 0.08fF
+C21 vin2 NAND2IN_2/vin1 0.41fF
+C22 vout NAND2IN_3/vin2 0.06fF
+C23 NAND2IN_3/vin1 vdd 0.08fF
+C24 vout Gnd 0.14fF
+C25 NAND2IN_3/vin1 Gnd 0.49fF
+C26 vdd Gnd 1.16fF
+C27 vdd Gnd 1.16fF
+C28 NAND2IN_3/vin2 Gnd 0.49fF
+C29 vdd Gnd 0.16fF
+C30 vdd Gnd 1.16fF
+C31 gnd Gnd 0.18fF
+C32 vin2 Gnd 0.94fF
+C33 vin1 Gnd 1.12fF
+C34 vdd Gnd 1.16fF
+
+.tran 1n 600n
+
+.control
+run
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vin1) v(vin2)+2 (vout)+4
+hardcopy image.ps v(vin1) v(vin2)+2 (vout)+4
+.end
+.endc
+

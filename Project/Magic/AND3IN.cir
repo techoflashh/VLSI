@@ -1,0 +1,68 @@
+* SPICE3 file created from AND3IN.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+
+.param SUPPLY = 1.8
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+
+V_in_3 vin3 gnd PULSE(0 1.8 0ns 100ps 100ps 80ns 160ns)
+V_in_2 vin2 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_1 vin1 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+
+
+M1000 vout NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=21 ps=19
+M1001 vout NOT_0/in vdd NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=90 ps=76
+M1002 NOT_0/in vin1 vdd w_n14_n10# CMOSP w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1003 a_19_n30# vin2 a_2_n30# Gnd CMOSN w=4 l=2
++  ad=60 pd=38 as=60 ps=38
+M1004 NOT_0/in vin2 vdd w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 NOT_0/in vin3 a_19_n30# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1006 a_2_n30# vin1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 NOT_0/in vin3 vdd w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 vout NOT_0/w_n7_n3# 0.03fF
+C1 NOT_0/in NOT_0/w_n7_n3# 0.07fF
+C2 vin3 w_n14_n10# 0.15fF
+C3 gnd vout 0.07fF
+C4 vin3 NOT_0/in 0.06fF
+C5 gnd NOT_0/in 0.01fF
+C6 vout vdd 0.06fF
+C7 w_n14_n10# vdd 0.19fF
+C8 vin2 w_n14_n10# 0.15fF
+C9 vdd NOT_0/in 0.19fF
+C10 vin2 NOT_0/in 0.06fF
+C11 w_n14_n10# NOT_0/in 0.19fF
+C12 vin1 w_n14_n10# 0.15fF
+C13 vdd NOT_0/w_n7_n3# 0.06fF
+C14 vin3 Gnd 0.21fF
+C15 vin2 Gnd 0.21fF
+C16 vin1 Gnd 0.21fF
+C17 w_n14_n10# Gnd 2.32fF
+C18 gnd Gnd 0.11fF
+C19 vout Gnd 0.09fF
+C20 vdd Gnd 0.26fF
+C21 NOT_0/in Gnd 0.44fF
+C22 NOT_0/w_n7_n3# Gnd 0.61fF
+
+.tran 1n 160n
+
+.control
+run
+
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vin1) v(vin2)+2 v(vin3)+4 v(vout)+6
+
+hardcopy image.ps v(vin1) v(vin2)+2 v(vin3)+4 v(vout)+6
+.end
+.endc
