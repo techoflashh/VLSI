@@ -1,64 +1,84 @@
 magic
 tech scmos
-timestamp 1698680491
+timestamp 1698769192
 << metal1 >>
-rect 61 99 62 100
-rect 75 98 83 101
-rect 75 65 112 68
-rect 29 58 32 60
-rect 29 57 33 58
-rect 29 53 32 57
-rect -91 41 44 44
-rect -91 -33 -87 41
-rect -38 26 -37 27
-rect -28 25 -20 28
-rect 60 -5 63 45
-rect -29 -8 63 -5
-rect -74 -20 -71 -13
-rect -62 -33 -59 -30
-rect -91 -37 -59 -33
-rect -43 -105 -40 -29
-rect 3 -97 6 -8
-rect 109 -25 112 65
-rect 189 31 196 34
-rect 189 -2 207 1
-rect 143 -14 146 -7
-rect 155 -25 158 -23
-rect 109 -28 158 -25
-rect 76 -40 83 -37
-rect 174 -70 177 -22
+rect -12 98 32 101
+rect 74 98 146 101
+rect -92 -48 -89 32
+rect -12 28 -9 98
+rect 75 65 93 68
+rect -34 25 -9 28
+rect 14 55 33 58
+rect 3 -3 6 10
+rect -29 -8 1 -5
+rect 14 -9 17 55
+rect 22 29 25 32
+rect 41 29 44 34
+rect 22 26 44 29
+rect 60 16 63 33
+rect 14 -12 75 -9
+rect -78 -18 -71 -15
+rect -78 -23 -75 -18
+rect 14 -23 17 -12
+rect -78 -26 17 -23
+rect 90 -26 93 65
+rect 142 34 146 98
+rect 121 31 146 34
+rect -62 -48 -59 -40
+rect -106 -51 -59 -48
+rect -43 -105 -40 -40
+rect 14 -80 17 -26
+rect 121 -37 124 31
+rect 190 -2 213 1
+rect 133 -12 146 -9
+rect 30 -40 32 -37
+rect 76 -40 124 -37
+rect 155 -46 158 -34
+rect 95 -49 158 -46
+rect 174 -70 177 -34
 rect 76 -73 177 -70
-rect 30 -85 33 -78
-rect 42 -97 45 -94
-rect 3 -100 45 -97
-rect 61 -105 64 -93
-rect -43 -108 64 -105
-use NAND2IN  NAND2IN_0
-timestamp 1698595213
-transform 1 0 -59 0 1 5
-box -16 -35 32 23
-use NAND2IN  NAND2IN_1
-timestamp 1698595213
-transform 1 0 44 0 1 78
-box -16 -35 32 23
-use NAND2IN  NAND2IN_2
-timestamp 1698595213
-transform 1 0 45 0 1 -60
-box -16 -35 32 23
+rect 14 -83 34 -80
+rect -106 -108 45 -105
+rect 61 -115 64 -106
+rect 8 -118 64 -115
+<< m2contact >>
+rect -92 32 -87 37
+rect 3 10 8 15
+rect 1 -8 6 -3
+rect 20 32 25 37
+rect 58 11 63 16
+rect 75 -13 80 -8
+rect 89 -31 94 -26
+rect 128 -13 133 -8
+rect 90 -49 95 -44
+rect 3 -118 8 -113
+<< metal2 >>
+rect -87 34 20 37
+rect 8 11 58 14
+rect 3 -113 6 -8
+rect 80 -12 128 -9
+rect 133 -12 134 -9
+rect 90 -44 93 -31
 use NAND2IN  NAND2IN_3
-timestamp 1698595213
+timestamp 1698685033
 transform 1 0 158 0 1 11
-box -16 -35 32 23
+box -16 -46 32 23
+use NAND2IN  NAND2IN_2
+timestamp 1698685033
+transform 1 0 45 0 1 -60
+box -16 -46 32 23
+use NAND2IN  NAND2IN_1
+timestamp 1698685033
+transform 1 0 44 0 1 78
+box -16 -46 32 23
+use NAND2IN  NAND2IN_0
+timestamp 1698685033
+transform 1 0 -59 0 1 5
+box -16 -46 32 23
 << labels >>
-rlabel metal1 -62 -36 -61 -35 1 vin1
-rlabel metal1 -42 -36 -41 -35 1 vin2
-rlabel metal1 -74 -17 -73 -16 1 gnd
-rlabel metal1 30 -82 31 -81 1 gnd
-rlabel metal1 29 56 30 57 1 gnd
-rlabel metal1 143 -11 144 -10 1 gnd
-rlabel metal1 194 32 195 33 7 vdd
-rlabel metal1 81 99 82 100 5 vdd
-rlabel metal1 80 -39 81 -38 1 vdd
-rlabel metal1 -23 26 -22 27 1 vdd
-rlabel metal1 198 -1 199 0 1 vout
+rlabel metal1 -105 -50 -104 -49 3 vin1
+rlabel metal1 -105 -107 -104 -106 3 vin2
+rlabel metal1 200 -1 201 0 1 vout
+rlabel metal1 -21 26 -20 27 1 vdd
+rlabel metal1 -17 -25 -16 -24 1 gnd
 << end >>

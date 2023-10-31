@@ -13,73 +13,77 @@ V_in_b vin2 gnd PULSE(1.8 0 0ns 100ps 100ps 40ns 80ns)
 
 M1000 NAND2IN_0/a_n1_n23# vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=80 ps=72
-M1001 NAND2IN_2/vin1 vin1 vdd vdd CMOSP w=4 l=2
+M1001 NAND2IN_2/vin2 vin1 vdd NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=160 ps=144
-M1002 NAND2IN_2/vin1 vin2 NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1002 NAND2IN_2/vin2 vin2 NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1003 NAND2IN_2/vin1 vin2 vdd vdd CMOSP w=4 l=2
+M1003 NAND2IN_2/vin2 vin2 vdd NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1004 NAND2IN_2/a_n1_n23# NAND2IN_2/vin1 gnd Gnd CMOSN w=4 l=2
+M1004 NAND2IN_1/a_n1_n23# vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1005 NAND2IN_3/vin2 NAND2IN_2/vin1 vdd vdd CMOSP w=4 l=2
+M1005 NAND2IN_3/vin1 vin1 vdd NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1006 NAND2IN_3/vin2 vin2 NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
+M1006 NAND2IN_3/vin1 NAND2IN_2/vin2 NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1007 NAND2IN_3/vin2 vin2 vdd vdd CMOSP w=4 l=2
+M1007 NAND2IN_3/vin1 NAND2IN_2/vin2 vdd NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1008 NAND2IN_1/a_n1_n23# vin1 gnd Gnd CMOSN w=4 l=2
+M1008 NAND2IN_2/a_n1_n23# vin2 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1009 NAND2IN_3/vin1 vin1 vdd vdd CMOSP w=4 l=2
+M1009 NAND2IN_3/vin2 vin2 vdd NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1010 NAND2IN_3/vin1 NAND2IN_2/vin1 NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
+M1010 NAND2IN_3/vin2 NAND2IN_2/vin2 NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1011 NAND2IN_3/vin1 NAND2IN_2/vin1 vdd vdd CMOSP w=4 l=2
+M1011 NAND2IN_3/vin2 NAND2IN_2/vin2 vdd NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
 M1012 NAND2IN_3/a_n1_n23# NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1013 vout NAND2IN_3/vin1 vdd vdd CMOSP w=4 l=2
+M1013 vout NAND2IN_3/vin1 vdd NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
 M1014 vout NAND2IN_3/vin2 NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1015 vout NAND2IN_3/vin2 vdd vdd CMOSP w=4 l=2
+M1015 vout NAND2IN_3/vin2 vdd NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-
-
-C0 vdd vdd 0.11fF
-C1 vdd NAND2IN_3/vin2 0.08fF
-C2 NAND2IN_3/vin1 vdd 0.08fF
-C3 vdd vin2 0.10fF
-C4 vin1 vdd 0.10fF
-C5 NAND2IN_3/vin1 vdd 0.10fF
-C6 vdd NAND2IN_2/vin1 0.08fF
-C7 NAND2IN_3/vin2 vdd 0.08fF
-C8 NAND2IN_3/vin1 NAND2IN_2/vin1 0.06fF
-C9 NAND2IN_3/vin2 vdd 0.10fF
-C10 NAND2IN_3/vin2 vin2 0.06fF
-C11 vout vdd 0.08fF
-C12 vout vdd 0.08fF
-C13 vdd vdd 0.11fF
-C14 vdd vdd 0.11fF
-C15 vdd vin2 0.10fF
-C16 vdd vin1 0.10fF
-C17 vdd NAND2IN_2/vin1 0.10fF
-C18 NAND2IN_2/vin1 vdd 0.10fF
-C19 vdd vdd 0.11fF
-C20 vdd NAND2IN_2/vin1 0.08fF
-C21 vin2 NAND2IN_2/vin1 0.41fF
-C22 vout NAND2IN_3/vin2 0.06fF
-C23 NAND2IN_3/vin1 vdd 0.08fF
-C24 vout Gnd 0.14fF
-C25 NAND2IN_3/vin1 Gnd 0.49fF
-C26 vdd Gnd 1.16fF
-C27 vdd Gnd 1.16fF
-C28 NAND2IN_3/vin2 Gnd 0.49fF
-C29 vdd Gnd 0.16fF
-C30 vdd Gnd 1.16fF
-C31 gnd Gnd 0.18fF
-C32 vin2 Gnd 0.94fF
-C33 vin1 Gnd 1.12fF
-C34 vdd Gnd 1.16fF
+C0 vdd NAND2IN_2/w_n16_n4# 0.11fF
+C1 NAND2IN_3/vin1 NAND2IN_1/w_n16_n4# 0.08fF
+C2 NAND2IN_3/vin1 NAND2IN_2/vin2 0.06fF
+C3 gnd NAND2IN_2/vin2 0.19fF
+C4 NAND2IN_2/w_n16_n4# NAND2IN_3/vin2 0.08fF
+C5 vin2 NAND2IN_2/vin2 0.39fF
+C6 vin2 NAND2IN_0/w_n16_n4# 0.10fF
+C7 gnd vin1 0.27fF
+C8 NAND2IN_1/w_n16_n4# NAND2IN_2/vin2 0.10fF
+C9 NAND2IN_0/w_n16_n4# NAND2IN_2/vin2 0.08fF
+C10 vdd NAND2IN_3/w_n16_n4# 0.11fF
+C11 vin2 NAND2IN_2/w_n16_n4# 0.10fF
+C12 vin1 NAND2IN_1/w_n16_n4# 0.10fF
+C13 vdd NAND2IN_3/vin2 0.08fF
+C14 vin1 NAND2IN_0/w_n16_n4# 0.10fF
+C15 NAND2IN_3/vin2 NAND2IN_3/w_n16_n4# 0.10fF
+C16 NAND2IN_2/w_n16_n4# NAND2IN_2/vin2 0.10fF
+C17 NAND2IN_3/vin1 vdd 0.43fF
+C18 NAND2IN_3/vin1 NAND2IN_3/w_n16_n4# 0.10fF
+C19 gnd vdd 0.11fF
+C20 vout vdd 0.08fF
+C21 vout NAND2IN_3/w_n16_n4# 0.08fF
+C22 vdd NAND2IN_1/w_n16_n4# 0.11fF
+C23 gnd NAND2IN_3/vin1 0.06fF
+C24 vdd NAND2IN_2/vin2 0.08fF
+C25 vdd NAND2IN_0/w_n16_n4# 0.11fF
+C26 vout NAND2IN_3/vin2 0.06fF
+C27 vin1 vdd 0.06fF
+C28 NAND2IN_2/vin2 NAND2IN_3/vin2 0.06fF
+C29 gnd vin2 0.09fF
+C30 vdd Gnd 0.57fF
+C31 vout Gnd 0.16fF
+C32 NAND2IN_3/vin1 Gnd 0.54fF
+C33 NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C34 NAND2IN_3/vin2 Gnd 0.55fF
+C35 NAND2IN_2/vin2 Gnd 0.80fF
+C36 NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C37 NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C38 vin2 Gnd 1.13fF
+C39 vin1 Gnd 2.28fF
+C40 NAND2IN_0/w_n16_n4# Gnd 1.16fF
 
 .tran 1n 600n
 
@@ -91,4 +95,3 @@ plot v(vin1) v(vin2)+2 (vout)+4
 hardcopy image.ps v(vin1) v(vin2)+2 (vout)+4
 .end
 .endc
-
