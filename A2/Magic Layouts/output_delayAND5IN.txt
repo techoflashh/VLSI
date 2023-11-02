@@ -1,0 +1,5 @@
+tpd                 =  1.91284e-10 input = vin1 output = vout
+tpd                 =  1.83979e-10 input = vin2 output = vout
+tpd                 =  1.77723e-10 input = vin3 output = vout
+tpd                 =  1.74912e-10 input = vin4 output = vout
+tpd                 =  1.70349e-10 input = vin5 output = vout

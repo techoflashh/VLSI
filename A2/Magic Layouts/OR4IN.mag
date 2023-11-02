@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1698576814
+timestamp 1698685870
 << nwell >>
 rect -19 -9 38 25
 << ntransistor >>
@@ -67,8 +67,9 @@ rect -5 -49 -1 -45
 rect 13 -49 17 -45
 rect 30 -49 34 -45
 << metal1 >>
-rect -19 25 38 28
+rect -19 25 63 28
 rect -8 13 -5 25
+rect 60 6 63 25
 rect 25 -16 28 1
 rect -16 -19 65 -16
 rect -16 -20 3 -19
@@ -81,12 +82,14 @@ rect -25 -39 -22 -29
 rect -9 -39 -6 -29
 rect 9 -39 12 -29
 rect 26 -39 29 -29
-rect -25 -42 29 -39
+rect 54 -36 70 -33
+rect 54 -39 57 -36
+rect -25 -42 57 -39
 rect -21 -54 -17 -49
 rect -5 -54 -1 -49
 rect 13 -54 17 -49
 rect 30 -54 34 -49
-use not  not_0
+use NOT  NOT_0
 timestamp 1698475750
 transform 1 0 67 0 1 -10
 box -7 -26 25 19
@@ -97,5 +100,5 @@ rlabel metal1 -19 -52 -18 -51 1 vin1
 rlabel metal1 -3 -52 -2 -51 1 vin2
 rlabel metal1 15 -52 16 -51 1 vin3
 rlabel metal1 32 -52 33 -51 1 vin4
-rlabel metal1 98 -19 99 -18 7 out
+rlabel metal1 98 -19 99 -18 7 vout
 << end >>

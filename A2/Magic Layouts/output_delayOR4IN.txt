@@ -1,0 +1,4 @@
+tpd                 =  1.40121e-07 input = vin1 output = vout
+tpd                 =  1.40121e-07 input = vin2 output = vout
+tpd                 =  1.40125e-07 input = vin3 output = vout
+tpd                 =  1.40102e-07 input = vin4 output = vout

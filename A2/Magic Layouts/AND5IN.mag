@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1698591752
+timestamp 1698684513
 << nwell >>
 rect -26 1 65 33
 << ntransistor >>
@@ -58,19 +58,19 @@ rect 2 -28 4 14
 rect 18 -28 20 14
 rect 34 -28 36 14
 rect 50 -28 52 14
-rect -14 -35 -12 -32
-rect 2 -35 4 -32
-rect 18 -35 20 -32
-rect 34 -35 36 -32
-rect 50 -35 52 -32
+rect -14 -56 -12 -32
+rect 2 -56 4 -32
+rect 18 -56 20 -32
+rect 34 -56 36 -32
+rect 50 -56 52 -32
 << polycontact >>
-rect -15 -40 -10 -35
-rect 1 -40 6 -35
-rect 17 -40 22 -35
-rect 33 -40 38 -35
-rect 49 -40 54 -35
+rect -15 -61 -10 -56
+rect 1 -61 6 -56
+rect 17 -61 22 -56
+rect 33 -61 38 -56
+rect 49 -61 54 -56
 << metal1 >>
-rect -26 33 65 36
+rect -26 33 78 36
 rect -19 18 -16 33
 rect -3 18 0 33
 rect 13 18 16 33
@@ -81,26 +81,31 @@ rect 6 -15 9 14
 rect 22 -15 25 14
 rect 38 -15 41 14
 rect 54 -15 57 14
+rect 75 7 78 33
 rect -10 -18 79 -15
 rect 54 -28 57 -18
 rect 99 -19 121 -16
 rect -31 -32 -19 -28
-rect -14 -46 -11 -40
-rect 2 -46 5 -40
-rect 18 -46 21 -40
-rect 34 -46 37 -40
-rect 50 -46 53 -40
-use not  not_0
+rect -31 -39 -27 -32
+rect 71 -35 88 -32
+rect 71 -39 74 -35
+rect -31 -42 74 -39
+rect -14 -67 -11 -61
+rect 2 -67 5 -61
+rect 18 -67 21 -61
+rect 34 -67 37 -61
+rect 50 -67 53 -61
+use NOT  NOT_0
 timestamp 1698475750
 transform 1 0 82 0 1 -9
 box -7 -26 25 19
 << labels >>
 rlabel metal1 116 -18 117 -17 7 vout
-rlabel metal1 -13 -44 -12 -43 1 vin1
-rlabel metal1 3 -44 4 -43 1 vin2
-rlabel metal1 19 -44 20 -43 1 vin3
-rlabel metal1 35 -44 36 -43 1 vin4
-rlabel metal1 51 -44 52 -43 1 vin5
 rlabel metal1 -27 -31 -26 -30 3 gnd
 rlabel metal1 2 34 3 35 5 vdd
+rlabel metal1 -13 -65 -12 -64 1 vin1
+rlabel metal1 3 -65 4 -64 1 vin2
+rlabel metal1 19 -65 20 -64 1 vin3
+rlabel metal1 35 -65 36 -64 1 vin4
+rlabel metal1 51 -65 52 -64 1 vin5
 << end >>

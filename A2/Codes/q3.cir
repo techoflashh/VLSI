@@ -42,7 +42,7 @@ Xm node_out node_a2 node_a1 node_a0 vdd gnd MajorityFunction
 
 C1 node_out gnd 50f
 
-.tran 1n 320n
+.tran 1n 640n
 
 .control
 run

@@ -1,7 +1,5 @@
 Question No 5
 
-*temperature
-
 .include TSMC_180nm.txt
 
 .subckt NAND node_out nodeA nodeB vdd gnd
@@ -38,14 +36,14 @@ Question No 5
 
 Vdd vdd gnd 'SUPPLY'
 
-V_in_a nodeA gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
-V_in_b nodeB gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a nodeA gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_b nodeB gnd PULSE(0 1.8 0ns 100ps 100ps 80ns 160ns)
 
 X1 node_out nodeA nodeB vdd gnd NAND
 
 *capacitance
 
-.tran 1n 600n
+.tran 1n 100n
 
 .measure tran trise
 + TRIG v(nodeA) VAL = 'SUPPLY/2' RISE = 1

@@ -1,7 +1,6 @@
 import os
 import subprocess
 import time
-import random
 
 
 command = "ngspice tempfile.cir"
@@ -9,16 +8,14 @@ command = "ngspice tempfile.cir"
 fp3 = open("q5_temperature_output.txt",'w')
 fp3.close()
 
-
 temperatures = []
 
-with open('temperatureValues.txt') as f:
-    temperatures = f.readlines()
-    temperatures = [float(i[:-1]) for i in temperatures]
+for i in range(0,501):
+    temp = (80/500)*i
+    temp = round(temp,2)
+    temperatures.append(temp)
 
-
-
-for i in range(500):
+for i in range(501):
     f1 = open("q5.cir",'r') 
     f2 = open("tempfile.cir",'w')
     fp3 = open("q5_temperature_output.txt",'a')

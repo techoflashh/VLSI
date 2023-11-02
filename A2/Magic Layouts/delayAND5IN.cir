@@ -8,11 +8,7 @@
 
 Vdd vdd gnd 'SUPPLY'
 
-V_in_5 vin5 gnd PULSE(0 1.8 0ns 100ps 100ps 320ns 640ns)
-V_in_4 vin4 gnd PULSE(0 1.8 0ns 100ps 100ps 160ns 320ns)
-V_in_3 vin3 gnd PULSE(0 1.8 0ns 100ps 100ps 80ns 160ns)
-V_in_2 vin2 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
-V_in_1 vin1 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+*inputPulses
 
 M1000 vout NOT_0/in gnd Gnd CMOSN w=4 l=2
 +  ad=24 pd=20 as=20 ps=18
@@ -71,18 +67,13 @@ C28 vdd Gnd 0.04fF
 C29 NOT_0/in Gnd 0.65fF
 C30 vdd Gnd 0.61fF
 
-.tran 1n 120n
+.tran 1n 640n
 
 *delayAnalysis
 
 .control
 run
-
-set color0 = rgb:f/f/e
-set color1 = black
-plot v(vin1) v(vin2)+2 v(vin3)+4 v(vin4)+6 v(vin5)+8 v(vout)+10
-hardcopy image.ps v(vin1) v(vin2)+2 v(vin3)+4 v(vin4)+6 v(vin5)+8 v(vout)+10
-
+quit
 .end
 .endc
 

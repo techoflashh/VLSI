@@ -29,7 +29,13 @@ for t in temperatures:
         mode2 = "RISE"
         mode3 = "FALL"
         mode4 = "FALL"
-
+        L = [0,1,2]
+        L.remove(j)
+        inputPulses = f'''
+V_in_3 node_a{L[1]} gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_2 node_a{L[0]} gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_1 node_a{j} gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+'''
         data = fp1.read()
 
         search_text = "*delay"
@@ -44,8 +50,9 @@ for t in temperatures:
 
 .measure tran tpd param = '(trise + tfall)/2' goal = 0
         '''
+        search_text2 = "*inputPulses"
         data = data.replace(search_text,replace_text)
-        data = data.replace(search_text_temp,replace_text_temp)
+        data = data.replace(search_text2,inputPulses)
         fp2.write(data)
         fp1.close()
         fp2.close()

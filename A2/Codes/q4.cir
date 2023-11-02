@@ -52,10 +52,10 @@ V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
 
 X_add node_out3 node_out2 node_out1 node_out0 Carry node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 node_b3 vdd gnd 4bitAdder
 
-C1 node_out0 gnd 100f
-C2 node_out1 gnd 100f
-C3 node_out2 gnd 100f
-C4 node_out3 gnd 100f
+C1 node_out0 gnd 0.5fF
+C2 node_out1 gnd 0.5fF
+C3 node_out2 gnd 0.5fF
+C4 node_out3 gnd 0.5fF
 
 .tran 1n 320n
 

@@ -1,0 +1,59 @@
+* SPICE3 file created from RingOscillator.ext - technology: scmos
+
+.include TSMC_180nm.txt
+.option scale=0.09u
+
+.param SUPPLY = 1.8
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+.ic V(vout)= 0V
+
+
+M1000 NOT_2/in NOT_1/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=60 ps=54
+M1001 NOT_2/in NOT_1/in vdd NOT_1/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=90 ps=66
+M1002 NOT_1/in vout gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1003 NOT_1/in vout vdd NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1004 vout NOT_2/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1005 vout NOT_2/in vdd NOT_2/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+C0 vdd NOT_2/in 0.06fF
+C1 NOT_2/w_n7_n3# vout 0.03fF
+C2 gnd NOT_2/in 0.08fF
+C3 NOT_1/in vdd 0.06fF
+C4 NOT_0/w_n7_n3# vout 0.07fF
+C5 gnd NOT_1/in 0.08fF
+C6 NOT_2/w_n7_n3# NOT_2/in 0.07fF
+C7 NOT_1/w_n7_n3# NOT_2/in 0.03fF
+C8 vdd vout 0.06fF
+C9 NOT_1/in NOT_1/w_n7_n3# 0.07fF
+C10 NOT_2/w_n7_n3# vdd 0.06fF
+C11 gnd vout 0.10fF
+C12 vdd NOT_1/w_n7_n3# 0.06fF
+C13 NOT_0/w_n7_n3# NOT_1/in 0.03fF
+C14 NOT_0/w_n7_n3# vdd 0.06fF
+C15 gnd Gnd 0.37fF
+C16 vdd Gnd 0.20fF
+C17 NOT_2/w_n7_n3# Gnd 0.61fF
+C18 NOT_1/in Gnd 0.30fF
+C19 vout Gnd 0.80fF
+C20 NOT_0/w_n7_n3# Gnd 0.61fF
+C21 NOT_2/in Gnd 0.30fF
+C22 NOT_1/w_n7_n3# Gnd 0.61fF
+
+.tran 1n 20n
+
+.control
+run
+
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vout)
+hardcopy image.ps v(vout)
+.end
+.endc
