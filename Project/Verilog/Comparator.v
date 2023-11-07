@@ -18,8 +18,9 @@ module Comparator(Greater,Equal,Less,A,B,En);
     and g10(gt2,A[2],b2c,eq3);
     and g11(gt1,A[1],b1c,eq3,eq2);
     and g12(gt0,A[0],b0c,eq3,eq2,eq1);
-    or g13(Greater,gt0,gt1,gt2,gt3);
+    or g13(tempGreater,gt0,gt1,gt2,gt3);
     and g14(Equal,eq0,eq1,eq2,eq3,En);
-    nor g15(tempLess,Greater,Equal);
-    and g16(Less,tempLess,En);
+    and g15(Greater,tempGreater,En);
+    nor g16(tempLess,Greater,Equal);
+    and g17(Less,tempLess,En);
 endmodule

@@ -34,6 +34,6 @@ run
 set color0 = rgb:f/f/e
 set color1 = black
 plot v(in) v(out)+2
-hardcopy image.ps v(node_a) v(out)+2
+hardcopy image.ps v(in) v(out)+2
 .end
 .endc

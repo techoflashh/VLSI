@@ -74,10 +74,8 @@ C3 Less gnd 100f
 run
 set color0 = rgb:f/f/e
 set color1 = black
-plot v(node_a0) v(node_b0)+8 v(node_a1)+2 v(node_b1)+10 v(node_a2)+4 v(node_b2)+12 v(node_a3)+6 v(node_b3)+14 v(Greater)+16 v(Equal)+18 v(Less)+20
-
-hardcopy image.ps v(node_a0) v(node_b0)+8 v(node_a1)+2 v(node_b1)+10 v(node_a2)+4 v(node_b2)+12 v(node_a3)+6 v(node_b3)+14 v(Greater)+16 v(Equal)+18 v(Less)+20
-
+plot v(node_a0) v(node_b0)+8 v(node_a1)+2 v(node_b1)+10 v(node_a2)+4 v(node_b2)+12 v(node_a3)+6 v(node_b3)+14 v(Greater)+18 v(Equal)+16 v(Less)+20
+hardcopy image.ps v(node_a0) v(node_b0)+8 v(node_a1)+2 v(node_b1)+10 v(node_a2)+4 v(node_b2)+12 v(node_a3)+6 v(node_b3)+14 v(Greater)+18 v(Equal)+16 v(Less)+20
 .end
 .endc
 
