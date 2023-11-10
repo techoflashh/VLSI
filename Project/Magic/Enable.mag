@@ -1,0 +1,84 @@
+magic
+tech scmos
+timestamp 1699634857
+<< metal1 >>
+rect 113 93 116 103
+rect 226 93 229 103
+rect 342 93 345 103
+rect 453 93 456 103
+rect 594 93 597 103
+rect 707 93 710 103
+rect 823 93 826 103
+rect 934 93 937 103
+rect -4 76 17 79
+rect 374 76 423 79
+rect -4 26 17 29
+rect 433 26 486 29
+rect -5 -13 13 -10
+rect 27 -23 30 2
+rect 46 -9 49 2
+rect 136 -23 139 2
+rect 155 -9 158 2
+rect 254 -23 257 2
+rect 273 -9 276 2
+rect 368 -23 371 2
+rect 387 -9 390 2
+rect 508 -23 511 2
+rect 527 -9 530 2
+rect 617 -23 620 2
+rect 636 -9 639 2
+rect 735 -23 738 2
+rect 754 -9 757 2
+rect 849 -23 852 2
+rect 868 -9 871 2
+<< m2contact >>
+rect 423 75 428 80
+rect 480 75 485 80
+rect 13 -14 18 -9
+rect 45 -14 50 -9
+rect 154 -14 159 -9
+rect 272 -14 277 -9
+rect 386 -14 391 -9
+rect 526 -14 531 -9
+rect 635 -14 640 -9
+rect 753 -14 758 -9
+rect 867 -14 872 -9
+<< metal2 >>
+rect 428 76 480 79
+rect 18 -13 45 -10
+rect 50 -13 154 -10
+rect 159 -13 272 -10
+rect 277 -13 386 -10
+rect 391 -13 526 -10
+rect 531 -13 635 -10
+rect 640 -13 753 -10
+rect 758 -13 867 -10
+use AND4Bit  AND4Bit_1
+timestamp 1699631834
+transform 1 0 493 0 1 6
+box -12 -6 444 89
+use AND4Bit  AND4Bit_0
+timestamp 1699631834
+transform 1 0 12 0 1 6
+box -12 -6 444 89
+<< labels >>
+rlabel metal1 -3 77 -2 78 3 vdd
+rlabel metal1 -3 27 -2 28 3 gnd
+rlabel metal1 -3 -12 -2 -11 3 vinEn
+rlabel metal1 28 -21 29 -20 1 vina0
+rlabel metal1 114 101 115 102 5 vouta0
+rlabel metal1 137 -20 138 -19 1 vina1
+rlabel metal1 227 100 228 101 5 vouta1
+rlabel metal1 255 -19 256 -18 1 vina2
+rlabel metal1 343 99 344 100 5 vouta2
+rlabel metal1 369 -20 370 -19 1 vina3
+rlabel metal1 454 101 455 102 5 vouta3
+rlabel metal1 509 -20 510 -19 1 vinb0
+rlabel metal1 595 101 596 102 5 voutb0
+rlabel metal1 618 -20 619 -19 1 vinb1
+rlabel metal1 708 100 709 101 5 voutb1
+rlabel metal1 736 -20 737 -19 1 vinb2
+rlabel metal1 824 100 825 101 5 voutb2
+rlabel metal1 850 -20 851 -19 1 vinb3
+rlabel metal1 935 100 936 101 6 voutb3
+<< end >>

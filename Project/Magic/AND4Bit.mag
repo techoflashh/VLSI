@@ -1,0 +1,74 @@
+magic
+tech scmos
+timestamp 1699631834
+<< metal1 >>
+rect 101 84 104 89
+rect 214 84 217 89
+rect 330 84 333 89
+rect -12 70 53 73
+rect 59 70 114 73
+rect 168 70 233 73
+rect 287 70 352 73
+rect 101 39 104 59
+rect 214 39 217 59
+rect 330 39 333 59
+rect 441 39 444 89
+rect 91 36 104 39
+rect 204 36 217 39
+rect 320 36 333 39
+rect 436 36 444 39
+rect -12 20 53 23
+rect 75 20 140 23
+rect 188 20 253 23
+rect 301 20 366 23
+rect 15 -6 18 2
+rect 34 -6 37 2
+rect 124 -6 127 2
+rect 143 -6 146 2
+rect 242 -6 245 2
+rect 261 -6 264 2
+rect 356 -6 359 2
+rect 375 -6 378 2
+<< m2contact >>
+rect 100 79 105 84
+rect 213 79 218 84
+rect 329 79 334 84
+rect 100 59 105 64
+rect 213 59 218 64
+rect 329 59 334 64
+<< metal2 >>
+rect 101 64 104 79
+rect 214 64 217 79
+rect 330 64 333 79
+use AND2IN  AND2IN_0
+timestamp 1698685374
+transform 1 0 2 0 1 15
+box -2 -15 94 58
+use AND2IN  AND2IN_1
+timestamp 1698685374
+transform 1 0 111 0 1 15
+box -2 -15 94 58
+use AND2IN  AND2IN_2
+timestamp 1698685374
+transform 1 0 229 0 1 15
+box -2 -15 94 58
+use AND2IN  AND2IN_3
+timestamp 1698685374
+transform 1 0 343 0 1 15
+box -2 -15 94 58
+<< labels >>
+rlabel metal1 16 -3 17 -2 1 vina0
+rlabel metal1 35 -3 36 -2 1 vinb0
+rlabel metal1 -10 21 -9 22 3 gnd
+rlabel metal1 -10 71 -9 72 3 vdd
+rlabel metal1 125 -4 126 -3 1 vina1
+rlabel metal1 144 -4 145 -3 1 vinb1
+rlabel metal1 243 -3 244 -2 1 vina2
+rlabel metal1 262 -3 263 -2 1 vinb2
+rlabel metal1 357 -3 358 -2 1 vina3
+rlabel metal1 376 -3 377 -2 1 vinb3
+rlabel metal1 102 87 103 88 5 vout0
+rlabel metal1 215 87 216 88 5 vout1
+rlabel metal1 331 86 332 87 5 vout2
+rlabel metal1 442 86 443 87 6 vout3
+<< end >>

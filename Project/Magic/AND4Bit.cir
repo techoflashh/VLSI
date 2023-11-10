@@ -1,0 +1,162 @@
+* SPICE3 file created from AND4Bit.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+
+.param SUPPLY = 1.8
+
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_a3 vina3 gnd PULSE(0 1.8 0ns 100ps 100ps 240ns 480ns)
+V_in_a2 vina2 gnd PULSE(0 1.8 0ns 100ps 100ps 120ns 240ns)
+V_in_a1 vina1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a0 vina0 gnd PULSE(0 1.8 0ns 100ps 100ps 30ns 60ns)
+V_in_b3 vinb3 gnd PULSE(0 1.8 0ns 100ps 100ps 160ns 320ns)
+V_in_b2 vinb2 gnd PULSE(0 1.8 0ns 100ps 100ps 80ns 160ns)
+V_in_b1 vinb1 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_b0 vinb0 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+
+M1000 AND2IN_0/NAND2IN_0/a_n1_n23# vina0 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=160 ps=144
+M1001 AND2IN_0/NOT_0/in vina0 vdd AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=280 ps=232
+M1002 AND2IN_0/NOT_0/in vinb0 AND2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 AND2IN_0/NOT_0/in vinb0 vdd AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 vout0 AND2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1005 vout0 AND2IN_0/NOT_0/in vdd AND2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1006 AND2IN_2/NAND2IN_0/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1007 AND2IN_2/NOT_0/in vina2 vdd AND2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1008 AND2IN_2/NOT_0/in vinb2 AND2IN_2/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1009 AND2IN_2/NOT_0/in vinb2 vdd AND2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 vout2 AND2IN_2/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1011 vout2 AND2IN_2/NOT_0/in vdd AND2IN_2/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1012 AND2IN_1/NAND2IN_0/a_n1_n23# vina1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1013 AND2IN_1/NOT_0/in vina1 vdd AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1014 AND2IN_1/NOT_0/in vinb1 AND2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1015 AND2IN_1/NOT_0/in vinb1 vdd AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 vout1 AND2IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1017 vout1 AND2IN_1/NOT_0/in vdd AND2IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1018 AND2IN_3/NAND2IN_0/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1019 AND2IN_3/NOT_0/in vina3 vdd AND2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1020 AND2IN_3/NOT_0/in vinb3 AND2IN_3/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1021 AND2IN_3/NOT_0/in vinb3 vdd AND2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 vout3 AND2IN_3/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1023 vout3 AND2IN_3/NOT_0/in vdd AND2IN_3/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+C0 vout2 AND2IN_2/NOT_0/w_n7_n3# 0.03fF
+C1 vdd AND2IN_3/NOT_0/w_n7_n3# 0.06fF
+C2 AND2IN_1/NOT_0/in AND2IN_1/NOT_0/w_n7_n3# 0.07fF
+C3 vinb1 AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C4 AND2IN_0/NOT_0/in AND2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
+C5 AND2IN_1/NAND2IN_0/w_n16_n4# vina1 0.10fF
+C6 vdd AND2IN_0/NOT_0/in 0.08fF
+C7 gnd AND2IN_2/NOT_0/in 0.05fF
+C8 vdd vout1 0.19fF
+C9 gnd vinb0 0.06fF
+C10 gnd vout0 0.07fF
+C11 AND2IN_3/NOT_0/in gnd 0.05fF
+C12 vina3 AND2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
+C13 vout3 gnd 0.07fF
+C14 vdd AND2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
+C15 AND2IN_2/NOT_0/w_n7_n3# AND2IN_2/NOT_0/in 0.07fF
+C16 AND2IN_2/NAND2IN_0/w_n16_n4# AND2IN_2/NOT_0/in 0.08fF
+C17 vdd AND2IN_1/NOT_0/in 0.08fF
+C18 vdd vout2 0.19fF
+C19 AND2IN_0/NOT_0/in gnd 0.05fF
+C20 vina0 AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C21 AND2IN_0/NOT_0/w_n7_n3# vout0 0.03fF
+C22 gnd vina2 0.06fF
+C23 AND2IN_3/NOT_0/in AND2IN_3/NAND2IN_0/w_n16_n4# 0.08fF
+C24 gnd vout1 0.07fF
+C25 AND2IN_3/NOT_0/in AND2IN_3/NOT_0/w_n7_n3# 0.07fF
+C26 vinb3 gnd 0.06fF
+C27 AND2IN_0/NOT_0/in vinb0 0.06fF
+C28 AND2IN_1/NOT_0/in vinb1 0.06fF
+C29 vout3 AND2IN_3/NOT_0/w_n7_n3# 0.03fF
+C30 gnd vinb2 0.06fF
+C31 AND2IN_0/NOT_0/in AND2IN_0/NOT_0/w_n7_n3# 0.07fF
+C32 AND2IN_2/NAND2IN_0/w_n16_n4# vina2 0.10fF
+C33 gnd AND2IN_1/NOT_0/in 0.05fF
+C34 AND2IN_3/NOT_0/in vinb3 0.06fF
+C35 gnd vout2 0.07fF
+C36 vdd AND2IN_2/NOT_0/in 0.08fF
+C37 gnd vina0 0.06fF
+C38 vinb0 AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C39 vinb2 AND2IN_2/NOT_0/in 0.06fF
+C40 AND2IN_1/NOT_0/w_n7_n3# vout1 0.03fF
+C41 vdd vout0 0.19fF
+C42 vdd AND2IN_1/NAND2IN_0/w_n16_n4# 0.11fF
+C43 vdd AND2IN_3/NOT_0/in 0.08fF
+C44 vinb3 AND2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
+C45 gnd vinb1 0.06fF
+C46 gnd vina1 0.06fF
+C47 vdd AND2IN_2/NOT_0/w_n7_n3# 0.06fF
+C48 vdd AND2IN_2/NAND2IN_0/w_n16_n4# 0.11fF
+C49 AND2IN_1/NOT_0/in AND2IN_1/NAND2IN_0/w_n16_n4# 0.08fF
+C50 vdd vout3 0.06fF
+C51 vdd AND2IN_0/NOT_0/w_n7_n3# 0.06fF
+C52 AND2IN_2/NAND2IN_0/w_n16_n4# vinb2 0.10fF
+C53 vdd AND2IN_3/NAND2IN_0/w_n16_n4# 0.11fF
+C54 vdd AND2IN_1/NOT_0/w_n7_n3# 0.06fF
+C55 vina3 gnd 0.06fF
+C56 vdd Gnd 1.52fF
+C57 vout3 Gnd 0.27fF
+C58 AND2IN_3/NOT_0/in Gnd 0.37fF
+C59 AND2IN_3/NOT_0/w_n7_n3# Gnd 0.61fF
+C60 vinb3 Gnd 0.29fF
+C61 vina3 Gnd 0.29fF
+C62 AND2IN_3/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C63 vout1 Gnd 0.53fF
+C64 AND2IN_1/NOT_0/in Gnd 0.37fF
+C65 AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C66 vinb1 Gnd 0.29fF
+C67 vina1 Gnd 0.29fF
+C68 AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C69 vout2 Gnd 0.53fF
+C70 AND2IN_2/NOT_0/in Gnd 0.37fF
+C71 AND2IN_2/NOT_0/w_n7_n3# Gnd 0.61fF
+C72 vinb2 Gnd 0.29fF
+C73 vina2 Gnd 0.29fF
+C74 AND2IN_2/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C75 gnd Gnd 2.10fF
+C76 vout0 Gnd 0.11fF
+C77 AND2IN_0/NOT_0/in Gnd 0.37fF
+C78 AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C79 vinb0 Gnd 0.29fF
+C80 vina0 Gnd 0.29fF
+C81 AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+
+.tran 1n 600n
+
+.control
+run
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vina0) v(vinb0)+2 v(vout0)+4 v(vina1)+6 v(vinb1)+8 v(vout1)+10 v(vina2)+12 v(vinb2)+14 v(vout2)+16 v(vina3)+18 v(vinb3)+20 v(vout3)+22
+
+hardcopy And_Plot.ps v(vina0) v(vinb0)+2 v(vout0)+4 v(vina1)+6 v(vinb1)+8 v(vout1)+10 v(vina2)+12 v(vinb2)+14 v(vout2)+16 v(vina3)+18 v(vinb3)+20 v(vout3)+22
+.end
+.endc

@@ -1,0 +1,171 @@
+* SPICE3 file created from Decoder.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+
+.param SUPPLY = 1.8
+
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_s1 vinSel1 gnd PULSE(1.8 0 0ns 100ps 100ps 400ns 800ns)
+V_in_s0 vinSel0 gnd PULSE(1.8 0 0ns 100ps 100ps 200ns 400ns)
+
+M1000 AND4Bit_0/AND2IN_0/NAND2IN_0/a_n1_n23# NOT_1/out gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=200 ps=180
+M1001 AND4Bit_0/AND2IN_0/NOT_0/in NOT_1/out vdd AND4Bit_0/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=340 ps=276
+M1002 AND4Bit_0/AND2IN_0/NOT_0/in NOT_0/out AND4Bit_0/AND2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 AND4Bit_0/AND2IN_0/NOT_0/in NOT_0/out vdd AND4Bit_0/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 vout0 AND4Bit_0/AND2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1005 vout0 AND4Bit_0/AND2IN_0/NOT_0/in vdd AND4Bit_0/AND2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1006 AND4Bit_0/AND2IN_1/NAND2IN_0/a_n1_n23# vinSel0 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1007 AND4Bit_0/AND2IN_1/NOT_0/in vinSel0 vdd AND4Bit_0/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1008 AND4Bit_0/AND2IN_1/NOT_0/in NOT_0/out AND4Bit_0/AND2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1009 AND4Bit_0/AND2IN_1/NOT_0/in NOT_0/out vdd AND4Bit_0/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 vout1 AND4Bit_0/AND2IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1011 vout1 AND4Bit_0/AND2IN_1/NOT_0/in vdd AND4Bit_0/AND2IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1012 AND4Bit_0/AND2IN_2/NAND2IN_0/a_n1_n23# NOT_1/out gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1013 AND4Bit_0/AND2IN_2/NOT_0/in NOT_1/out vdd AND4Bit_0/AND2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1014 AND4Bit_0/AND2IN_2/NOT_0/in vinSel1 AND4Bit_0/AND2IN_2/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1015 AND4Bit_0/AND2IN_2/NOT_0/in vinSel1 vdd AND4Bit_0/AND2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 vout2 AND4Bit_0/AND2IN_2/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1017 vout2 AND4Bit_0/AND2IN_2/NOT_0/in vdd AND4Bit_0/AND2IN_2/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1018 AND4Bit_0/AND2IN_3/NAND2IN_0/a_n1_n23# vinSel0 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1019 AND4Bit_0/AND2IN_3/NOT_0/in vinSel0 vdd AND4Bit_0/AND2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1020 AND4Bit_0/AND2IN_3/NOT_0/in vinSel1 AND4Bit_0/AND2IN_3/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1021 AND4Bit_0/AND2IN_3/NOT_0/in vinSel1 vdd AND4Bit_0/AND2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 vout3 AND4Bit_0/AND2IN_3/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1023 vout3 AND4Bit_0/AND2IN_3/NOT_0/in vdd AND4Bit_0/AND2IN_3/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1024 NOT_0/out vinSel1 gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1025 NOT_0/out vinSel1 vdd NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1026 NOT_1/out vinSel0 gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1027 NOT_1/out vinSel0 vdd NOT_1/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+C0 AND4Bit_0/AND2IN_2/NAND2IN_0/w_n16_n4# AND4Bit_0/AND2IN_2/NOT_0/in 0.08fF
+C1 vinSel1 AND4Bit_0/AND2IN_3/NOT_0/in 0.06fF
+C2 AND4Bit_0/AND2IN_3/NOT_0/in gnd 0.05fF
+C3 vinSel1 AND4Bit_0/AND2IN_2/NAND2IN_0/w_n16_n4# 0.10fF
+C4 AND4Bit_0/AND2IN_1/NOT_0/in vdd 0.08fF
+C5 gnd vout1 0.07fF
+C6 AND4Bit_0/AND2IN_2/NOT_0/w_n7_n3# vdd 0.06fF
+C7 vinSel1 NOT_0/w_n7_n3# 0.07fF
+C8 AND4Bit_0/AND2IN_0/NOT_0/in vdd 0.08fF
+C9 NOT_0/out gnd 0.26fF
+C10 vinSel1 NOT_1/out 0.09fF
+C11 vdd AND4Bit_0/AND2IN_3/NOT_0/w_n7_n3# 0.06fF
+C12 vout3 vdd 0.12fF
+C13 AND4Bit_0/AND2IN_0/NOT_0/w_n7_n3# vdd 0.06fF
+C14 NOT_1/out gnd 0.20fF
+C15 AND4Bit_0/AND2IN_3/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C16 vout3 vinSel0 0.03fF
+C17 AND4Bit_0/AND2IN_2/NOT_0/in vdd 0.08fF
+C18 AND4Bit_0/AND2IN_3/NAND2IN_0/w_n16_n4# vinSel0 0.10fF
+C19 vout2 vdd 0.19fF
+C20 AND4Bit_0/AND2IN_0/NOT_0/in AND4Bit_0/AND2IN_0/NOT_0/w_n7_n3# 0.07fF
+C21 AND4Bit_0/AND2IN_2/NOT_0/w_n7_n3# AND4Bit_0/AND2IN_2/NOT_0/in 0.07fF
+C22 vinSel1 vinSel0 0.13fF
+C23 vinSel0 gnd 0.20fF
+C24 AND4Bit_0/AND2IN_2/NOT_0/w_n7_n3# vout2 0.03fF
+C25 NOT_0/out AND4Bit_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C26 vout3 AND4Bit_0/AND2IN_3/NOT_0/w_n7_n3# 0.03fF
+C27 AND4Bit_0/AND2IN_1/NOT_0/in gnd 0.05fF
+C28 vout0 vdd 0.19fF
+C29 AND4Bit_0/AND2IN_1/NAND2IN_0/w_n16_n4# NOT_0/out 0.10fF
+C30 vout1 AND4Bit_0/AND2IN_1/NOT_0/w_n7_n3# 0.03fF
+C31 NOT_0/w_n7_n3# NOT_0/out 0.03fF
+C32 NOT_1/out AND4Bit_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C33 AND4Bit_0/AND2IN_0/NOT_0/in gnd 0.05fF
+C34 AND4Bit_0/AND2IN_2/NAND2IN_0/w_n16_n4# NOT_1/out 0.10fF
+C35 NOT_1/out NOT_0/out 0.99fF
+C36 AND4Bit_0/AND2IN_3/NOT_0/in vdd 0.08fF
+C37 vout3 gnd 0.07fF
+C38 AND4Bit_0/AND2IN_3/NAND2IN_0/w_n16_n4# vinSel1 0.10fF
+C39 vinSel1 AND4Bit_0/AND2IN_2/NOT_0/in 0.06fF
+C40 vdd vout1 0.19fF
+C41 vdd AND4Bit_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
+C42 AND4Bit_0/AND2IN_2/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C43 AND4Bit_0/AND2IN_2/NOT_0/in gnd 0.05fF
+C44 AND4Bit_0/AND2IN_1/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C45 vout0 AND4Bit_0/AND2IN_0/NOT_0/w_n7_n3# 0.03fF
+C46 vout2 gnd 0.07fF
+C47 NOT_1/out NOT_1/w_n7_n3# 0.03fF
+C48 NOT_0/w_n7_n3# vdd 0.06fF
+C49 vinSel1 gnd 0.13fF
+C50 AND4Bit_0/AND2IN_1/NAND2IN_0/w_n16_n4# vinSel0 0.10fF
+C51 NOT_0/out vdd 0.06fF
+C52 AND4Bit_0/AND2IN_1/NAND2IN_0/w_n16_n4# AND4Bit_0/AND2IN_1/NOT_0/in 0.08fF
+C53 vinSel0 NOT_0/out 0.06fF
+C54 AND4Bit_0/AND2IN_0/NOT_0/in AND4Bit_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
+C55 AND4Bit_0/AND2IN_1/NOT_0/in NOT_0/out 0.06fF
+C56 vdd AND4Bit_0/AND2IN_1/NOT_0/w_n7_n3# 0.06fF
+C57 NOT_1/out vdd 0.06fF
+C58 AND4Bit_0/AND2IN_3/NOT_0/in AND4Bit_0/AND2IN_3/NOT_0/w_n7_n3# 0.07fF
+C59 vout0 gnd 0.07fF
+C60 NOT_1/w_n7_n3# vdd 0.06fF
+C61 AND4Bit_0/AND2IN_1/NOT_0/in AND4Bit_0/AND2IN_1/NOT_0/w_n7_n3# 0.07fF
+C62 NOT_1/out vinSel0 0.50fF
+C63 AND4Bit_0/AND2IN_3/NAND2IN_0/w_n16_n4# AND4Bit_0/AND2IN_3/NOT_0/in 0.08fF
+C64 AND4Bit_0/AND2IN_0/NOT_0/in NOT_0/out 0.06fF
+C65 vinSel0 NOT_1/w_n7_n3# 0.07fF
+C66 NOT_1/w_n7_n3# Gnd 0.61fF
+C67 NOT_0/w_n7_n3# Gnd 0.61fF
+C68 vdd Gnd 2.22fF
+C69 vout3 Gnd 0.23fF
+C70 AND4Bit_0/AND2IN_3/NOT_0/in Gnd 0.37fF
+C71 AND4Bit_0/AND2IN_3/NOT_0/w_n7_n3# Gnd 0.61fF
+C72 AND4Bit_0/AND2IN_3/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C73 vout2 Gnd 0.50fF
+C74 AND4Bit_0/AND2IN_2/NOT_0/in Gnd 0.37fF
+C75 AND4Bit_0/AND2IN_2/NOT_0/w_n7_n3# Gnd 0.61fF
+C76 vinSel1 Gnd 1.18fF
+C77 AND4Bit_0/AND2IN_2/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C78 vout1 Gnd 0.56fF
+C79 AND4Bit_0/AND2IN_1/NOT_0/in Gnd 0.37fF
+C80 AND4Bit_0/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C81 vinSel0 Gnd 1.00fF
+C82 AND4Bit_0/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C83 gnd Gnd 2.18fF
+C84 vout0 Gnd 0.14fF
+C85 AND4Bit_0/AND2IN_0/NOT_0/in Gnd 0.37fF
+C86 AND4Bit_0/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C87 NOT_0/out Gnd 0.94fF
+C88 NOT_1/out Gnd 2.59fF
+C89 AND4Bit_0/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+
+.tran 1n 800n
+
+.control
+run
+set color0 = rgb:f/f/e
+set color1 = black
+plot v(vinSel0) v(vinSel1)+2 v(vout0)+4 v(vout1)+6 v(vout2)+8 v(vout3)+10
+hardcopy Decoder_Plot.ps v(vinSel0) v(vinSel1)+2 v(vout0)+4 v(vout1)+6 v(vout2)+8 v(vout3)+10
+.end
+.endc

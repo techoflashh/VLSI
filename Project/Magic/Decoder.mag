@@ -1,0 +1,85 @@
+magic
+tech scmos
+timestamp 1699639768
+<< metal1 >>
+rect 113 93 116 101
+rect 226 93 229 101
+rect 342 93 345 101
+rect 453 93 456 101
+rect 0 75 3 79
+rect 413 76 426 79
+rect -19 72 3 75
+rect 467 71 470 74
+rect -48 47 -44 50
+rect -26 46 -13 49
+rect 467 46 472 49
+rect 492 45 506 48
+rect -29 30 3 33
+rect 0 26 3 30
+rect 476 29 479 32
+rect 433 26 479 29
+rect 27 -22 30 3
+rect 46 -12 49 3
+rect 155 -14 158 3
+rect 51 -17 158 -14
+rect 254 -22 257 1
+rect 273 -14 276 3
+rect 387 -12 390 3
+rect 273 -17 385 -14
+rect 27 -25 257 -22
+rect 237 -39 240 -25
+rect 395 -32 430 -29
+rect 503 -39 506 45
+rect 237 -42 506 -39
+rect 409 -67 412 -54
+rect 448 -67 451 -53
+<< m2contact >>
+rect 426 75 431 80
+rect 465 74 470 79
+rect -53 45 -48 50
+rect -13 44 -8 49
+rect 462 44 467 49
+rect 135 -1 140 4
+rect 46 -17 51 -12
+rect 367 -1 372 4
+rect 385 -17 390 -12
+rect 390 -33 395 -28
+rect 430 -33 435 -28
+rect 407 -54 412 -49
+rect 447 -53 452 -48
+<< metal2 >>
+rect 431 76 465 79
+rect -53 -49 -50 45
+rect -11 -14 -8 44
+rect -11 -17 46 -14
+rect 136 -29 139 -1
+rect 368 -29 371 -1
+rect 390 -17 412 -14
+rect 136 -32 390 -29
+rect 409 -49 412 -17
+rect 462 -29 465 44
+rect 435 -32 465 -29
+rect 448 -48 451 -32
+rect -53 -52 407 -49
+use NOT  NOT_1
+timestamp 1698475750
+transform 1 0 474 0 1 55
+box -7 -26 25 19
+use NOT  NOT_0
+timestamp 1698475750
+transform 1 0 -42 0 1 56
+box -7 -26 25 19
+use AND4Bit  AND4Bit_0
+timestamp 1699631834
+transform 1 0 12 0 1 6
+box -12 -6 444 89
+<< labels >>
+rlabel metal1 114 99 115 100 5 vout0
+rlabel metal1 -7 73 -6 74 1 vdd
+rlabel metal1 -2 31 -1 32 1 gnd
+rlabel metal1 227 98 228 99 5 vout1
+rlabel metal1 343 98 344 99 5 vout2
+rlabel metal1 454 98 455 99 5 vout3
+rlabel metal1 410 -65 411 -64 1 vinSel1
+rlabel metal1 449 -64 450 -63 1 vinSel0
+<< end >>
