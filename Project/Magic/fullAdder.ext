@@ -1,0 +1,102 @@
+timestamp 1699609590
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use OR2IN OR2IN_0 1 0 -316 0 1 -381
+use AND2IN AND2IN_1 1 0 -479 0 1 -411
+use AND2IN AND2IN_0 1 0 -789 0 1 -411
+use XOR2IN XOR2IN_0 1 0 -736 0 1 -205
+use XOR2IN XOR2IN_1 1 0 -408 0 1 -205
+node "m1_n401_n423#" 2 239.196 -401 -423 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 237 164 0 0 0 0 0 0 0 0 0 0
+node "vcout" 2 191.969 -241 -401 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 189 132 0 0 0 0 0 0 0 0 0 0
+node "m1_n390_n391#" 3 1254.67 -390 -391 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58 44 344 230 0 0 0 0 0 0 0 0
+node "m1_n420_n356#" 2 277.568 -420 -356 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 276 190 0 0 0 0 0 0 0 0 0 0
+node "m1_n712_n407#" 7 2588.12 -712 -407 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 40 725 484 0 0 0 0 0 0 0 0
+node "gnd" 5 507.801 -780 -496 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 510 346 0 0 0 0 0 0 0 0 0 0
+node "vcin" 16 5132.83 -886 -474 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 560 380 1316 868 0 0 0 0 0 0 0 0
+node "m1_n699_n390#" 12 1404.9 -699 -390 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1434 950 0 0 0 0 0 0 0 0 0 0
+node "m1_n704_n365#" 7 2631.73 -704 -365 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 40 728 486 0 0 0 0 0 0 0 0
+node "vin2" 7 811.826 -884 -313 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 819 552 0 0 0 0 0 0 0 0 0 0
+node "vin1" 9 2998.74 -884 -256 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 227 158 794 530 0 0 0 0 0 0 0 0
+node "m1_n814_n406#" 18 6402.02 -814 -406 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 330 230 1707 1136 0 0 0 0 0 0 0 0
+node "vout" 1 65.046 -198 -207 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 46 0 0 0 0 0 0 0 0 0 0
+node "m1_n527_n435#" 9 1024.35 -527 -435 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1035 696 0 0 0 0 0 0 0 0 0 0
+node "m1_n749_n303#" 6 1288.73 -749 -303 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 418 286 259 174 0 0 0 0 0 0 0 0
+node "m1_n596_n107#" 5 537.318 -596 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 540 366 0 0 0 0 0 0 0 0 0 0
+node "vdd" 3 298.23 -843 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 297 204 0 0 0 0 0 0 0 0 0 0
+cap "m1_n814_n406#" "m1_n527_n435#" 63.1773
+cap "m1_n712_n407#" "vcin" 63.1773
+cap "m1_n527_n435#" "vcin" 255.621
+cap "m1_n712_n407#" "m1_n699_n390#" 63.1773
+cap "m1_n704_n365#" "vcin" 63.1773
+cap "m1_n712_n407#" "m1_n527_n435#" 63.1773
+cap "m1_n814_n406#" "vcin" 63.1773
+cap "m1_n814_n406#" "m1_n749_n303#" 63.1773
+cap "vin1" "vin2" 270.688
+cap "m1_n704_n365#" "m1_n527_n435#" 63.1773
+cap "vcin" "gnd" 63.1773
+cap "m1_n699_n390#" "vcin" 63.1773
+cap "m1_n401_n423#" "m1_n390_n391#" 63.1773
+subcap "m1_n814_n406#" -6279.89
+subcap "m1_n712_n407#" -1544.19
+subcap "m1_n699_n390#" -1446.22
+cap "AND2IN_0/gnd" "AND2IN_0/vout" 13.746
+subcap "m1_n390_n391#" -1064.19
+cap "AND2IN_1/vout" "AND2IN_1/gnd" -1.42109e-14
+subcap "m1_n390_n391#" -273.649
+cap "OR2IN_0/vin1" "OR2IN_0/gnd" 1.06581e-14
+subcap "vcout" -0.0543
+cap "AND2IN_0/gnd" "XOR2IN_0/vin2" 63.1773
+subcap "m1_n699_n390#" -1302.54
+subcap "m1_n704_n365#" -1787.55
+subcap "m1_n749_n303#" -444.545
+cap "AND2IN_0/vout" "AND2IN_0/gnd" 1.96371
+cap "XOR2IN_0/NAND2IN_2/vin1" "AND2IN_0/vdd" 122.089
+cap "AND2IN_0/NOT_0/w_n7_n3#" "AND2IN_0/vdd" 33.9015
+subcap "m1_n390_n391#" -1110.9
+cap "XOR2IN_1/vin2" "m1_n814_n406#" 63.1773
+cap "AND2IN_1/NAND2IN_0/w_n16_n4#" "AND2IN_1/vdd" 22.8297
+subcap "m1_n390_n391#" -1170.8
+subcap "vcout" -204.605
+cap "XOR2IN_0/vin1" "XOR2IN_0/NAND2IN_0/gnd" 63.1773
+subcap "m1_n749_n303#" -614.192
+cap "m1_n749_n303#" "XOR2IN_0/m1_n29_n8#" 63.1773
+cap "m1_n749_n303#" "XOR2IN_0/gnd" 97.5423
+cap "XOR2IN_1/NAND2IN_0/gnd" "XOR2IN_1/vin1" 63.1773
+subcap "m1_n596_n107#" -448.821
+merge "XOR2IN_1/vdd" "XOR2IN_0/NAND2IN_3/vdd" -126.247 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -111 -91 0 0 0 0 0 0 0 0 0 0
+merge "XOR2IN_0/NAND2IN_3/vdd" "XOR2IN_0/m1_74_98#"
+merge "XOR2IN_0/m1_74_98#" "m1_n596_n107#"
+merge "XOR2IN_0/vdd" "vdd" -192.994 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 -70 0 0 0 0 0 0 0 0 0 0
+merge "vdd" "OR2IN_0/vdd"
+merge "OR2IN_0/vdd" "AND2IN_1/vdd"
+merge "AND2IN_1/vdd" "AND2IN_1/NAND2IN_0/vdd"
+merge "AND2IN_1/NAND2IN_0/vdd" "AND2IN_0/vdd"
+merge "AND2IN_0/vdd" "m1_n749_n303#"
+merge "m1_n749_n303#" "m1_n704_n365#"
+merge "m1_n704_n365#" "m1_n420_n356#"
+merge "XOR2IN_1/vin1" "XOR2IN_0/vout" -332.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -303 -236 0 0 0 0 0 0 0 0 0 0
+merge "XOR2IN_0/vout" "AND2IN_1/vin2"
+merge "AND2IN_1/vin2" "m1_n527_n435#"
+merge "OR2IN_0/vout" "vcout" -14.9757 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -14 0 0 0 0 0 0 0 0 0 0
+merge "XOR2IN_0/vin1" "AND2IN_0/vin1" -1090.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21 -26 -300 -200 0 0 0 0 0 0 0 0
+merge "AND2IN_0/vin1" "vin1"
+merge "OR2IN_0/vin2" "AND2IN_0/vout" -27.7944 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 -29 0 0 0 0 0 0 0 0 0 0
+merge "AND2IN_0/vout" "m1_n699_n390#"
+merge "XOR2IN_0/vin2" "AND2IN_0/vin2" -26.7825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -22 0 0 0 0 0 0 0 0 0 0
+merge "AND2IN_0/vin2" "vin2"
+merge "XOR2IN_1/NAND2IN_0/gnd" "XOR2IN_0/NAND2IN_0/gnd" -2606.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14 -83 -594 -447 0 0 0 0 0 0 0 0
+merge "XOR2IN_0/NAND2IN_0/gnd" "OR2IN_0/gnd"
+merge "OR2IN_0/gnd" "AND2IN_1/gnd"
+merge "AND2IN_1/gnd" "AND2IN_0/gnd"
+merge "AND2IN_0/gnd" "m1_n814_n406#"
+merge "m1_n814_n406#" "gnd"
+merge "gnd" "m1_n712_n407#"
+merge "m1_n712_n407#" "m1_n401_n423#"
+merge "XOR2IN_1/vin2" "AND2IN_1/vin1" -29.7342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -24 0 0 0 0 0 0 0 0 0 0
+merge "AND2IN_1/vin1" "vcin"
+merge "OR2IN_0/vin1" "AND2IN_1/vout" -31.1787 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27 -24 0 0 0 0 0 0 0 0 0 0
+merge "AND2IN_1/vout" "m1_n390_n391#"
+merge "XOR2IN_1/vout" "vout" -19.1466 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 -21 0 0 0 0 0 0 0 0 0 0
