@@ -17,23 +17,23 @@ node "vin3" 285 290.166 10 -18 p 0 0 0 0 0 0 0 0 0 0 156 156 0 0 36 26 0 0 0 0 0
 node "vin2" 300 313.406 -5 -49 pc 0 0 0 0 0 0 0 0 0 0 164 164 0 0 36 26 0 0 0 0 0 0 0 0 0 0
 node "vin1" 339 324.201 -21 -49 pc 0 0 0 0 0 0 0 0 0 0 184 184 0 0 36 26 0 0 0 0 0 0 0 0 0 0
 node "w_n19_n9#" 1557 1946.53 -19 -9 nw 0 0 0 0 1938 182 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "vin3" "vin4" 124.641
+cap "vin3" "w_n19_n9#" 117.06
 cap "gnd" "vin1" 118.443
-cap "w_n19_n9#" "vin3" 117.06
-cap "w_n19_n9#" "vin1" 164.365
 cap "a_n18_n29#" "vin2" 76.572
 cap "gnd" "vin2" 118.443
-cap "vdd" "w_n19_n9#" 106.562
-cap "w_n19_n9#" "vin2" 117.06
-cap "gnd" "a_n18_n29#" 354.647
-cap "a_n18_n29#" "vin4" 126.918
-cap "gnd" "vin4" 118.443
 cap "vin3" "vin2" 135.972
-cap "w_n19_n9#" "a_n18_n29#" 46.551
-cap "vin1" "vin2" 137.86
-cap "w_n19_n9#" "vin4" 117.06
+cap "gnd" "a_n18_n29#" 354.647
+cap "vin4" "a_n18_n29#" 126.918
+cap "w_n19_n9#" "vin1" 164.365
+cap "gnd" "vin4" 118.443
+cap "w_n19_n9#" "vin2" 117.06
 cap "vin3" "a_n18_n29#" 91.791
 cap "gnd" "vin3" 118.443
+cap "vin3" "vin4" 124.641
+cap "vdd" "w_n19_n9#" 106.562
+cap "vin1" "vin2" 137.86
+cap "a_n18_n29#" "w_n19_n9#" 46.551
+cap "vin4" "w_n19_n9#" 117.06
 fet nfet 31 -29 32 -28 8 12 "Gnd!" "vin4" 4 0 "gnd" 4 0 "a_n18_n29#" 4 0
 fet nfet 14 -29 15 -28 8 12 "Gnd!" "vin3" 4 0 "gnd" 4 0 "a_n18_n29#" 4 0
 fet nfet -4 -29 -3 -28 8 12 "Gnd!" "vin2" 4 0 "gnd" 4 0 "a_n18_n29#" 4 0
@@ -46,8 +46,8 @@ subcap "vdd" -10.5234
 subcap "vin4" -6.5352
 subcap "vin3" -6.5352
 subcap "vin2" -6.5352
-cap "NOT_0/in" "w_n19_n9#" 7.10543e-15
-cap "NOT_0/in" "NOT_0/gnd" 5.68434e-14
+cap "w_n19_n9#" "NOT_0/in" 7.10543e-15
+cap "NOT_0/gnd" "NOT_0/in" 5.68434e-14
 merge "NOT_0/out" "vout" -8.9637 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -8 0 0 0 0 0 0 0 0 0 0
 merge "NOT_0/in" "a_n18_n29#" -8.9637 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -8 0 0 0 0 0 0 0 0 0 0
 merge "NOT_0/gnd" "gnd" -4.2252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 -8 0 0 0 0 0 0 0 0 0 0

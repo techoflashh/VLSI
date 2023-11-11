@@ -4,9 +4,9 @@ tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 9
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
-use NOT NOT_1 1 0 474 0 1 55
-use NOT NOT_0 1 0 -42 0 1 56
 use AND4Bit AND4Bit_0 1 0 12 0 1 6
+use NOT NOT_0 1 0 -42 0 1 56
+use NOT NOT_1 1 0 474 0 1 55
 node "m1_433_26#" 1 150.645 433 26 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 147 104 0 0 0 0 0 0 0 0 0 0
 node "gnd" 1 112.273 -29 30 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108 78 0 0 0 0 0 0 0 0 0 0
 node "m1_27_n25#" 18 1951.18 27 -25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1977 1324 0 0 0 0 0 0 0 0 0 0
@@ -19,13 +19,13 @@ node "vout3" 0 29.6256 453 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0
 node "vout2" 0 29.6256 342 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0 0 0 0
 node "vout1" 0 29.6256 226 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0 0 0 0
 node "vout0" 0 29.6256 113 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0 0 0 0
-cap "m1_n26_46#" "m1_27_n25#" 986.909
+cap "m1_27_n25#" "m1_n26_46#" 986.909
+cap "gnd" "m1_n26_46#" 63.1773
+cap "m1_27_n25#" "vinSel1" 92.633
+cap "vinSel0" "m1_433_26#" 63.1773
+cap "vinSel0" "m1_n26_46#" 63.1773
 cap "m1_27_n25#" "vinSel0" 498.817
-cap "m1_433_26#" "vinSel0" 63.1773
-cap "vinSel1" "vinSel0" 126.355
-cap "m1_n26_46#" "vinSel0" 63.1773
-cap "vinSel1" "m1_27_n25#" 92.633
-cap "m1_n26_46#" "gnd" 63.1773
+cap "vinSel0" "vinSel1" 126.355
 subcap "vinSel0" -5009.63
 subcap "gnd" -69.3747
 subcap "m1_n26_46#" -1525.58
@@ -34,8 +34,8 @@ subcap "m1_433_26#" -229.452
 subcap "m1_413_76#" -85.2441
 subcap "vout3" -61.8669
 subcap "vout2" -60.4218
-cap "NOT_1/in" "AND4Bit_0/vout3" 34.365
-cap "NOT_1/vdd" "AND4Bit_0/vout3" 63.1773
+cap "AND4Bit_0/vout3" "NOT_1/in" 34.365
+cap "AND4Bit_0/vout3" "NOT_1/vdd" 63.1773
 merge "AND4Bit_0/vout3" "vout3" -8.1246 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 -10 0 0 0 0 0 0 0 0 0 0
 merge "AND4Bit_0/AND2IN_3/gnd" "NOT_1/gnd" -24.9957 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -24 0 0 0 0 0 0 0 0 0 0
 merge "NOT_1/gnd" "AND4Bit_0/AND2IN_3/NOT_0/gnd"
@@ -57,7 +57,7 @@ merge "AND4Bit_0/vina0" "m1_27_n25#"
 merge "NOT_0/out" "AND4Bit_0/vinb1" -480.798 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -38 -126 -87 0 0 0 0 0 0 0 0
 merge "AND4Bit_0/vinb1" "AND4Bit_0/vinb0"
 merge "AND4Bit_0/vinb0" "m1_n26_46#"
-merge "AND4Bit_0/gnd" "NOT_0/gnd" -32.7402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -27 0 0 0 0 0 0 0 0 0 0
-merge "NOT_0/gnd" "gnd"
-merge "AND4Bit_0/vdd" "NOT_0/vdd" -26.7825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -22 0 0 0 0 0 0 0 0 0 0
-merge "NOT_0/vdd" "vdd"
+merge "NOT_0/gnd" "AND4Bit_0/gnd" -32.7402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -27 0 0 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/gnd" "gnd"
+merge "NOT_0/vdd" "AND4Bit_0/vdd" -26.7825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -22 0 0 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/vdd" "vdd"

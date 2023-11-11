@@ -12,10 +12,10 @@ node "gnd" 2 245.1 -2 5 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 243 168 0 0 0 0 0 0 0 0 0
 node "vout" 0 35.529 84 21 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 26 0 0 0 0 0 0 0 0 0 0
 node "m1_46_22#" 0 56.1909 46 22 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51 40 0 0 0 0 0 0 0 0 0 0
 node "vdd" 1 79.8045 44 55 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0 0 0 0 0 0 0 0 0
-cap "NOT_0/gnd" "NAND2IN_0/vin2" 63.459
-cap "NOT_0/gnd" "NOT_0/in" 41.238
-cap "NAND2IN_0/w_n16_n4#" "NOT_0/in" -1.42109e-14
+cap "NAND2IN_0/vin2" "NOT_0/gnd" 63.459
 cap "NAND2IN_0/vin1" "NOT_0/gnd" 63.459
+cap "NAND2IN_0/w_n16_n4#" "NOT_0/in" -1.42109e-14
+cap "NOT_0/in" "NOT_0/gnd" 41.238
 merge "NAND2IN_0/gnd" "NOT_0/gnd" -32.6859 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -18 0 0 0 0 0 0 0 0 0 0
 merge "NOT_0/gnd" "gnd"
 merge "NAND2IN_0/vout" "NOT_0/in" -20.8791 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -18 0 0 0 0 0 0 0 0 0 0

@@ -18,7 +18,7 @@ Testbench for ALU
 
 .global gnd
 
-Vdd node_x gnd 'SUPPLY'
+Vdd vdd gnd 'SUPPLY'
 
 V_in_a3 node_a3 gnd PULSE(0 1.8 0ns 100ps 100ps 10ns 50ns)
 V_in_b3 node_b3 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 70ns)
@@ -32,7 +32,7 @@ V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 10ns 70ns)
 V_in_s1 Sel1 gnd PULSE(1.8 0 0ns 100ps 100ps 400ns 800ns)
 V_in_s0 Sel0 gnd PULSE(1.8 0 0ns 100ps 100ps 200ns 400ns)
 
-X_ALU CarryOut node_out3 node_out2 node_out1 node_out0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 Sel1 Sel0 node_x gnd ALU
+X_ALU CarryOut node_out3 node_out2 node_out1 node_out0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 Sel1 Sel0 vdd gnd ALU
 
 
 C1 node_out0 gnd 100f

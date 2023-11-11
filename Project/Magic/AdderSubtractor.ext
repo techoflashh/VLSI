@@ -1,4 +1,4 @@
-timestamp 1699621707
+timestamp 1699694653
 version 8.3
 tech scmos
 style TSMC0.18um(tsmc18)from:t11b
@@ -12,13 +12,13 @@ use fullAdder fullAdder_3 1 0 3273 0 1 496
 use fullAdder fullAdder_2 1 0 2473 0 1 496
 use fullAdder fullAdder_1 1 0 1677 0 1 496
 use fullAdder fullAdder_0 1 0 886 0 1 496
-node "vinb3" 5 531.415 2739 -336 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 534 362 0 0 0 0 0 0 0 0 0 0
+node "vinb3" 65 7240.63 500 -370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7353 4908 0 0 0 0 0 0 0 0 0 0
 node "m1_1840_n310#" 18 2001.36 1840 -310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2028 1358 0 0 0 0 0 0 0 0 0 0
 node "m1_1012_n309#" 18 2001.36 1012 -309 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2028 1358 0 0 0 0 0 0 0 0 0 0
-node "vinb2" 5 831.26 1932 -327 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 479 326 116 78 0 0 0 0 0 0 0 0
-node "vinb1" 5 865.776 1106 -327 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 503 342 119 80 0 0 0 0 0 0 0 0
+node "vinb2" 45 16985.8 478 -370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 455 310 4577 3052 0 0 0 0 0 0 0 0
+node "vinb1" 24 8219.42 452 -370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 509 346 2159 1440 0 0 0 0 0 0 0 0
 node "m1_244_n285#" 16 1830.16 244 -285 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1854 1242 0 0 0 0 0 0 0 0 0 0
-node "vinb0" 5 814.219 339 -297 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 506 344 104 70 0 0 0 0 0 0 0 0
+node "vinb0" 9 2179.88 339 -274 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 509 346 506 338 0 0 0 0 0 0 0 0
 node "m1_2527_0#" 13 1413.97 2527 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1431 960 0 0 0 0 0 0 0 0 0 0
 node "m1_2519_n1#" 6 2269.07 2519 -1 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 20 622 418 0 0 0 0 0 0 0 0
 node "m1_1759_0#" 20 2178.46 1759 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2208 1478 0 0 0 0 0 0 0 0 0 0
@@ -27,7 +27,7 @@ node "m1_965_0#" 20 2178.46 965 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2208 1478 0 0 0
 node "m1_178_0#" 25 4369.78 178 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2203 1472 619 416 0 0 0 0 0 0 0 0
 node "m1_121_n1#" 5 1996.53 121 -1 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 20 547 368 0 0 0 0 0 0 0 0
 node "gnd" 2 236.245 32 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 234 162 0 0 0 0 0 0 0 0 0 0
-node "vinM" 89 9805.66 0 -35 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9960 6646 0 0 0 0 0 0 0 0 0 0
+node "vinM" 89 9894.21 0 -35 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10050 6706 0 0 0 0 0 0 0 0 0 0
 node "m1_2289_95#" 5 519.608 2289 95 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 522 354 0 0 0 0 0 0 0 0 0 0
 node "m1_1496_95#" 4 498.946 1496 95 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 501 340 0 0 0 0 0 0 0 0 0 0
 node "m1_694_95#" 5 516.656 694 95 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 519 352 0 0 0 0 0 0 0 0 0 0
@@ -36,10 +36,10 @@ node "m1_2355_107#" 14 4009.99 2355 107 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 563 382 9
 node "m1_1555_107#" 14 4112.2 1555 107 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 545 370 1019 680 0 0 0 0 0 0 0 0
 node "m1_759_107#" 13 3898.73 759 107 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 461 314 983 656 0 0 0 0 0 0 0 0
 node "m1_n12_n185#" 11 1251.63 -12 -185 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1266 850 0 0 0 0 0 0 0 0 0 0
-node "vina3" 18 5336.34 2331 -326 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 659 446 1334 890 0 0 0 0 0 0 0 0
-node "vina2" 18 5362 1531 -327 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 674 456 1337 892 0 0 0 0 0 0 0 0
-node "vina1" 17 5081.51 735 -301 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 677 458 1259 840 0 0 0 0 0 0 0 0
-node "vina0" 16 2045.55 -25 -299 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1691 1134 122 82 0 0 0 0 0 0 0 0
+node "vina3" 80 12213.8 31 -370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7649 5106 1334 890 0 0 0 0 0 0 0 0
+node "vina2" 59 9913.52 13 -370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5300 3540 1337 892 0 0 0 0 0 0 0 0
+node "vina1" 38 7416.3 -7 -370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3050 2040 1259 840 0 0 0 0 0 0 0 0
+node "vina0" 18 2222.65 -25 -299 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1871 1254 122 82 0 0 0 0 0 0 0 0
 node "vout3" 4 413.347 3092 289 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 414 282 0 0 0 0 0 0 0 0 0 0
 node "m1_2180_389#" 7 773.454 2180 389 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 780 526 0 0 0 0 0 0 0 0 0 0
 node "m1_1357_389#" 20 2178.46 1357 389 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2208 1478 0 0 0 0 0 0 0 0 0 0
@@ -48,61 +48,70 @@ node "vdd" 26 2830.79 -67 -285 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2871 1920 0 0 0 0 
 node "vout2" 4 714.098 2291 374 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 371 254 113 76 0 0 0 0 0 0 0 0
 node "vout1" 4 714.098 1495 374 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 371 254 113 76 0 0 0 0 0 0 0 0
 node "vout0" 4 690.248 704 377 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380 260 104 70 0 0 0 0 0 0 0 0
-cap "m1_965_0#" "m1_1555_107#" 63.1773
-cap "vinM" "m1_178_0#" 63.1773
-cap "vinb2" "m1_1840_n310#" 92.633
-cap "vina3" "m1_2289_95#" 63.1773
-cap "m1_1759_0#" "vina3" 63.1773
-cap "m1_617_389#" "vout0" 92.633
-cap "m1_2355_107#" "m1_2289_95#" 63.1773
-cap "m1_1759_0#" "m1_2355_107#" 63.1773
-cap "m1_1357_389#" "vout1" 63.1773
-cap "vina1" "vinM" 63.1773
-cap "m1_1555_107#" "vinM" 63.1773
-cap "vina1" "m1_178_0#" 63.1773
-cap "vinb1" "m1_1012_n309#" 92.633
-cap "vina1" "m1_694_95#" 63.1773
-cap "m1_2527_0#" "m1_2519_n1#" 41.238
-cap "m1_759_107#" "vinM" 63.1773
-cap "m1_1012_n309#" "vina2" 63.1773
-cap "m1_759_107#" "m1_178_0#" 63.1773
-cap "vinb0" "m1_244_n285#" 92.633
-cap "vout2" "m1_2180_389#" 63.1773
-cap "m1_244_n285#" "vina1" 63.1773
-cap "m1_759_107#" "m1_694_95#" 63.1773
-cap "m1_2519_n1#" "vinM" 63.1773
-cap "vina2" "m1_1496_95#" 63.1773
-cap "vinM" "m1_1715_n1#" 63.1773
-cap "vina3" "m1_1840_n310#" 63.1773
-cap "vdd" "vina0" 63.1773
 cap "vina3" "vinM" 63.1773
-cap "m1_965_0#" "vina2" 63.1773
+cap "m1_2355_107#" "vinM" 63.1773
+cap "m1_244_n285#" "vinb0" 63.1773
+cap "m1_1555_107#" "m1_965_0#" 63.1773
+cap "vina1" "vinb0" 63.1773
+cap "m1_2519_n1#" "m1_2527_0#" 41.238
+cap "vina2" "m1_965_0#" 63.1773
 cap "m1_121_n1#" "vinM" 63.1773
-cap "vinM" "m1_2355_107#" 63.1773
+cap "m1_1357_389#" "vout1" 63.1773
 cap "m1_1555_107#" "m1_1496_95#" 63.1773
-cap "vinM" "vina2" 63.1773
-subcap "m1_244_n285#" -1437.59
+cap "vinb1" "m1_1012_n309#" 92.633
+cap "vina1" "m1_244_n285#" 63.1773
+cap "vout2" "m1_2180_389#" 63.1773
+cap "m1_2519_n1#" "vinM" 63.1773
+cap "m1_1496_95#" "vina2" 63.1773
+cap "vina3" "m1_2289_95#" 63.1773
+cap "vina1" "vinM" 63.1773
+cap "vina2" "vinb0" 63.1773
+cap "vinb1" "vina2" 63.1773
+cap "vina3" "vinb2" 63.1773
+cap "m1_1555_107#" "vinM" 63.1773
+cap "vina3" "m1_1759_0#" 63.1773
+cap "m1_2355_107#" "m1_2289_95#" 63.1773
+cap "vina2" "vinM" 63.1773
+cap "vina1" "m1_694_95#" 63.1773
+cap "vina1" "m1_178_0#" 63.1773
+cap "vina3" "m1_1840_n310#" 63.1773
+cap "m1_178_0#" "vinM" 63.1773
+cap "m1_759_107#" "vinM" 63.1773
+cap "vina2" "m1_1012_n309#" 63.1773
+cap "m1_1840_n310#" "vinb2" 92.633
+cap "vina3" "vinb0" 92.633
+cap "vina3" "vinb1" 63.1773
+cap "m1_2355_107#" "m1_1759_0#" 63.1773
+cap "vout0" "m1_617_389#" 92.633
+cap "vinb1" "vinb2" 1649.52
+cap "m1_1715_n1#" "vinM" 63.1773
+cap "m1_694_95#" "m1_759_107#" 63.1773
+cap "vdd" "vina0" 63.1773
+cap "m1_759_107#" "m1_178_0#" 63.1773
+subcap "m1_244_n285#" -1505.48
+subcap "vinb0" -2210.49
 subcap "m1_1012_n309#" -1883.24
-subcap "vinb1" -286.369
 subcap "m1_1840_n310#" -2033.63
-subcap "m1_1840_n310#" -1420.39
-subcap "vinb2" -575.051
-subcap "vinb2" -339.631
-cap "XOR2IN_1/m1_74_98#" "m1_178_0#" 63.1773
-cap "m1_178_0#" "XOR2IN_1/m1_75_65#" 63.1773
+subcap "m1_1840_n310#" -1567.52
+subcap "vinb0" -2397.31
+subcap "vinb0" -1863.04
+cap "XOR2IN_1/NAND2IN_3/gnd" "XOR2IN_1/NAND2IN_3/vdd" 41.2191
 cap "XOR2IN_2/NAND2IN_3/vin1" "XOR2IN_2/NAND2IN_3/gnd" 63.1773
 cap "XOR2IN_2/NAND2IN_3/gnd" "XOR2IN_2/m1_74_98#" 63.1773
-cap "XOR2IN_2/NAND2IN_3/vin2" "XOR2IN_2/NAND2IN_3/gnd" 63.1773
-cap "XOR2IN_3/NAND2IN_3/gnd" "XOR2IN_3/m1_74_98#" 63.1773
-cap "XOR2IN_3/NAND2IN_3/vin1" "XOR2IN_3/NAND2IN_3/gnd" 63.1773
-cap "m1_121_n1#" "XOR2IN_0/m1_75_65#" 63.1773
-cap "m1_121_n1#" "XOR2IN_0/m1_74_98#" 63.1773
-cap "m1_121_n1#" "XOR2IN_0/m1_76_n73#" 63.1773
+cap "XOR2IN_3/m1_74_98#" "XOR2IN_3/NAND2IN_3/gnd" 52.1982
+cap "XOR2IN_0/NAND2IN_3/gnd" "XOR2IN_0/m1_74_98#" 63.1773
+cap "XOR2IN_0/NAND2IN_3/gnd" "XOR2IN_0/NAND2IN_3/vin2" 63.1773
+cap "XOR2IN_0/NAND2IN_3/gnd" "XOR2IN_0/NAND2IN_3/vin1" 63.1773
+cap "m1_178_0#" "XOR2IN_1/m1_75_65#" 63.1773
+cap "m1_178_0#" "XOR2IN_1/m1_74_98#" 52.1982
 cap "m1_178_0#" "XOR2IN_1/m1_76_n73#" 63.1773
+cap "XOR2IN_2/m1_76_n73#" "m1_1715_n1#" 63.1773
+cap "XOR2IN_3/m1_74_98#" "m1_2519_n1#" 41.2191
+cap "m1_2519_n1#" "XOR2IN_3/m1_75_65#" 63.1773
 cap "m1_2519_n1#" "XOR2IN_3/m1_76_n73#" 63.1773
 subcap "gnd" -230.287
-subcap "m1_121_n1#" -1533.9
-subcap "m1_178_0#" -4071.39
+subcap "m1_121_n1#" -917.259
+subcap "m1_178_0#" -4146.49
 subcap "m1_965_0#" -1948.18
 subcap "m1_1715_n1#" -1935.16
 subcap "m1_1759_0#" -1853.78
@@ -113,64 +122,67 @@ subcap "m1_694_95#" -416.19
 subcap "m1_1496_95#" -430.948
 subcap "m1_2289_95#" -442.755
 subcap "vcout" -1077.37
-subcap "vout3" -194.867
+subcap "vout3" -262.756
 subcap "m1_617_389#" -552.131
-subcap "vout0" -224.384
+subcap "vout0" -156.494
 subcap "m1_1357_389#" -1895.15
+subcap "vout1" -165.349
 subcap "m1_2180_389#" -558.034
+subcap "vout2" -165.349
 merge "fullAdder_3/vout" "vout3" -19.191 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -16 0 0 0 0 0 0 0 0 0 0
-merge "fullAdder_2/vout" "vout2" -19.191 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -16 0 0 0 0 0 0 0 0 0 0
+merge "fullAdder_2/vout" "vout2" -563.615 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -215 -153 -113 -76 0 0 0 0 0 0 0 0
 merge "fullAdder_1/vcout" "fullAdder_2/vcin" -29.7342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -24 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_2/vcin" "m1_1496_95#"
 merge "fullAdder_0/vcout" "fullAdder_1/vcin" -62.2029 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51 -46 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_1/vcin" "m1_694_95#"
-merge "fullAdder_0/vcin" "XOR2IN_3/vin2" -65.0214 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -63 0 0 0 0 0 0 0 0 0 0
+merge "fullAdder_0/vcin" "XOR2IN_3/vin2" -658.205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -615 -463 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_3/vin2" "XOR2IN_2/vin2"
 merge "XOR2IN_2/vin2" "XOR2IN_1/vin2"
 merge "XOR2IN_1/vin2" "XOR2IN_0/vin2"
 merge "XOR2IN_0/vin2" "vinM"
-merge "fullAdder_3/gnd" "m1_2527_0#" -1059.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -159 -124 -204 -145 0 0 0 0 0 0 0 0
+merge "fullAdder_3/gnd" "m1_2527_0#" -1266.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -159 -124 -273 -191 0 0 0 0 0 0 0 0
 merge "m1_2527_0#" "fullAdder_2/gnd"
 merge "fullAdder_2/gnd" "fullAdder_1/gnd"
 merge "fullAdder_1/gnd" "fullAdder_0/gnd"
 merge "fullAdder_0/gnd" "gnd"
 merge "gnd" "XOR2IN_0/gnd"
-merge "XOR2IN_0/gnd" "XOR2IN_0/NAND2IN_3/gnd"
+merge "XOR2IN_0/gnd" "XOR2IN_0/NAND2IN_1/gnd"
+merge "XOR2IN_0/NAND2IN_1/gnd" "XOR2IN_0/NAND2IN_3/gnd"
 merge "XOR2IN_0/NAND2IN_3/gnd" "m1_121_n1#"
-merge "m1_121_n1#" "XOR2IN_1/gnd"
-merge "XOR2IN_1/gnd" "m1_178_0#"
+merge "m1_121_n1#" "XOR2IN_1/NAND2IN_3/gnd"
+merge "XOR2IN_1/NAND2IN_3/gnd" "m1_178_0#"
 merge "m1_178_0#" "m1_965_0#"
 merge "m1_965_0#" "XOR2IN_2/NAND2IN_3/gnd"
 merge "XOR2IN_2/NAND2IN_3/gnd" "m1_1715_n1#"
 merge "m1_1715_n1#" "m1_1759_0#"
 merge "m1_1759_0#" "XOR2IN_3/NAND2IN_3/gnd"
 merge "XOR2IN_3/NAND2IN_3/gnd" "m1_2519_n1#"
-merge "fullAdder_2/XOR2IN_1/vdd" "fullAdder_2/m1_n596_n107#" -2527.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2562 -1735 0 0 0 0 0 0 0 0 0 0
+merge "fullAdder_2/XOR2IN_1/vdd" "fullAdder_2/m1_n596_n107#" -2752.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2787 -1888 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_2/m1_n596_n107#" "fullAdder_2/XOR2IN_0/NAND2IN_1/vdd"
 merge "fullAdder_2/XOR2IN_0/NAND2IN_1/vdd" "fullAdder_2/vdd"
 merge "fullAdder_2/vdd" "fullAdder_1/XOR2IN_1/m1_74_98#"
 merge "fullAdder_1/XOR2IN_1/m1_74_98#" "m1_1357_389#"
 merge "XOR2IN_2/m1_74_98#" "XOR2IN_1/vdd" -440.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -435 -302 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_1/vdd" "m1_1012_n309#"
-merge "fullAdder_0/vin2" "XOR2IN_0/vout" -159.935 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -132 -118 0 0 0 0 0 0 0 0 0 0
+merge "fullAdder_0/vin2" "XOR2IN_0/vout" -145.122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 -107 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_0/vout" "m1_n12_n185#"
-merge "fullAdder_0/vdd" "XOR2IN_0/m1_74_98#" -545.561 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -509 -384 0 0 0 0 0 0 0 0 0 0
+merge "fullAdder_0/vdd" "XOR2IN_0/m1_74_98#" -533.014 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -501 -374 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_0/m1_74_98#" "vdd"
 merge "XOR2IN_0/vin1" "vinb0" -8.2332 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 -12 0 0 0 0 0 0 0 0 0 0
-merge "XOR2IN_2/vin1" "vinb2" -17.8731 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -15 0 0 0 0 0 0 0 0 0 0
+merge "XOR2IN_2/vin1" "vinb2" -19.7685 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -15 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_0/vin1" "vina0" -20.7705 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -16 0 0 0 0 0 0 0 0 0 0
+merge "XOR2IN_1/vin1" "vinb1" -14.8671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_2/vin2" "XOR2IN_2/vout" -26.7825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -22 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_2/vout" "m1_1555_107#"
-merge "XOR2IN_1/vin1" "vinb1" -14.8671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_1/vin1" "vina1" -14.8671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_3/vin1" "vina3" -14.8671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_2/vin1" "vina2" -14.8671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_3/vin1" "vinb3" -9.1809 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 -12 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_3/vin2" "XOR2IN_3/vout" -19.2009 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 -22 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_3/vout" "m1_2355_107#"
-merge "fullAdder_3/vdd" "fullAdder_2/XOR2IN_1/m1_74_98#" -513.813 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -510 -352 0 0 0 0 0 0 0 0 0 0
+merge "fullAdder_3/vdd" "fullAdder_2/XOR2IN_1/m1_74_98#" -726.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -723 -497 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_2/XOR2IN_1/m1_74_98#" "m1_2180_389#"
-merge "fullAdder_1/vout" "vout1" -19.191 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -16 0 0 0 0 0 0 0 0 0 0
+merge "fullAdder_1/vout" "vout1" -563.615 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -215 -153 -113 -76 0 0 0 0 0 0 0 0
 merge "XOR2IN_1/m1_74_98#" "XOR2IN_0/vdd" -109.376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102 -77 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_0/vdd" "m1_244_n285#"
 merge "fullAdder_2/vcout" "fullAdder_3/vcin" -38.5893 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27 -30 0 0 0 0 0 0 0 0 0 0
@@ -179,7 +191,7 @@ merge "XOR2IN_3/m1_74_98#" "XOR2IN_2/vdd" -430.435 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
 merge "XOR2IN_2/vdd" "m1_1840_n310#"
 merge "fullAdder_1/vdd" "fullAdder_0/XOR2IN_1/m1_74_98#" -598.573 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -588 -412 0 0 0 0 0 0 0 0 0 0
 merge "fullAdder_0/XOR2IN_1/m1_74_98#" "m1_617_389#"
-merge "fullAdder_0/vout" "vout0" -480.731 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -164 -119 -104 -70 0 0 0 0 0 0 0 0
+merge "fullAdder_0/vout" "vout0" -548.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -233 -165 -104 -70 0 0 0 0 0 0 0 0
 merge "fullAdder_1/vin2" "XOR2IN_1/vout" -32.6859 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21 -26 0 0 0 0 0 0 0 0 0 0
 merge "XOR2IN_1/vout" "m1_759_107#"
 merge "fullAdder_3/vcout" "vcout" -19.191 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -16 0 0 0 0 0 0 0 0 0 0

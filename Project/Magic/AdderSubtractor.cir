@@ -19,269 +19,269 @@ V_in_b0 vinb0 gnd PULSE(1.8 0 0ns 100ps 100ps 20ns 40ns)
 
 V_in_en vinM gnd PULSE(1.8 0 0ns 100ps 100ps 240ns 480ns)
 
-M1000 fullAdder_2/XOR2IN_1/NAND2IN_0/a_n1_n23# fullAdder_2/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
+M1000 fullAdder_3/XOR2IN_1/NAND2IN_0/a_n1_n23# fullAdder_3/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=1520 ps=1368
-M1001 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/vin1 vdd fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1001 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/vin1 vdd fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=2888 ps=2424
-M1002 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/vcin fullAdder_2/XOR2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1002 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1003 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/vcin vdd fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1003 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/vcin vdd fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1004 fullAdder_2/XOR2IN_1/NAND2IN_1/a_n1_n23# fullAdder_2/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
+M1004 fullAdder_3/XOR2IN_1/NAND2IN_1/a_n1_n23# fullAdder_3/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1005 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 fullAdder_2/XOR2IN_1/vin1 vdd fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1005 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/vin1 vdd fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1006 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
+M1006 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1007 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1007 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1008 fullAdder_2/XOR2IN_1/NAND2IN_2/a_n1_n23# fullAdder_2/vcin gnd Gnd CMOSN w=4 l=2
+M1008 fullAdder_3/XOR2IN_1/NAND2IN_2/a_n1_n23# fullAdder_3/vcin gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1009 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/vcin vdd fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1009 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/vcin vdd fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1010 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
+M1010 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1011 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1011 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1012 fullAdder_2/XOR2IN_1/NAND2IN_3/a_n1_n23# fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
+M1012 fullAdder_3/XOR2IN_1/NAND2IN_3/a_n1_n23# fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1013 vout2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 vdd fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1013 vout3 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 vdd fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1014 vout2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
+M1014 vout3 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1015 vout2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 vdd fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1015 vout3 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 vdd fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1016 fullAdder_2/XOR2IN_0/NAND2IN_0/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
+M1016 fullAdder_3/XOR2IN_0/NAND2IN_0/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1017 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 vina2 vdd fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1017 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vina3 vdd fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1018 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_2/vout fullAdder_2/XOR2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1018 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_3/vout fullAdder_3/XOR2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1019 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_2/vout vdd fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1019 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_3/vout vdd fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1020 fullAdder_2/XOR2IN_0/NAND2IN_1/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
+M1020 fullAdder_3/XOR2IN_0/NAND2IN_1/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1021 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 vina2 vdd fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1021 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 vina3 vdd fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1022 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
+M1022 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1023 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1023 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1024 fullAdder_2/XOR2IN_0/NAND2IN_2/a_n1_n23# XOR2IN_2/vout gnd Gnd CMOSN w=4 l=2
+M1024 fullAdder_3/XOR2IN_0/NAND2IN_2/a_n1_n23# XOR2IN_3/vout gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1025 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 XOR2IN_2/vout vdd fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1025 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 XOR2IN_3/vout vdd fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1026 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
+M1026 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1027 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1027 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1028 fullAdder_2/XOR2IN_0/NAND2IN_3/a_n1_n23# fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
+M1028 fullAdder_3/XOR2IN_0/NAND2IN_3/a_n1_n23# fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1029 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 vdd fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1029 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 vdd fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1030 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
+M1030 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_0/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1031 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 vdd fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1031 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 vdd fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1032 fullAdder_2/AND2IN_0/NAND2IN_0/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
+M1032 fullAdder_3/AND2IN_0/NAND2IN_0/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1033 fullAdder_2/AND2IN_0/NOT_0/in vina2 vdd fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1033 fullAdder_3/AND2IN_0/NOT_0/in vina3 vdd fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1034 fullAdder_2/AND2IN_0/NOT_0/in XOR2IN_2/vout fullAdder_2/AND2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1034 fullAdder_3/AND2IN_0/NOT_0/in XOR2IN_3/vout fullAdder_3/AND2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1035 fullAdder_2/AND2IN_0/NOT_0/in XOR2IN_2/vout vdd fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1035 fullAdder_3/AND2IN_0/NOT_0/in XOR2IN_3/vout vdd fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1036 fullAdder_2/OR2IN_0/vin2 fullAdder_2/AND2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
+M1036 fullAdder_3/OR2IN_0/vin2 fullAdder_3/AND2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
 +  ad=24 pd=20 as=0 ps=0
-M1037 fullAdder_2/OR2IN_0/vin2 fullAdder_2/AND2IN_0/NOT_0/in vdd fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
+M1037 fullAdder_3/OR2IN_0/vin2 fullAdder_3/AND2IN_0/NOT_0/in vdd fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
 +  ad=30 pd=22 as=0 ps=0
-M1038 fullAdder_2/AND2IN_1/NAND2IN_0/a_n1_n23# fullAdder_2/vcin gnd Gnd CMOSN w=4 l=2
+M1038 fullAdder_3/AND2IN_1/NAND2IN_0/a_n1_n23# fullAdder_3/vcin gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1039 fullAdder_2/AND2IN_1/NOT_0/in fullAdder_2/vcin vdd fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1039 fullAdder_3/AND2IN_1/NOT_0/in fullAdder_3/vcin vdd fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1040 fullAdder_2/AND2IN_1/NOT_0/in fullAdder_2/XOR2IN_1/vin1 fullAdder_2/AND2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1040 fullAdder_3/AND2IN_1/NOT_0/in fullAdder_3/XOR2IN_1/vin1 fullAdder_3/AND2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1041 fullAdder_2/AND2IN_1/NOT_0/in fullAdder_2/XOR2IN_1/vin1 vdd fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1041 fullAdder_3/AND2IN_1/NOT_0/in fullAdder_3/XOR2IN_1/vin1 vdd fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1042 fullAdder_2/OR2IN_0/vin1 fullAdder_2/AND2IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
+M1042 fullAdder_3/OR2IN_0/vin1 fullAdder_3/AND2IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
 +  ad=24 pd=20 as=0 ps=0
-M1043 fullAdder_2/OR2IN_0/vin1 fullAdder_2/AND2IN_1/NOT_0/in vdd fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
+M1043 fullAdder_3/OR2IN_0/vin1 fullAdder_3/AND2IN_1/NOT_0/in vdd fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
 +  ad=30 pd=22 as=0 ps=0
-M1044 fullAdder_3/vcin fullAdder_2/OR2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
+M1044 vcout fullAdder_3/OR2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
 +  ad=24 pd=20 as=0 ps=0
-M1045 fullAdder_3/vcin fullAdder_2/OR2IN_0/NOT_0/in vdd fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
+M1045 vcout fullAdder_3/OR2IN_0/NOT_0/in vdd fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
 +  ad=30 pd=22 as=0 ps=0
-M1046 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/vin2 fullAdder_2/OR2IN_0/a_0_1# fullAdder_2/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
+M1046 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/vin2 fullAdder_3/OR2IN_0/a_0_1# fullAdder_3/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
 +  ad=72 pd=36 as=48 ps=32
-M1047 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/vin2 gnd Gnd CMOSN w=4 l=2
+M1047 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/vin2 gnd Gnd CMOSN w=4 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1048 fullAdder_2/OR2IN_0/a_0_1# fullAdder_2/OR2IN_0/vin1 vdd fullAdder_2/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
+M1048 fullAdder_3/OR2IN_0/a_0_1# fullAdder_3/OR2IN_0/vin1 vdd fullAdder_3/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1049 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/vin1 gnd Gnd CMOSN w=4 l=2
+M1049 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1050 fullAdder_3/XOR2IN_1/NAND2IN_0/a_n1_n23# fullAdder_3/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
+M1050 fullAdder_2/XOR2IN_1/NAND2IN_0/a_n1_n23# fullAdder_2/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1051 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/vin1 vdd fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1051 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/vin1 vdd fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1052 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1052 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/vcin fullAdder_2/XOR2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1053 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/vcin vdd fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1053 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/vcin vdd fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1054 fullAdder_3/XOR2IN_1/NAND2IN_1/a_n1_n23# fullAdder_3/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
+M1054 fullAdder_2/XOR2IN_1/NAND2IN_1/a_n1_n23# fullAdder_2/XOR2IN_1/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1055 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/vin1 vdd fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1055 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 fullAdder_2/XOR2IN_1/vin1 vdd fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1056 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
+M1056 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1057 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1057 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1058 fullAdder_3/XOR2IN_1/NAND2IN_2/a_n1_n23# fullAdder_3/vcin gnd Gnd CMOSN w=4 l=2
+M1058 fullAdder_2/XOR2IN_1/NAND2IN_2/a_n1_n23# fullAdder_2/vcin gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1059 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/vcin vdd fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1059 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/vcin vdd fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1060 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
+M1060 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1061 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1061 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1062 fullAdder_3/XOR2IN_1/NAND2IN_3/a_n1_n23# fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
+M1062 fullAdder_2/XOR2IN_1/NAND2IN_3/a_n1_n23# fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1063 vout3 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 vdd fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1063 vout2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 vdd fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1064 vout3 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
+M1064 vout2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1065 vout3 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 vdd fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1065 vout2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 vdd fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1066 fullAdder_3/XOR2IN_0/NAND2IN_0/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
+M1066 fullAdder_2/XOR2IN_0/NAND2IN_0/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1067 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vina3 vdd fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1067 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 vina2 vdd fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1068 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_3/vout fullAdder_3/XOR2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1068 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_2/vout fullAdder_2/XOR2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1069 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_3/vout vdd fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1069 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_2/vout vdd fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1070 fullAdder_3/XOR2IN_0/NAND2IN_1/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
+M1070 fullAdder_2/XOR2IN_0/NAND2IN_1/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1071 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 vina3 vdd fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1071 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 vina2 vdd fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1072 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
+M1072 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1073 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1073 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1074 fullAdder_3/XOR2IN_0/NAND2IN_2/a_n1_n23# XOR2IN_3/vout gnd Gnd CMOSN w=4 l=2
+M1074 fullAdder_2/XOR2IN_0/NAND2IN_2/a_n1_n23# XOR2IN_2/vout gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1075 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 XOR2IN_3/vout vdd fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1075 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 XOR2IN_2/vout vdd fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1076 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
+M1076 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1077 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1077 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 vdd fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1078 fullAdder_3/XOR2IN_0/NAND2IN_3/a_n1_n23# fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
+M1078 fullAdder_2/XOR2IN_0/NAND2IN_3/a_n1_n23# fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1079 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 vdd fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1079 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 vdd fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1080 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_0/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
+M1080 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1081 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 vdd fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1081 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 vdd fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1082 fullAdder_3/AND2IN_0/NAND2IN_0/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
+M1082 fullAdder_2/AND2IN_0/NAND2IN_0/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1083 fullAdder_3/AND2IN_0/NOT_0/in vina3 vdd fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1083 fullAdder_2/AND2IN_0/NOT_0/in vina2 vdd fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1084 fullAdder_3/AND2IN_0/NOT_0/in XOR2IN_3/vout fullAdder_3/AND2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1084 fullAdder_2/AND2IN_0/NOT_0/in XOR2IN_2/vout fullAdder_2/AND2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1085 fullAdder_3/AND2IN_0/NOT_0/in XOR2IN_3/vout vdd fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1085 fullAdder_2/AND2IN_0/NOT_0/in XOR2IN_2/vout vdd fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1086 fullAdder_3/OR2IN_0/vin2 fullAdder_3/AND2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
+M1086 fullAdder_2/OR2IN_0/vin2 fullAdder_2/AND2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
 +  ad=24 pd=20 as=0 ps=0
-M1087 fullAdder_3/OR2IN_0/vin2 fullAdder_3/AND2IN_0/NOT_0/in vdd fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
+M1087 fullAdder_2/OR2IN_0/vin2 fullAdder_2/AND2IN_0/NOT_0/in vdd fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
 +  ad=30 pd=22 as=0 ps=0
-M1088 fullAdder_3/AND2IN_1/NAND2IN_0/a_n1_n23# fullAdder_3/vcin gnd Gnd CMOSN w=4 l=2
+M1088 fullAdder_2/AND2IN_1/NAND2IN_0/a_n1_n23# fullAdder_2/vcin gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1089 fullAdder_3/AND2IN_1/NOT_0/in fullAdder_3/vcin vdd fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1089 fullAdder_2/AND2IN_1/NOT_0/in fullAdder_2/vcin vdd fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1090 fullAdder_3/AND2IN_1/NOT_0/in fullAdder_3/XOR2IN_1/vin1 fullAdder_3/AND2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1090 fullAdder_2/AND2IN_1/NOT_0/in fullAdder_2/XOR2IN_1/vin1 fullAdder_2/AND2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1091 fullAdder_3/AND2IN_1/NOT_0/in fullAdder_3/XOR2IN_1/vin1 vdd fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1091 fullAdder_2/AND2IN_1/NOT_0/in fullAdder_2/XOR2IN_1/vin1 vdd fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1092 fullAdder_3/OR2IN_0/vin1 fullAdder_3/AND2IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
+M1092 fullAdder_2/OR2IN_0/vin1 fullAdder_2/AND2IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
 +  ad=24 pd=20 as=0 ps=0
-M1093 fullAdder_3/OR2IN_0/vin1 fullAdder_3/AND2IN_1/NOT_0/in vdd fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
+M1093 fullAdder_2/OR2IN_0/vin1 fullAdder_2/AND2IN_1/NOT_0/in vdd fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
 +  ad=30 pd=22 as=0 ps=0
-M1094 vcout fullAdder_3/OR2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
+M1094 fullAdder_3/vcin fullAdder_2/OR2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
 +  ad=24 pd=20 as=0 ps=0
-M1095 vcout fullAdder_3/OR2IN_0/NOT_0/in vdd fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
+M1095 fullAdder_3/vcin fullAdder_2/OR2IN_0/NOT_0/in vdd fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
 +  ad=30 pd=22 as=0 ps=0
-M1096 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/vin2 fullAdder_3/OR2IN_0/a_0_1# fullAdder_3/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
+M1096 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/vin2 fullAdder_2/OR2IN_0/a_0_1# fullAdder_2/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
 +  ad=72 pd=36 as=48 ps=32
-M1097 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/vin2 gnd Gnd CMOSN w=4 l=2
+M1097 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/vin2 gnd Gnd CMOSN w=4 l=2
 +  ad=60 pd=46 as=0 ps=0
-M1098 fullAdder_3/OR2IN_0/a_0_1# fullAdder_3/OR2IN_0/vin1 vdd fullAdder_3/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
+M1098 fullAdder_2/OR2IN_0/a_0_1# fullAdder_2/OR2IN_0/vin1 vdd fullAdder_2/OR2IN_0/w_n19_n9# CMOSP w=12 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1099 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/vin1 gnd Gnd CMOSN w=4 l=2
+M1099 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1100 XOR2IN_0/NAND2IN_0/a_n1_n23# vinb0 gnd Gnd CMOSN w=4 l=2
+M1100 XOR2IN_1/NAND2IN_0/a_n1_n23# vinb1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1101 XOR2IN_0/NAND2IN_2/vin2 vinb0 vdd XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1101 XOR2IN_1/NAND2IN_2/vin2 vinb1 vdd XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1102 XOR2IN_0/NAND2IN_2/vin2 vinM XOR2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1102 XOR2IN_1/NAND2IN_2/vin2 vinM XOR2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1103 XOR2IN_0/NAND2IN_2/vin2 vinM vdd XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1103 XOR2IN_1/NAND2IN_2/vin2 vinM vdd XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1104 XOR2IN_0/NAND2IN_1/a_n1_n23# vinb0 gnd Gnd CMOSN w=4 l=2
+M1104 XOR2IN_1/NAND2IN_1/a_n1_n23# vinb1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1105 XOR2IN_0/NAND2IN_3/vin1 vinb0 vdd XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1105 XOR2IN_1/NAND2IN_3/vin1 vinb1 vdd XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1106 XOR2IN_0/NAND2IN_3/vin1 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
+M1106 XOR2IN_1/NAND2IN_3/vin1 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1107 XOR2IN_0/NAND2IN_3/vin1 XOR2IN_0/NAND2IN_2/vin2 vdd XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1107 XOR2IN_1/NAND2IN_3/vin1 XOR2IN_1/NAND2IN_2/vin2 vdd XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1108 XOR2IN_0/NAND2IN_2/a_n1_n23# vinM gnd Gnd CMOSN w=4 l=2
+M1108 XOR2IN_1/NAND2IN_2/a_n1_n23# vinM gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1109 XOR2IN_0/NAND2IN_3/vin2 vinM vdd XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1109 XOR2IN_1/NAND2IN_3/vin2 vinM vdd XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1110 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
+M1110 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1111 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/vin2 vdd XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1111 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/vin2 vdd XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1112 XOR2IN_0/NAND2IN_3/a_n1_n23# XOR2IN_0/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
+M1112 XOR2IN_1/NAND2IN_3/a_n1_n23# XOR2IN_1/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1113 XOR2IN_0/vout XOR2IN_0/NAND2IN_3/vin1 vdd XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1113 XOR2IN_1/vout XOR2IN_1/NAND2IN_3/vin1 vdd XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1114 XOR2IN_0/vout XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
+M1114 XOR2IN_1/vout XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1115 XOR2IN_0/vout XOR2IN_0/NAND2IN_3/vin2 vdd XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1115 XOR2IN_1/vout XOR2IN_1/NAND2IN_3/vin2 vdd XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1116 XOR2IN_1/NAND2IN_0/a_n1_n23# vinb1 gnd Gnd CMOSN w=4 l=2
+M1116 XOR2IN_0/NAND2IN_0/a_n1_n23# vinb0 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1117 XOR2IN_1/NAND2IN_2/vin2 vinb1 vdd XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1117 XOR2IN_0/NAND2IN_2/vin2 vinb0 vdd XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1118 XOR2IN_1/NAND2IN_2/vin2 vinM XOR2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
+M1118 XOR2IN_0/NAND2IN_2/vin2 vinM XOR2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1119 XOR2IN_1/NAND2IN_2/vin2 vinM vdd XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
+M1119 XOR2IN_0/NAND2IN_2/vin2 vinM vdd XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1120 XOR2IN_1/NAND2IN_1/a_n1_n23# vinb1 gnd Gnd CMOSN w=4 l=2
+M1120 XOR2IN_0/NAND2IN_1/a_n1_n23# vinb0 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1121 XOR2IN_1/NAND2IN_3/vin1 vinb1 vdd XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1121 XOR2IN_0/NAND2IN_3/vin1 vinb0 vdd XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1122 XOR2IN_1/NAND2IN_3/vin1 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
+M1122 XOR2IN_0/NAND2IN_3/vin1 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1123 XOR2IN_1/NAND2IN_3/vin1 XOR2IN_1/NAND2IN_2/vin2 vdd XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
+M1123 XOR2IN_0/NAND2IN_3/vin1 XOR2IN_0/NAND2IN_2/vin2 vdd XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1124 XOR2IN_1/NAND2IN_2/a_n1_n23# vinM gnd Gnd CMOSN w=4 l=2
+M1124 XOR2IN_0/NAND2IN_2/a_n1_n23# vinM gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1125 XOR2IN_1/NAND2IN_3/vin2 vinM vdd XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1125 XOR2IN_0/NAND2IN_3/vin2 vinM vdd XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1126 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
+M1126 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1127 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/vin2 vdd XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
+M1127 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/vin2 vdd XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-M1128 XOR2IN_1/NAND2IN_3/a_n1_n23# XOR2IN_1/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
+M1128 XOR2IN_0/NAND2IN_3/a_n1_n23# XOR2IN_0/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
-M1129 XOR2IN_1/vout XOR2IN_1/NAND2IN_3/vin1 vdd XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1129 XOR2IN_0/vout XOR2IN_0/NAND2IN_3/vin1 vdd XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=40 pd=36 as=0 ps=0
-M1130 XOR2IN_1/vout XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
+M1130 XOR2IN_0/vout XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1131 XOR2IN_1/vout XOR2IN_1/NAND2IN_3/vin2 vdd XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
+M1131 XOR2IN_0/vout XOR2IN_0/NAND2IN_3/vin2 vdd XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
 M1132 XOR2IN_2/NAND2IN_0/a_n1_n23# vinb2 gnd Gnd CMOSN w=4 l=2
 +  ad=72 pd=44 as=0 ps=0
@@ -547,664 +547,669 @@ M1262 fullAdder_1/OR2IN_0/a_0_1# fullAdder_1/OR2IN_0/vin1 vdd fullAdder_1/OR2IN_
 +  ad=0 pd=0 as=0 ps=0
 M1263 fullAdder_1/OR2IN_0/NOT_0/in fullAdder_1/OR2IN_0/vin1 gnd Gnd CMOSN w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
-C0 XOR2IN_2/NAND2IN_0/w_n16_n4# vdd 0.11fF
-C1 vdd fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# 0.06fF
-C2 gnd fullAdder_2/AND2IN_0/NOT_0/in 0.05fF
-C3 XOR2IN_2/NAND2IN_2/vin2 vdd 0.08fF
-C4 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 0.06fF
-C5 vdd fullAdder_3/AND2IN_0/NOT_0/in 0.08fF
-C6 gnd fullAdder_1/OR2IN_0/vin1 0.26fF
-C7 vinb2 vdd 0.16fF
-C8 fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# fullAdder_0/AND2IN_0/NOT_0/in 0.07fF
-C9 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 0.10fF
-C10 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_3/vin1 0.06fF
-C11 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_2/vout 0.10fF
-C12 vdd vout0 0.18fF
-C13 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 vdd 0.43fF
-C14 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 0.10fF
-C15 gnd fullAdder_3/vcin 0.48fF
-C16 fullAdder_1/OR2IN_0/vin1 fullAdder_1/OR2IN_0/w_n19_n9# 0.16fF
-C17 fullAdder_2/OR2IN_0/vin1 fullAdder_2/OR2IN_0/w_n19_n9# 0.16fF
-C18 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
-C19 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
-C20 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/w_n19_n9# 0.05fF
-C21 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/vout 0.06fF
-C22 gnd fullAdder_0/OR2IN_0/vin2 0.27fF
-C23 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.08fF
-C24 vdd fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# 0.14fF
-C25 vdd fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# 0.06fF
-C26 XOR2IN_2/NAND2IN_3/vin2 XOR2IN_2/vout 0.06fF
-C27 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/AND2IN_1/NOT_0/in 0.06fF
-C28 XOR2IN_0/NAND2IN_3/w_n16_n4# XOR2IN_0/NAND2IN_3/vin1 0.10fF
-C29 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 0.08fF
-C30 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/w_n16_n4# 0.08fF
-C31 gnd vina0 0.40fF
-C32 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.39fF
-C33 vdd fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.11fF
-C34 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
-C35 XOR2IN_3/NAND2IN_2/w_n16_n4# XOR2IN_3/NAND2IN_3/vin2 0.08fF
-C36 fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# vcout 0.03fF
-C37 gnd vdd 2.27fF
-C38 fullAdder_0/OR2IN_0/vin2 fullAdder_0/OR2IN_0/w_n19_n9# 0.12fF
-C39 vdd XOR2IN_3/NAND2IN_3/vin2 0.08fF
-C40 gnd XOR2IN_0/vout 0.21fF
-C41 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# vina3 0.10fF
-C42 fullAdder_3/OR2IN_0/vin1 fullAdder_3/OR2IN_0/w_n19_n9# 0.16fF
-C43 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.08fF
-C44 vdd fullAdder_1/OR2IN_0/w_n19_n9# 0.09fF
-C45 gnd fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.19fF
-C46 vinb3 vdd 0.06fF
-C47 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C48 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
-C49 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_2/AND2IN_1/NOT_0/in 0.08fF
-C50 XOR2IN_2/vout fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.39fF
-C51 vdd fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.11fF
-C52 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C53 gnd fullAdder_0/AND2IN_0/NOT_0/in 0.05fF
-C54 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
-C55 XOR2IN_1/NAND2IN_3/vin2 vdd 0.08fF
-C56 vdd fullAdder_0/OR2IN_0/w_n19_n9# 0.09fF
-C57 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/vin2 0.06fF
-C58 gnd vina1 0.46fF
-C59 vdd fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.08fF
-C60 XOR2IN_3/vout fullAdder_3/vcin 0.06fF
-C61 vinM XOR2IN_2/vout 0.06fF
-C62 XOR2IN_2/vout fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C63 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_3/vin1 0.06fF
-C64 XOR2IN_3/vout fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
-C65 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.08fF
-C66 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.10fF
-C67 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# vout1 0.08fF
-C68 fullAdder_3/OR2IN_0/vin1 vdd 0.06fF
-C69 gnd fullAdder_0/XOR2IN_1/vin1 0.52fF
-C70 gnd fullAdder_3/XOR2IN_1/vin1 0.52fF
-C71 fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# fullAdder_1/AND2IN_1/NOT_0/in 0.07fF
-C72 gnd fullAdder_1/vcin 0.48fF
-C73 fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# fullAdder_1/AND2IN_0/NOT_0/in 0.07fF
-C74 vdd fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.11fF
-C75 XOR2IN_1/NAND2IN_1/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.10fF
-C76 XOR2IN_2/NAND2IN_2/w_n16_n4# vdd 0.11fF
-C77 vina1 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
-C78 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_3/vin2 0.06fF
-C79 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# fullAdder_3/OR2IN_0/vin1 0.03fF
-C80 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C81 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
-C82 vdd fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 0.08fF
-C83 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
-C84 vinM fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.39fF
-C85 XOR2IN_0/NAND2IN_2/w_n16_n4# vdd 0.11fF
-C86 gnd fullAdder_2/OR2IN_0/vin2 0.27fF
-C87 fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# fullAdder_2/OR2IN_0/vin1 0.03fF
-C88 gnd fullAdder_1/AND2IN_1/NOT_0/in 0.05fF
-C89 XOR2IN_0/NAND2IN_3/w_n16_n4# vdd 0.11fF
-C90 XOR2IN_3/vout vdd 0.20fF
-C91 fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# fullAdder_3/OR2IN_0/NOT_0/in 0.07fF
-C92 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.08fF
-C93 vina0 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
-C94 XOR2IN_0/NAND2IN_3/w_n16_n4# XOR2IN_0/vout 0.08fF
-C95 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# vina3 0.10fF
-C96 gnd fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C97 vdd fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.11fF
-C98 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vdd 0.15fF
-C99 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.08fF
-C100 fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_0/XOR2IN_1/vin1 0.10fF
-C101 fullAdder_3/OR2IN_0/vin2 fullAdder_3/vcin 0.06fF
-C102 vdd fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.11fF
-C103 XOR2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
-C104 vdd fullAdder_1/XOR2IN_1/vin1 0.21fF
-C105 fullAdder_0/OR2IN_0/vin2 fullAdder_0/OR2IN_0/NOT_0/in 0.08fF
-C106 fullAdder_3/OR2IN_0/vin2 fullAdder_3/OR2IN_0/w_n19_n9# 0.12fF
-C107 fullAdder_1/OR2IN_0/vin2 fullAdder_1/OR2IN_0/NOT_0/in 0.08fF
-C108 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C109 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.06fF
-C110 vinb1 XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
-C111 XOR2IN_3/NAND2IN_2/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.10fF
-C112 gnd XOR2IN_2/NAND2IN_3/vin2 0.06fF
-C113 XOR2IN_0/NAND2IN_2/vin2 vdd 0.08fF
-C114 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_2/vcin 0.10fF
-C115 vinM XOR2IN_2/NAND2IN_0/w_n16_n4# 0.10fF
-C116 vinM XOR2IN_2/NAND2IN_2/vin2 0.39fF
-C117 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.08fF
-C118 vdd XOR2IN_3/NAND2IN_2/vin2 0.08fF
-C119 XOR2IN_0/NAND2IN_1/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C120 fullAdder_3/OR2IN_0/vin2 fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# 0.03fF
-C121 vdd fullAdder_2/vcin 0.12fF
-C122 XOR2IN_2/NAND2IN_3/vin1 vdd 0.43fF
-C123 vdd fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.11fF
-C124 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 0.06fF
-C125 vina2 XOR2IN_2/vout 0.27fF
-C126 fullAdder_3/OR2IN_0/vin2 vdd 0.06fF
-C127 vdd fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 0.08fF
-C128 vinM fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C129 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C130 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.08fF
-C131 vdd fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.11fF
-C132 XOR2IN_0/NAND2IN_3/vin1 vdd 0.43fF
-C133 vdd vout1 0.15fF
-C134 gnd fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.19fF
-C135 fullAdder_1/vcin fullAdder_1/XOR2IN_1/vin1 0.26fF
-C136 gnd fullAdder_2/OR2IN_0/NOT_0/in 0.11fF
-C137 vdd fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 0.08fF
-C138 XOR2IN_0/NAND2IN_1/w_n16_n4# XOR2IN_0/NAND2IN_3/vin1 0.08fF
-C139 XOR2IN_1/NAND2IN_2/vin2 gnd 0.19fF
-C140 gnd vina3 0.46fF
-C141 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_3/vcin 0.10fF
-C142 fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 0.06fF
-C143 XOR2IN_0/NAND2IN_3/vin2 vdd 0.08fF
-C144 vdd XOR2IN_3/NAND2IN_3/vin1 0.43fF
-C145 XOR2IN_1/vout fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C146 gnd fullAdder_2/XOR2IN_1/vin1 0.52fF
-C147 vinM gnd 1.00fF
-C148 XOR2IN_3/NAND2IN_1/w_n16_n4# vinb3 0.10fF
-C149 XOR2IN_2/NAND2IN_2/w_n16_n4# XOR2IN_2/NAND2IN_3/vin2 0.08fF
-C150 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/vout 0.06fF
-C151 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/AND2IN_1/NOT_0/in 0.06fF
-C152 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# vina3 0.10fF
-C153 fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# fullAdder_2/AND2IN_1/NOT_0/in 0.07fF
-C154 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.06fF
-C155 gnd fullAdder_1/AND2IN_0/NOT_0/in 0.05fF
-C156 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
-C157 vdd XOR2IN_1/vout 0.20fF
-C158 XOR2IN_1/NAND2IN_3/w_n16_n4# XOR2IN_1/vout 0.08fF
-C159 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_3/vin2 0.06fF
-C160 fullAdder_2/vcin fullAdder_2/OR2IN_0/vin2 0.06fF
-C161 gnd fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 0.19fF
-C162 vdd fullAdder_2/AND2IN_0/NOT_0/in 0.08fF
-C163 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 0.06fF
-C164 vdd fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.11fF
-C165 vdd fullAdder_1/OR2IN_0/vin1 0.06fF
-C166 XOR2IN_2/NAND2IN_3/w_n16_n4# XOR2IN_2/vout 0.08fF
-C167 gnd fullAdder_2/OR2IN_0/vin1 0.26fF
-C168 vdd fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.11fF
-C169 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# vdd 0.14fF
-C170 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C171 XOR2IN_3/NAND2IN_3/vin2 XOR2IN_3/NAND2IN_3/w_n16_n4# 0.10fF
-C172 vdd fullAdder_3/vcin 0.12fF
-C173 fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# fullAdder_1/OR2IN_0/NOT_0/in 0.07fF
-C174 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# vdd 0.11fF
-C175 fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.06fF
-C176 fullAdder_3/OR2IN_0/w_n19_n9# vdd 0.09fF
-C177 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.06fF
-C178 vinb1 gnd 0.27fF
-C179 vdd fullAdder_0/OR2IN_0/vin2 0.06fF
-C180 gnd fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.19fF
-C181 vdd fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.11fF
-C182 vina1 XOR2IN_1/vout 0.27fF
-C183 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 0.10fF
-C184 fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 0.06fF
-C185 fullAdder_2/AND2IN_0/NOT_0/in fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# 0.07fF
-C186 fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# vdd 0.09fF
-C187 vinM fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C188 vdd fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
-C189 fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# fullAdder_0/OR2IN_0/vin1 0.03fF
-C190 vinM XOR2IN_2/NAND2IN_2/w_n16_n4# 0.10fF
-C191 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.10fF
-C192 XOR2IN_1/NAND2IN_1/w_n16_n4# XOR2IN_1/NAND2IN_3/vin1 0.08fF
-C193 vdd vina0 0.13fF
-C194 XOR2IN_3/vout vina3 0.27fF
-C195 vdd fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.11fF
-C196 vdd fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 0.08fF
-C197 fullAdder_1/vcin XOR2IN_1/vout 0.06fF
-C198 vdd XOR2IN_3/NAND2IN_2/w_n16_n4# 0.11fF
-C199 vinM XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
-C200 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 0.10fF
-C201 fullAdder_3/vcin fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# 0.03fF
-C202 vina0 XOR2IN_0/vout 0.27fF
-C203 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C204 XOR2IN_1/NAND2IN_3/w_n16_n4# vdd 0.11fF
-C205 XOR2IN_3/vout vinM 0.06fF
-C206 gnd fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 0.19fF
-C207 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_3/XOR2IN_1/vin1 0.10fF
-C208 XOR2IN_1/NAND2IN_0/w_n16_n4# vdd 0.11fF
-C209 vdd XOR2IN_0/vout 0.20fF
-C210 XOR2IN_0/NAND2IN_1/w_n16_n4# vdd 0.11fF
-C211 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 0.06fF
-C212 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_1/vin1 0.10fF
-C213 fullAdder_3/vcin fullAdder_3/XOR2IN_1/vin1 0.26fF
-C214 vina1 fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C215 gnd fullAdder_1/OR2IN_0/NOT_0/in 0.11fF
-C216 fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# fullAdder_1/OR2IN_0/vin2 0.03fF
-C217 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# vdd 0.06fF
-C218 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C219 XOR2IN_1/vout fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
-C220 vdd fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.15fF
-C221 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
-C222 gnd vina2 0.46fF
-C223 XOR2IN_3/NAND2IN_1/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.10fF
-C224 XOR2IN_0/vout fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.39fF
-C225 vdd fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.11fF
-C226 vdd fullAdder_0/AND2IN_0/NOT_0/in 0.08fF
-C227 vinM XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C228 vout3 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 0.06fF
-C229 XOR2IN_3/vout XOR2IN_3/NAND2IN_3/w_n16_n4# 0.08fF
-C230 vdd fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# 0.09fF
-C231 vdd vina1 0.13fF
-C232 fullAdder_1/OR2IN_0/NOT_0/in fullAdder_1/OR2IN_0/w_n19_n9# 0.05fF
-C233 XOR2IN_0/vout fullAdder_0/AND2IN_0/NOT_0/in 0.06fF
-C234 vdd fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# 0.06fF
-C235 vinM XOR2IN_0/NAND2IN_2/vin2 0.39fF
-C236 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 vout0 0.06fF
-C237 vinM XOR2IN_3/NAND2IN_2/vin2 0.39fF
-C238 gnd fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C239 fullAdder_2/vcin fullAdder_2/XOR2IN_1/vin1 0.26fF
-C240 vdd fullAdder_0/XOR2IN_1/vin1 0.21fF
-C241 vdd fullAdder_3/XOR2IN_1/vin1 0.21fF
-C242 vdd fullAdder_1/vcin 0.12fF
-C243 XOR2IN_1/NAND2IN_2/w_n16_n4# XOR2IN_1/NAND2IN_3/vin2 0.08fF
-C244 vdd fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.11fF
-C245 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
-C246 gnd fullAdder_2/AND2IN_1/NOT_0/in 0.05fF
-C247 vinb3 XOR2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
-C248 fullAdder_2/vcin fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 0.39fF
-C249 gnd fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.06fF
-C250 vdd fullAdder_2/OR2IN_0/vin2 0.06fF
-C251 fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# vdd 0.06fF
-C252 vdd fullAdder_1/AND2IN_1/NOT_0/in 0.08fF
-C253 XOR2IN_3/NAND2IN_1/w_n16_n4# XOR2IN_3/NAND2IN_3/vin1 0.08fF
-C254 vdd fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.11fF
-C255 fullAdder_1/vcin fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
-C256 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# vdd 0.11fF
-C257 fullAdder_1/vcin vina1 0.06fF
-C258 vdd fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
-C259 vdd fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.43fF
-C260 fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# fullAdder_0/AND2IN_1/NOT_0/in 0.07fF
-C261 XOR2IN_1/NAND2IN_3/vin1 gnd 0.13fF
-C262 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# fullAdder_3/AND2IN_0/NOT_0/in 0.08fF
-C263 vdd fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.11fF
-C264 fullAdder_2/OR2IN_0/vin2 fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# 0.03fF
-C265 vdd fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.08fF
-C266 fullAdder_3/AND2IN_1/NOT_0/in gnd 0.05fF
-C267 vinM XOR2IN_1/vout 0.06fF
-C268 XOR2IN_2/NAND2IN_3/vin2 vdd 0.08fF
-C269 vout3 vdd 0.08fF
-C270 fullAdder_2/AND2IN_0/NOT_0/in fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
-C271 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.08fF
-C272 XOR2IN_3/NAND2IN_3/w_n16_n4# XOR2IN_3/NAND2IN_3/vin1 0.10fF
-C273 gnd fullAdder_0/OR2IN_0/vin1 0.26fF
-C274 fullAdder_3/vcin vina3 0.06fF
-C275 vdd fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.11fF
-C276 vinM fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
-C277 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 0.08fF
-C278 XOR2IN_1/vout fullAdder_1/AND2IN_0/NOT_0/in 0.06fF
-C279 fullAdder_2/vcin fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C280 XOR2IN_2/NAND2IN_1/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.10fF
-C281 vinb2 XOR2IN_2/NAND2IN_1/w_n16_n4# 0.10fF
-C282 vinM fullAdder_0/OR2IN_0/vin2 0.06fF
-C283 fullAdder_2/vcin vina2 0.06fF
-C284 gnd fullAdder_1/OR2IN_0/vin2 0.27fF
-C285 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.08fF
-C286 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 0.06fF
-C287 vdd fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.11fF
-C288 fullAdder_1/vcin fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C289 vinb0 gnd 0.27fF
-C290 fullAdder_0/OR2IN_0/vin1 fullAdder_0/OR2IN_0/w_n19_n9# 0.16fF
-C291 XOR2IN_3/NAND2IN_1/w_n16_n4# vdd 0.11fF
-C292 vdd fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.15fF
-C293 vdd fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# 0.14fF
-C294 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.08fF
-C295 XOR2IN_2/vout fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
-C296 vdd fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.11fF
-C297 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_2/XOR2IN_1/vin1 0.10fF
-C298 XOR2IN_1/NAND2IN_2/vin2 vdd 0.08fF
-C299 vdd vina3 0.13fF
-C300 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 0.06fF
-C301 XOR2IN_1/vout fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.39fF
-C302 XOR2IN_3/NAND2IN_0/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.08fF
-C303 fullAdder_1/OR2IN_0/vin2 fullAdder_1/OR2IN_0/w_n19_n9# 0.12fF
-C304 vinM XOR2IN_3/NAND2IN_2/w_n16_n4# 0.10fF
-C305 fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# fullAdder_1/AND2IN_0/NOT_0/in 0.08fF
-C306 gnd XOR2IN_2/vout 0.28fF
-C307 XOR2IN_1/NAND2IN_0/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.08fF
-C308 vdd fullAdder_2/XOR2IN_1/vin1 0.21fF
-C309 vinM vdd 0.06fF
-C310 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.08fF
-C311 vdd fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
-C312 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 gnd 0.06fF
-C313 vinM XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C314 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 0.08fF
-C315 fullAdder_2/vcin fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
-C316 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 0.08fF
-C317 fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.08fF
-C318 vdd fullAdder_1/AND2IN_0/NOT_0/in 0.08fF
-C319 XOR2IN_2/NAND2IN_0/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.08fF
-C320 vdd fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 0.08fF
-C321 fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# fullAdder_2/OR2IN_0/NOT_0/in 0.07fF
+C0 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C1 vina0 vdd 0.13fF
+C2 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 gnd 0.19fF
+C3 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_1/vin1 0.10fF
+C4 vina2 vinb1 0.06fF
+C5 fullAdder_3/OR2IN_0/vin1 fullAdder_3/OR2IN_0/vin2 0.11fF
+C6 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_3/vcin 0.10fF
+C7 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
+C8 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/vin2 0.06fF
+C9 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C10 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.10fF
+C11 fullAdder_3/OR2IN_0/vin2 fullAdder_3/vcin 0.06fF
+C12 fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 0.08fF
+C13 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.06fF
+C14 vina0 XOR2IN_0/vout 0.27fF
+C15 gnd fullAdder_1/OR2IN_0/NOT_0/in 0.11fF
+C16 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_3/vin1 0.06fF
+C17 fullAdder_2/OR2IN_0/vin1 gnd 0.26fF
+C18 vina3 vinM 0.06fF
+C19 vdd fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.11fF
+C20 vout3 vdd 0.08fF
+C21 XOR2IN_2/NAND2IN_3/vin1 vdd 0.43fF
+C22 fullAdder_1/vcin fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C23 XOR2IN_1/vout fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.39fF
+C24 XOR2IN_2/NAND2IN_0/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.08fF
+C25 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C26 vina3 vinb2 0.06fF
+C27 XOR2IN_2/vout fullAdder_2/AND2IN_0/NOT_0/in 0.06fF
+C28 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
+C29 gnd fullAdder_1/vcin 0.48fF
+C30 XOR2IN_2/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C31 gnd vina1 0.46fF
+C32 gnd fullAdder_0/AND2IN_1/NOT_0/in 0.05fF
+C33 fullAdder_3/OR2IN_0/vin2 gnd 0.27fF
+C34 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/w_n16_n4# 0.08fF
+C35 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.10fF
+C36 vdd fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.11fF
+C37 fullAdder_3/XOR2IN_1/vin1 vdd 0.21fF
+C38 fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_0/XOR2IN_1/vin1 0.10fF
+C39 XOR2IN_0/NAND2IN_2/vin2 gnd 0.19fF
+C40 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 0.10fF
+C41 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.08fF
+C42 vdd fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.08fF
+C43 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/vout 0.06fF
+C44 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.10fF
+C45 fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# vdd 0.14fF
+C46 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C47 fullAdder_1/vcin vina1 0.06fF
+C48 vdd fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.11fF
+C49 fullAdder_2/OR2IN_0/vin2 fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# 0.03fF
+C50 vdd fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# 0.09fF
+C51 gnd fullAdder_0/AND2IN_0/NOT_0/in 0.05fF
+C52 vina3 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C53 vina2 vinM 0.06fF
+C54 XOR2IN_0/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C55 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.08fF
+C56 vout0 vdd 0.18fF
+C57 vcout gnd 0.07fF
+C58 vina3 vinb0 0.09fF
+C59 fullAdder_0/OR2IN_0/NOT_0/in fullAdder_0/OR2IN_0/w_n19_n9# 0.05fF
+C60 fullAdder_3/AND2IN_1/NOT_0/in gnd 0.05fF
+C61 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
+C62 XOR2IN_0/NAND2IN_2/w_n16_n4# XOR2IN_0/NAND2IN_3/vin2 0.08fF
+C63 gnd vina0 0.40fF
+C64 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 vout3 0.06fF
+C65 XOR2IN_1/NAND2IN_2/vin2 vinM 0.39fF
+C66 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
+C67 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 vdd 0.08fF
+C68 XOR2IN_3/NAND2IN_3/vin2 XOR2IN_3/NAND2IN_3/w_n16_n4# 0.10fF
+C69 XOR2IN_2/vout vdd 0.20fF
+C70 fullAdder_2/OR2IN_0/vin2 fullAdder_2/OR2IN_0/w_n19_n9# 0.12fF
+C71 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/vcin 0.26fF
+C72 XOR2IN_3/vout vdd 0.20fF
+C73 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/vin2 0.08fF
+C74 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 vdd 0.43fF
+C75 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_2/vout 0.39fF
+C76 vinM fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.39fF
+C77 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_3/AND2IN_1/NOT_0/in 0.08fF
+C78 fullAdder_0/XOR2IN_1/vin1 vdd 0.21fF
+C79 XOR2IN_1/vout fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C80 gnd XOR2IN_2/NAND2IN_3/vin1 0.13fF
+C81 fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# fullAdder_1/OR2IN_0/vin1 0.03fF
+C82 fullAdder_0/OR2IN_0/vin2 fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# 0.03fF
+C83 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 vdd 0.43fF
+C84 fullAdder_0/OR2IN_0/vin2 fullAdder_0/OR2IN_0/NOT_0/in 0.08fF
+C85 fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C86 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# vina2 0.10fF
+C87 XOR2IN_0/NAND2IN_3/w_n16_n4# XOR2IN_0/NAND2IN_3/vin1 0.10fF
+C88 fullAdder_2/vcin fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# 0.03fF
+C89 vcout fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# 0.03fF
+C90 fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_2/vout 0.10fF
+C91 XOR2IN_1/NAND2IN_2/w_n16_n4# vinM 0.10fF
+C92 fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C93 vinb0 vina2 0.06fF
+C94 fullAdder_3/XOR2IN_1/vin1 gnd 0.52fF
+C95 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# XOR2IN_2/vout 0.10fF
+C96 fullAdder_2/OR2IN_0/vin2 vdd 0.06fF
+C97 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.08fF
+C98 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 vout2 0.06fF
+C99 XOR2IN_1/vout fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
+C100 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.39fF
+C101 vdd fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.11fF
+C102 vinM XOR2IN_1/vout 0.06fF
+C103 vinM XOR2IN_3/NAND2IN_2/vin2 0.39fF
+C104 fullAdder_3/AND2IN_0/NOT_0/in vdd 0.08fF
+C105 XOR2IN_0/NAND2IN_3/vin1 vdd 0.43fF
+C106 fullAdder_3/vcin XOR2IN_3/vout 0.06fF
+C107 XOR2IN_0/NAND2IN_1/w_n16_n4# XOR2IN_0/NAND2IN_3/vin1 0.08fF
+C108 fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 0.06fF
+C109 gnd fullAdder_0/OR2IN_0/NOT_0/in 0.11fF
+C110 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_3/XOR2IN_1/vin1 0.10fF
+C111 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 vdd 0.43fF
+C112 vina1 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
+C113 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.06fF
+C114 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C115 vdd fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.15fF
+C116 XOR2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C117 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 XOR2IN_3/vout 0.39fF
+C118 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_3/vin1 0.06fF
+C119 vinb3 vdd 0.06fF
+C120 vinb2 XOR2IN_2/NAND2IN_1/w_n16_n4# 0.10fF
+C121 fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_0/AND2IN_1/NOT_0/in 0.08fF
+C122 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/vin1 0.06fF
+C123 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.08fF
+C124 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 0.06fF
+C125 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 gnd 0.19fF
+C126 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C127 XOR2IN_2/vout gnd 0.28fF
+C128 XOR2IN_3/vout gnd 0.28fF
+C129 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 gnd 0.06fF
+C130 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C131 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C132 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C133 fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.06fF
+C134 XOR2IN_0/NAND2IN_2/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C135 XOR2IN_1/NAND2IN_3/vin2 vdd 0.08fF
+C136 gnd fullAdder_0/XOR2IN_1/vin1 0.52fF
+C137 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/AND2IN_1/NOT_0/in 0.06fF
+C138 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 gnd 0.06fF
+C139 fullAdder_0/AND2IN_0/NOT_0/in fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# 0.07fF
+C140 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 vdd 0.08fF
+C141 XOR2IN_1/NAND2IN_0/w_n16_n4# vinb1 0.10fF
+C142 fullAdder_3/OR2IN_0/w_n19_n9# vdd 0.09fF
+C143 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.08fF
+C144 vinb1 vdd 0.16fF
+C145 vinM fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
+C146 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C147 fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# fullAdder_1/AND2IN_1/NOT_0/in 0.07fF
+C148 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/AND2IN_1/NOT_0/in 0.06fF
+C149 vinM fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C150 fullAdder_2/OR2IN_0/vin2 fullAdder_2/OR2IN_0/vin1 0.11fF
+C151 fullAdder_2/OR2IN_0/vin2 gnd 0.27fF
+C152 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# vout1 0.08fF
+C153 vina3 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
+C154 vina2 fullAdder_2/vcin 0.06fF
+C155 XOR2IN_3/NAND2IN_1/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.10fF
+C156 fullAdder_1/AND2IN_0/NOT_0/in fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
+C157 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
+C158 fullAdder_3/AND2IN_0/NOT_0/in gnd 0.05fF
+C159 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_1/vout 0.10fF
+C160 XOR2IN_0/NAND2IN_3/vin1 gnd 0.13fF
+C161 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C162 vinb3 XOR2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
+C163 vdd fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
+C164 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_3/vin2 0.06fF
+C165 XOR2IN_2/vout fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C166 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.08fF
+C167 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 gnd 0.06fF
+C168 XOR2IN_1/NAND2IN_1/w_n16_n4# vinb1 0.10fF
+C169 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.08fF
+C170 vdd fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.11fF
+C171 vdd fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# 0.06fF
+C172 gnd fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.19fF
+C173 XOR2IN_1/NAND2IN_3/w_n16_n4# XOR2IN_1/NAND2IN_3/vin1 0.10fF
+C174 fullAdder_3/OR2IN_0/vin1 fullAdder_3/OR2IN_0/w_n19_n9# 0.16fF
+C175 gnd vinb3 0.27fF
+C176 vinM XOR2IN_3/NAND2IN_2/w_n16_n4# 0.10fF
+C177 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 0.06fF
+C178 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/vcin 0.26fF
+C179 fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 0.08fF
+C180 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.10fF
+C181 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.08fF
+C182 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.08fF
+C183 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_3/vin1 0.06fF
+C184 XOR2IN_1/NAND2IN_0/w_n16_n4# vinM 0.10fF
+C185 vinM XOR2IN_2/NAND2IN_2/vin2 0.39fF
+C186 vdd fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.11fF
+C187 vinM vdd 0.06fF
+C188 XOR2IN_1/NAND2IN_2/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.10fF
+C189 XOR2IN_1/NAND2IN_3/vin2 gnd 0.06fF
+C190 XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.08fF
+C191 vdd fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.11fF
+C192 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C193 vinb2 vdd 0.16fF
+C194 vinb1 gnd 0.27fF
+C195 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.10fF
+C196 vdd fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# 0.06fF
+C197 fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# vdd 0.09fF
+C198 fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# vdd 0.06fF
+C199 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
+C200 fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 vdd 0.15fF
+C201 fullAdder_3/OR2IN_0/vin2 fullAdder_3/OR2IN_0/w_n19_n9# 0.12fF
+C202 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C203 XOR2IN_0/vout fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.39fF
+C204 vinM fullAdder_0/OR2IN_0/vin2 0.06fF
+C205 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C206 fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# fullAdder_2/AND2IN_1/NOT_0/in 0.07fF
+C207 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 vdd 0.08fF
+C208 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
+C209 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C210 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 0.10fF
+C211 XOR2IN_3/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C212 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C213 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# fullAdder_2/vcin 0.10fF
+C214 fullAdder_1/OR2IN_0/vin1 fullAdder_1/OR2IN_0/w_n19_n9# 0.16fF
+C215 vinb0 vdd 0.13fF
+C216 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# 0.07fF
+C217 vinb0 XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
+C218 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 vdd 0.43fF
+C219 vina0 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
+C220 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/vcin 0.39fF
+C221 XOR2IN_2/NAND2IN_3/vin2 XOR2IN_2/NAND2IN_3/w_n16_n4# 0.10fF
+C222 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 vdd 0.08fF
+C223 vinM XOR2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
+C224 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.06fF
+C225 vdd fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.43fF
+C226 XOR2IN_3/NAND2IN_2/w_n16_n4# XOR2IN_3/NAND2IN_3/vin2 0.08fF
+C227 vina3 vdd 0.13fF
+C228 vina1 fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C229 XOR2IN_1/NAND2IN_3/vin1 vdd 0.43fF
+C230 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 vdd 0.08fF
+C231 fullAdder_1/vcin fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C232 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 0.08fF
+C233 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.06fF
+C234 XOR2IN_3/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C235 vinM gnd 1.00fF
+C236 vdd fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
+C237 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C238 fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.10fF
+C239 XOR2IN_3/NAND2IN_3/vin2 vdd 0.08fF
+C240 fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# vdd 0.06fF
+C241 fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C242 fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.08fF
+C243 XOR2IN_1/NAND2IN_3/w_n16_n4# XOR2IN_1/vout 0.08fF
+C244 fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# fullAdder_1/OR2IN_0/NOT_0/in 0.07fF
+C245 vinb2 gnd 0.27fF
+C246 vinM XOR2IN_2/NAND2IN_2/w_n16_n4# 0.10fF
+C247 fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.08fF
+C248 fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C249 XOR2IN_3/NAND2IN_3/w_n16_n4# XOR2IN_3/NAND2IN_3/vin1 0.10fF
+C250 vinM vina1 0.06fF
+C251 XOR2IN_1/NAND2IN_1/w_n16_n4# XOR2IN_1/NAND2IN_3/vin1 0.08fF
+C252 fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# fullAdder_2/OR2IN_0/vin1 0.03fF
+C253 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.08fF
+C254 fullAdder_1/vcin fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
+C255 vdd fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# 0.06fF
+C256 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
+C257 gnd fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.19fF
+C258 XOR2IN_0/vout fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C259 vinM XOR2IN_0/NAND2IN_2/vin2 0.39fF
+C260 fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# fullAdder_0/OR2IN_0/vin1 0.03fF
+C261 fullAdder_3/AND2IN_0/NOT_0/in XOR2IN_3/vout 0.06fF
+C262 vina3 fullAdder_3/vcin 0.06fF
+C263 fullAdder_3/OR2IN_0/NOT_0/in gnd 0.11fF
+C264 vout2 vdd 0.15fF
+C265 vina2 vdd 0.13fF
+C266 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.06fF
+C267 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C268 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_2/vcin 0.10fF
+C269 XOR2IN_3/NAND2IN_1/w_n16_n4# XOR2IN_3/NAND2IN_3/vin1 0.08fF
+C270 fullAdder_3/OR2IN_0/vin2 fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# 0.03fF
+C271 XOR2IN_1/NAND2IN_0/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.08fF
+C272 fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C273 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
+C274 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
+C275 vinb0 gnd 0.27fF
+C276 XOR2IN_1/NAND2IN_2/vin2 vdd 0.08fF
+C277 fullAdder_3/vcin fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# 0.03fF
+C278 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.08fF
+C279 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/vin2 0.08fF
+C280 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 gnd 0.06fF
+C281 XOR2IN_0/vout fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
+C282 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# vdd 0.06fF
+C283 fullAdder_2/XOR2IN_1/vin1 vdd 0.21fF
+C284 gnd fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.06fF
+C285 fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 vdd 0.08fF
+C286 fullAdder_2/vcin vdd 0.12fF
+C287 vina2 fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C288 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C289 vina3 gnd 0.46fF
+C290 XOR2IN_1/NAND2IN_3/vin1 gnd 0.13fF
+C291 fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.06fF
+C292 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_3/vout 0.10fF
+C293 vdd fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# 0.06fF
+C294 vinb0 vina1 0.06fF
+C295 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/AND2IN_1/NOT_0/in 0.06fF
+C296 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# 0.07fF
+C297 XOR2IN_3/NAND2IN_2/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.10fF
+C298 gnd XOR2IN_3/NAND2IN_3/vin2 0.06fF
+C299 XOR2IN_2/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C300 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
+C301 fullAdder_0/XOR2IN_1/vin1 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C302 XOR2IN_1/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C303 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.10fF
+C304 XOR2IN_1/vout fullAdder_1/AND2IN_0/NOT_0/in 0.06fF
+C305 vdd fullAdder_1/OR2IN_0/vin1 0.06fF
+C306 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
+C307 vinM XOR2IN_2/NAND2IN_0/w_n16_n4# 0.10fF
+C308 vdd fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.43fF
+C309 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C310 fullAdder_1/OR2IN_0/vin2 fullAdder_1/OR2IN_0/vin1 0.11fF
+C311 vdd fullAdder_1/OR2IN_0/w_n19_n9# 0.09fF
+C312 vina1 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C313 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_2/vcin 0.10fF
+C314 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# fullAdder_3/OR2IN_0/vin1 0.03fF
+C315 vdd XOR2IN_1/vout 0.20fF
+C316 fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# fullAdder_2/AND2IN_0/NOT_0/in 0.07fF
+C317 fullAdder_1/OR2IN_0/vin2 fullAdder_1/OR2IN_0/w_n19_n9# 0.12fF
+C318 XOR2IN_3/NAND2IN_2/vin2 vdd 0.08fF
+C319 XOR2IN_2/NAND2IN_1/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.10fF
+C320 fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.08fF
+C321 XOR2IN_2/NAND2IN_1/w_n16_n4# vdd 0.11fF
 C322 vinb2 XOR2IN_2/NAND2IN_0/w_n16_n4# 0.10fF
-C323 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 vout2 0.06fF
-C324 gnd fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.19fF
-C325 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# vout3 0.08fF
-C326 vdd fullAdder_2/OR2IN_0/vin1 0.06fF
-C327 vdd XOR2IN_3/NAND2IN_3/w_n16_n4# 0.11fF
-C328 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 0.06fF
-C329 vinM vina1 0.06fF
-C330 XOR2IN_2/NAND2IN_3/w_n16_n4# XOR2IN_2/NAND2IN_3/vin1 0.10fF
-C331 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.06fF
-C332 fullAdder_1/vcin fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C333 fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_0/AND2IN_1/NOT_0/in 0.08fF
-C334 vinb1 vdd 0.16fF
-C335 gnd fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C336 gnd fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.06fF
-C337 vinM fullAdder_0/XOR2IN_1/vin1 0.26fF
-C338 vdd fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.15fF
-C339 XOR2IN_3/vout fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C340 vinb1 XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C341 vcout gnd 0.07fF
-C342 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_2/XOR2IN_1/vin1 0.10fF
-C343 fullAdder_2/OR2IN_0/vin2 fullAdder_2/OR2IN_0/NOT_0/in 0.08fF
-C344 fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_1/AND2IN_1/NOT_0/in 0.08fF
-C345 gnd fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.06fF
-C346 gnd fullAdder_0/AND2IN_1/NOT_0/in 0.05fF
-C347 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 0.10fF
-C348 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.08fF
-C349 gnd XOR2IN_2/NAND2IN_2/vin2 0.19fF
-C350 gnd fullAdder_3/AND2IN_0/NOT_0/in 0.05fF
-C351 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 0.10fF
-C352 vinb2 gnd 0.27fF
-C353 vdd fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 0.08fF
-C354 fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.08fF
-C355 XOR2IN_0/NAND2IN_0/w_n16_n4# vinb0 0.10fF
-C356 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 gnd 0.06fF
-C357 vdd fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# 0.14fF
-C358 fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# fullAdder_0/OR2IN_0/NOT_0/in 0.07fF
-C359 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# vdd 0.11fF
-C360 fullAdder_2/OR2IN_0/vin2 fullAdder_2/OR2IN_0/vin1 0.11fF
-C361 vdd vina2 0.13fF
-C362 vdd fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.11fF
-C363 XOR2IN_1/NAND2IN_2/w_n16_n4# vdd 0.11fF
-C364 fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 0.08fF
-C365 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
-C366 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# vout2 0.08fF
-C367 fullAdder_2/vcin XOR2IN_2/vout 0.06fF
-C368 vdd fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.11fF
-C369 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.10fF
-C370 vdd fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 0.43fF
-C371 XOR2IN_3/NAND2IN_0/w_n16_n4# vdd 0.11fF
-C372 fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C373 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
-C374 fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 0.08fF
-C375 fullAdder_1/vcin fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 0.39fF
-C376 XOR2IN_2/NAND2IN_2/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.10fF
-C377 fullAdder_3/OR2IN_0/NOT_0/in gnd 0.11fF
-C378 gnd XOR2IN_3/NAND2IN_3/vin2 0.06fF
-C379 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_1/vout 0.10fF
-C380 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.08fF
-C381 vdd fullAdder_2/AND2IN_1/NOT_0/in 0.08fF
-C382 vdd fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.11fF
-C383 fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C384 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 0.08fF
-C385 XOR2IN_2/NAND2IN_1/w_n16_n4# XOR2IN_2/NAND2IN_3/vin1 0.08fF
-C386 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_3/AND2IN_1/NOT_0/in 0.08fF
-C387 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_3/XOR2IN_1/vin1 0.08fF
-C388 vdd fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.43fF
-C389 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
-C390 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C391 vdd fullAdder_2/OR2IN_0/w_n19_n9# 0.09fF
-C392 gnd vinb3 0.27fF
-C393 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_3/XOR2IN_1/vin1 0.10fF
-C394 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C395 vdd fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 0.08fF
-C396 XOR2IN_3/vout fullAdder_3/AND2IN_0/NOT_0/in 0.06fF
-C397 XOR2IN_1/NAND2IN_3/vin2 gnd 0.06fF
-C398 fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 0.06fF
-C399 XOR2IN_2/NAND2IN_3/w_n16_n4# vdd 0.11fF
-C400 vinM vina3 0.06fF
-C401 vinM XOR2IN_1/NAND2IN_2/vin2 0.39fF
-C402 gnd fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 0.19fF
-C403 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C404 vdd fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.11fF
-C405 vina0 fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C406 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 vout1 0.06fF
-C407 fullAdder_0/OR2IN_0/vin2 fullAdder_0/OR2IN_0/vin1 0.11fF
-C408 XOR2IN_1/NAND2IN_3/w_n16_n4# XOR2IN_1/NAND2IN_3/vin1 0.10fF
-C409 XOR2IN_1/NAND2IN_3/vin1 vdd 0.43fF
-C410 fullAdder_1/OR2IN_0/vin2 fullAdder_1/OR2IN_0/vin1 0.11fF
-C411 fullAdder_3/OR2IN_0/vin1 gnd 0.26fF
-C412 vdd fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
-C413 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 vdd 0.08fF
-C414 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.08fF
-C415 XOR2IN_0/vout fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C416 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C417 fullAdder_3/AND2IN_1/NOT_0/in vdd 0.08fF
-C418 fullAdder_2/AND2IN_0/NOT_0/in XOR2IN_2/vout 0.06fF
-C419 vina2 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C420 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.10fF
-C421 fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# fullAdder_2/vcin 0.03fF
-C422 vdd fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
-C423 vdd fullAdder_0/OR2IN_0/vin1 0.06fF
-C424 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.10fF
-C425 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_3/vin1 0.06fF
-C426 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# fullAdder_3/AND2IN_1/NOT_0/in 0.07fF
-C427 vdd fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# 0.06fF
-C428 vdd fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.11fF
-C429 fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# fullAdder_0/AND2IN_0/NOT_0/in 0.08fF
-C430 XOR2IN_3/vout gnd 0.28fF
-C431 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.10fF
-C432 vdd vout2 0.15fF
-C433 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_1/vin1 0.10fF
-C434 XOR2IN_3/vout XOR2IN_3/NAND2IN_3/vin2 0.06fF
-C435 fullAdder_2/OR2IN_0/vin2 fullAdder_2/OR2IN_0/w_n19_n9# 0.12fF
-C436 vdd fullAdder_1/OR2IN_0/vin2 0.06fF
-C437 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
-C438 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
-C439 fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.10fF
-C440 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_3/vout 0.10fF
-C441 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 gnd 0.19fF
-C442 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/vin1 0.06fF
-C443 vinb0 vdd 0.16fF
-C444 vina1 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C445 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
-C446 vdd fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.11fF
-C447 gnd fullAdder_1/XOR2IN_1/vin1 0.52fF
-C448 fullAdder_3/AND2IN_1/NOT_0/in fullAdder_3/XOR2IN_1/vin1 0.06fF
-C449 vdd fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# 0.06fF
-C450 XOR2IN_0/NAND2IN_1/w_n16_n4# vinb0 0.10fF
-C451 XOR2IN_0/vout fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
-C452 XOR2IN_0/NAND2IN_2/vin2 gnd 0.19fF
-C453 vdd XOR2IN_2/vout 0.20fF
-C454 vdd fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# 0.09fF
-C455 vina0 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C456 gnd XOR2IN_3/NAND2IN_2/vin2 0.19fF
-C457 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 0.08fF
-C458 fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C459 vdd fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# 0.06fF
-C460 gnd fullAdder_2/vcin 0.48fF
-C461 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 vdd 0.43fF
-C462 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C463 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_3/vin2 0.06fF
-C464 gnd XOR2IN_2/NAND2IN_3/vin1 0.13fF
-C465 fullAdder_1/vcin fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# 0.03fF
-C466 vdd fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
-C467 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
-C468 vdd fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 0.08fF
-C469 vina2 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
-C470 gnd fullAdder_0/OR2IN_0/NOT_0/in 0.11fF
-C471 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_0/vout 0.10fF
-C472 XOR2IN_2/NAND2IN_1/w_n16_n4# vdd 0.11fF
-C473 XOR2IN_1/NAND2IN_2/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.10fF
-C474 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
-C475 vinM vina2 0.06fF
-C476 vina2 fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
-C477 fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# fullAdder_0/OR2IN_0/vin2 0.03fF
-C478 XOR2IN_1/NAND2IN_1/w_n16_n4# vdd 0.11fF
-C479 fullAdder_3/OR2IN_0/vin2 gnd 0.27fF
-C480 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.08fF
-C481 vdd fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.08fF
-C482 XOR2IN_2/NAND2IN_3/vin2 XOR2IN_2/NAND2IN_3/w_n16_n4# 0.10fF
-C483 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C484 fullAdder_1/vcin fullAdder_1/OR2IN_0/vin2 0.06fF
-C485 vinM XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
-C486 fullAdder_3/OR2IN_0/vin2 fullAdder_3/OR2IN_0/NOT_0/in 0.08fF
-C487 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 0.08fF
-C488 XOR2IN_0/NAND2IN_3/vin1 gnd 0.13fF
-C489 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.08fF
-C490 vinM XOR2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
-C491 vdd fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.43fF
-C492 vdd fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 0.43fF
-C493 fullAdder_0/OR2IN_0/NOT_0/in fullAdder_0/OR2IN_0/w_n19_n9# 0.05fF
-C494 XOR2IN_0/NAND2IN_3/vin2 gnd 0.06fF
-C495 gnd XOR2IN_3/NAND2IN_3/vin1 0.13fF
-C496 vdd fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# 0.09fF
-C497 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# vdd 0.11fF
-C498 vcout vdd 0.06fF
-C499 fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# fullAdder_3/AND2IN_0/NOT_0/in 0.07fF
-C500 XOR2IN_3/vout fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 0.39fF
-C501 fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# fullAdder_1/OR2IN_0/vin1 0.03fF
-C502 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/w_n19_n9# 0.05fF
-C503 vdd fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.43fF
-C504 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# vout0 0.08fF
-C505 fullAdder_2/XOR2IN_1/vin1 fullAdder_2/AND2IN_1/NOT_0/in 0.06fF
-C506 vdd fullAdder_0/AND2IN_1/NOT_0/in 0.08fF
-C507 fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.06fF
-C508 XOR2IN_0/NAND2IN_2/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.10fF
-C509 fullAdder_3/OR2IN_0/vin2 fullAdder_3/OR2IN_0/vin1 0.11fF
-C510 gnd XOR2IN_1/vout 0.28fF
-C511 fullAdder_1/OR2IN_0/w_n19_n9# Gnd 1.40fF
-C512 fullAdder_1/OR2IN_0/NOT_0/in Gnd 0.42fF
-C513 fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C514 fullAdder_1/AND2IN_1/NOT_0/in Gnd 0.37fF
-C515 fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
-C516 fullAdder_1/XOR2IN_1/vin1 Gnd 3.73fF
-C517 fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C518 fullAdder_1/AND2IN_0/NOT_0/in Gnd 0.37fF
-C519 fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C520 fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C521 fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
-C522 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C523 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
-C524 fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
-C525 fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C526 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C527 XOR2IN_1/vout Gnd 6.27fF
-C528 vina1 Gnd 10.62fF
-C529 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C530 vout1 Gnd 0.94fF
-C531 fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
-C532 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C533 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
-C534 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
-C535 fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C536 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C537 fullAdder_1/vcin Gnd 6.72fF
-C538 fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C539 fullAdder_0/OR2IN_0/w_n19_n9# Gnd 1.40fF
-C540 fullAdder_0/OR2IN_0/NOT_0/in Gnd 0.42fF
-C541 fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C542 fullAdder_0/AND2IN_1/NOT_0/in Gnd 0.37fF
-C543 fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
-C544 fullAdder_0/XOR2IN_1/vin1 Gnd 3.73fF
-C545 fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C546 vdd Gnd 18.81fF
-C547 fullAdder_0/AND2IN_0/NOT_0/in Gnd 0.37fF
-C548 fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C549 fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C550 fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
-C551 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C552 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
-C553 fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
-C554 fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C555 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C556 XOR2IN_0/vout Gnd 3.62fF
-C557 vina0 Gnd 7.59fF
-C558 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C559 vout0 Gnd 0.69fF
-C560 fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
-C561 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C562 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
-C563 fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
-C564 fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C565 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C566 fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C567 XOR2IN_3/NAND2IN_3/vin1 Gnd 0.54fF
-C568 XOR2IN_3/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C569 XOR2IN_3/NAND2IN_3/vin2 Gnd 0.55fF
-C570 XOR2IN_3/NAND2IN_2/vin2 Gnd 0.80fF
-C571 XOR2IN_3/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C572 XOR2IN_3/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C573 vinb3 Gnd 2.81fF
-C574 XOR2IN_3/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C575 XOR2IN_2/NAND2IN_3/vin1 Gnd 0.54fF
-C576 XOR2IN_2/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C577 XOR2IN_2/NAND2IN_3/vin2 Gnd 0.55fF
-C578 XOR2IN_2/NAND2IN_2/vin2 Gnd 0.80fF
-C579 XOR2IN_2/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C580 XOR2IN_2/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C581 vinb2 Gnd 2.20fF
-C582 XOR2IN_2/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C583 XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
-C584 XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C585 XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
-C586 XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
-C587 XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C588 XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C589 vinb1 Gnd 2.86fF
-C590 XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C591 XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
-C592 XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C593 XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
-C594 XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
-C595 XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C596 XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C597 vinM Gnd 20.87fF
-C598 vinb0 Gnd 3.09fF
-C599 XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C600 fullAdder_3/OR2IN_0/w_n19_n9# Gnd 1.40fF
-C601 vcout Gnd 0.16fF
-C602 fullAdder_3/OR2IN_0/NOT_0/in Gnd 0.42fF
-C603 fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C604 fullAdder_3/AND2IN_1/NOT_0/in Gnd 0.37fF
-C605 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
-C606 fullAdder_3/XOR2IN_1/vin1 Gnd 3.73fF
-C607 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C608 fullAdder_3/AND2IN_0/NOT_0/in Gnd 0.37fF
-C609 fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C610 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C611 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
-C612 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C613 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
-C614 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
-C615 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C616 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C617 XOR2IN_3/vout Gnd 6.38fF
-C618 vina3 Gnd 10.88fF
-C619 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C620 vout3 Gnd 0.44fF
-C621 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
-C622 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C623 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
-C624 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
-C625 fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C626 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C627 fullAdder_3/vcin Gnd 6.69fF
-C628 fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C629 fullAdder_2/OR2IN_0/w_n19_n9# Gnd 1.40fF
-C630 fullAdder_2/OR2IN_0/NOT_0/in Gnd 0.42fF
-C631 fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C632 fullAdder_2/AND2IN_1/NOT_0/in Gnd 0.37fF
-C633 fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
-C634 fullAdder_2/XOR2IN_1/vin1 Gnd 3.73fF
-C635 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C636 fullAdder_2/AND2IN_0/NOT_0/in Gnd 0.37fF
-C637 fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
-C638 fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C639 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
-C640 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C641 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
-C642 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
-C643 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C644 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C645 XOR2IN_2/vout Gnd 6.48fF
-C646 vina2 Gnd 10.90fF
-C647 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-C648 vout2 Gnd 0.94fF
-C649 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
-C650 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
-C651 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
-C652 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
-C653 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
-C654 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
-C655 fullAdder_2/vcin Gnd 6.68fF
-C656 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
-
+C323 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C324 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# fullAdder_3/AND2IN_0/NOT_0/in 0.08fF
+C325 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.06fF
+C326 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_3/vin2 0.06fF
+C327 vina2 gnd 0.46fF
+C328 fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 vdd 0.43fF
+C329 vinM fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C330 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_1/vin1 0.10fF
+C331 XOR2IN_2/NAND2IN_3/vin2 vdd 0.08fF
+C332 vdd fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 0.08fF
+C333 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
+C334 vinM XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
+C335 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 0.10fF
+C336 fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# fullAdder_0/AND2IN_1/NOT_0/in 0.07fF
+C337 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C338 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C339 fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C340 XOR2IN_1/NAND2IN_2/vin2 gnd 0.19fF
+C341 XOR2IN_1/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C342 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C343 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# vout0 0.08fF
+C344 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/AND2IN_1/NOT_0/in 0.06fF
+C345 fullAdder_2/XOR2IN_1/vin1 gnd 0.52fF
+C346 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 0.06fF
+C347 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 vdd 0.08fF
+C348 fullAdder_0/AND2IN_0/NOT_0/in fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
+C349 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
+C350 gnd fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 0.19fF
+C351 fullAdder_2/vcin gnd 0.48fF
+C352 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.10fF
+C353 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_0/vout 0.10fF
+C354 XOR2IN_2/vout vinM 0.06fF
+C355 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# 0.08fF
+C356 XOR2IN_3/vout vinM 0.06fF
+C357 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 vdd 0.08fF
+C358 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_3/vin1 0.06fF
+C359 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
+C360 fullAdder_2/OR2IN_0/NOT_0/in fullAdder_2/OR2IN_0/w_n19_n9# 0.05fF
+C361 vina0 fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C362 vinM fullAdder_0/XOR2IN_1/vin1 0.26fF
+C363 fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# vdd 0.09fF
+C364 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
+C365 fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C366 XOR2IN_3/NAND2IN_0/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.08fF
+C367 vdd fullAdder_1/XOR2IN_1/vin1 0.21fF
+C368 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.08fF
+C369 fullAdder_2/AND2IN_0/NOT_0/in vdd 0.08fF
+C370 fullAdder_1/vcin fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# 0.03fF
+C371 vina2 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C372 fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C373 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 vout0 0.06fF
+C374 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C375 fullAdder_1/OR2IN_0/NOT_0/in fullAdder_1/OR2IN_0/w_n19_n9# 0.05fF
+C376 gnd fullAdder_1/OR2IN_0/vin1 0.26fF
+C377 gnd fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.06fF
+C378 fullAdder_3/vcin fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
+C379 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 0.10fF
+C380 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# 0.08fF
+C381 gnd XOR2IN_1/vout 0.28fF
+C382 gnd XOR2IN_3/NAND2IN_2/vin2 0.19fF
+C383 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# vout2 0.08fF
+C384 fullAdder_2/OR2IN_0/w_n19_n9# vdd 0.09fF
+C385 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
+C386 vdd fullAdder_1/AND2IN_1/NOT_0/in 0.08fF
+C387 gnd fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 0.06fF
+C388 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# fullAdder_3/AND2IN_1/NOT_0/in 0.07fF
+C389 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.08fF
+C390 fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# fullAdder_2/AND2IN_0/NOT_0/in 0.08fF
+C391 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_3/vout 0.10fF
+C392 gnd XOR2IN_2/NAND2IN_3/vin2 0.06fF
+C393 XOR2IN_0/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C394 fullAdder_1/vcin XOR2IN_1/vout 0.06fF
+C395 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 vout1 0.06fF
+C396 XOR2IN_3/vout XOR2IN_3/NAND2IN_3/w_n16_n4# 0.08fF
+C397 XOR2IN_3/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C398 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# vdd 0.14fF
+C399 vina1 XOR2IN_1/vout 0.27fF
+C400 fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C401 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
+C402 XOR2IN_0/NAND2IN_3/w_n16_n4# XOR2IN_0/vout 0.08fF
+C403 XOR2IN_0/NAND2IN_0/w_n16_n4# vinM 0.10fF
+C404 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C405 XOR2IN_2/NAND2IN_2/w_n16_n4# XOR2IN_2/NAND2IN_3/vin2 0.08fF
+C406 vdd fullAdder_1/AND2IN_0/NOT_0/in 0.08fF
+C407 XOR2IN_1/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C408 fullAdder_3/AND2IN_0/NOT_0/in fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# 0.07fF
+C409 XOR2IN_2/NAND2IN_2/vin2 vdd 0.08fF
+C410 vina3 XOR2IN_3/vout 0.27fF
+C411 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 gnd 0.19fF
+C412 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_2/AND2IN_1/NOT_0/in 0.08fF
+C413 XOR2IN_0/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C414 vdd fullAdder_1/OR2IN_0/vin2 0.06fF
+C415 vdd fullAdder_0/OR2IN_0/vin1 0.06fF
+C416 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 vdd 0.15fF
+C417 fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 vdd 0.43fF
+C418 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_2/XOR2IN_1/vin1 0.08fF
+C419 vdd fullAdder_0/OR2IN_0/w_n19_n9# 0.09fF
+C420 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# 0.10fF
+C421 XOR2IN_0/NAND2IN_3/vin2 vdd 0.08fF
+C422 XOR2IN_0/vout vdd 0.20fF
+C423 fullAdder_0/OR2IN_0/vin1 fullAdder_0/OR2IN_0/w_n19_n9# 0.16fF
+C424 XOR2IN_3/vout XOR2IN_3/NAND2IN_3/vin2 0.06fF
+C425 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 vdd 0.08fF
+C426 fullAdder_2/AND2IN_1/NOT_0/in vdd 0.08fF
+C427 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/vout 0.06fF
+C428 gnd fullAdder_1/XOR2IN_1/vin1 0.52fF
+C429 XOR2IN_2/NAND2IN_3/w_n16_n4# XOR2IN_2/NAND2IN_3/vin1 0.10fF
+C430 fullAdder_2/AND2IN_0/NOT_0/in gnd 0.05fF
+C431 fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C432 XOR2IN_1/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C433 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C434 fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# fullAdder_1/AND2IN_1/NOT_0/in 0.08fF
+C435 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C436 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C437 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
+C438 fullAdder_0/OR2IN_0/vin2 vdd 0.06fF
+C439 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C440 vina2 XOR2IN_2/vout 0.27fF
+C441 fullAdder_2/OR2IN_0/w_n19_n9# fullAdder_2/OR2IN_0/vin1 0.16fF
+C442 vinb1 vinb2 1.65fF
+C443 fullAdder_1/vcin fullAdder_1/XOR2IN_1/vin1 0.26fF
+C444 vinb0 XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C445 fullAdder_3/OR2IN_0/vin1 vdd 0.06fF
+C446 fullAdder_2/OR2IN_0/NOT_0/in gnd 0.11fF
+C447 fullAdder_3/vcin vdd 0.12fF
+C448 fullAdder_0/OR2IN_0/vin2 fullAdder_0/OR2IN_0/vin1 0.11fF
+C449 XOR2IN_3/NAND2IN_3/vin1 vdd 0.43fF
+C450 vina0 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C451 XOR2IN_2/NAND2IN_1/w_n16_n4# XOR2IN_2/NAND2IN_3/vin1 0.08fF
+C452 gnd fullAdder_1/AND2IN_1/NOT_0/in 0.05fF
+C453 fullAdder_0/OR2IN_0/vin2 fullAdder_0/OR2IN_0/w_n19_n9# 0.12fF
+C454 fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C455 fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 0.06fF
+C456 fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# fullAdder_0/OR2IN_0/NOT_0/in 0.07fF
+C457 fullAdder_3/OR2IN_0/NOT_0/in fullAdder_3/OR2IN_0/w_n19_n9# 0.05fF
+C458 fullAdder_1/AND2IN_0/NOT_0/in fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# 0.07fF
+C459 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 vdd 0.15fF
+C460 XOR2IN_3/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C461 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 vdd 0.08fF
+C462 vdd fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# 0.14fF
+C463 vinb3 XOR2IN_3/NAND2IN_1/w_n16_n4# 0.10fF
+C464 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# vout3 0.08fF
+C465 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 0.08fF
+C466 fullAdder_2/vcin XOR2IN_2/vout 0.06fF
+C467 vdd fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# 0.09fF
+C468 gnd fullAdder_1/AND2IN_0/NOT_0/in 0.05fF
+C469 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# XOR2IN_3/vout 0.10fF
+C470 fullAdder_1/OR2IN_0/vin2 fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# 0.03fF
+C471 gnd XOR2IN_2/NAND2IN_2/vin2 0.19fF
+C472 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 0.08fF
+C473 vdd vout1 0.15fF
+C474 fullAdder_1/OR2IN_0/vin2 fullAdder_1/OR2IN_0/NOT_0/in 0.08fF
+C475 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# vina3 0.10fF
+C476 fullAdder_2/OR2IN_0/vin1 vdd 0.06fF
+C477 gnd vdd 2.33fF
+C478 gnd fullAdder_1/OR2IN_0/vin2 0.27fF
+C479 gnd fullAdder_0/OR2IN_0/vin1 0.26fF
+C480 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 gnd 0.19fF
+C481 gnd fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 0.06fF
+C482 XOR2IN_2/NAND2IN_2/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.10fF
+C483 XOR2IN_0/NAND2IN_3/vin2 gnd 0.06fF
+C484 gnd XOR2IN_0/vout 0.21fF
+C485 XOR2IN_2/vout XOR2IN_2/NAND2IN_3/w_n16_n4# 0.08fF
+C486 XOR2IN_2/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C487 gnd fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 0.19fF
+C488 vina3 vinb1 0.06fF
+C489 fullAdder_1/vcin vdd 0.12fF
+C490 fullAdder_2/AND2IN_1/NOT_0/in gnd 0.05fF
+C491 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# vdd 0.14fF
+C492 fullAdder_1/vcin fullAdder_1/OR2IN_0/vin2 0.06fF
+C493 vdd vina1 0.13fF
+C494 vdd fullAdder_0/AND2IN_1/NOT_0/in 0.08fF
+C495 fullAdder_3/OR2IN_0/vin2 vdd 0.06fF
+C496 fullAdder_1/XOR2IN_1/vin1 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# 0.08fF
+C497 fullAdder_2/OR2IN_0/vin2 fullAdder_2/vcin 0.06fF
+C498 XOR2IN_0/NAND2IN_2/vin2 vdd 0.08fF
+C499 XOR2IN_0/NAND2IN_1/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C500 fullAdder_3/XOR2IN_1/vin1 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C501 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 fullAdder_1/vcin 0.39fF
+C502 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C503 gnd fullAdder_0/OR2IN_0/vin2 0.27fF
+C504 fullAdder_3/OR2IN_0/vin1 gnd 0.26fF
+C505 fullAdder_0/AND2IN_0/NOT_0/in vdd 0.08fF
+C506 fullAdder_3/vcin gnd 0.48fF
+C507 XOR2IN_2/vout XOR2IN_2/NAND2IN_3/vin2 0.06fF
+C508 gnd XOR2IN_3/NAND2IN_3/vin1 0.13fF
+C509 fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# vdd 0.06fF
+C510 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 0.10fF
+C511 vcout vdd 0.06fF
+C512 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 0.08fF
+C513 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C514 XOR2IN_0/vout fullAdder_0/AND2IN_0/NOT_0/in 0.06fF
+C515 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
+C516 fullAdder_3/AND2IN_1/NOT_0/in vdd 0.08fF
+C517 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# 0.08fF
+C518 fullAdder_1/OR2IN_0/w_n19_n9# Gnd 1.40fF
+C519 fullAdder_1/OR2IN_0/NOT_0/in Gnd 0.42fF
+C520 fullAdder_1/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C521 fullAdder_1/AND2IN_1/NOT_0/in Gnd 0.37fF
+C522 fullAdder_1/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C523 fullAdder_1/XOR2IN_1/vin1 Gnd 3.73fF
+C524 fullAdder_1/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C525 fullAdder_1/AND2IN_0/NOT_0/in Gnd 0.37fF
+C526 fullAdder_1/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C527 fullAdder_1/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C528 fullAdder_1/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
+C529 fullAdder_1/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C530 fullAdder_1/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
+C531 fullAdder_1/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
+C532 fullAdder_1/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C533 fullAdder_1/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C534 XOR2IN_1/vout Gnd 6.27fF
+C535 vina1 Gnd 12.96fF
+C536 fullAdder_1/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C537 vout1 Gnd 0.77fF
+C538 fullAdder_1/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
+C539 fullAdder_1/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C540 fullAdder_1/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
+C541 fullAdder_1/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
+C542 fullAdder_1/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C543 fullAdder_1/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C544 fullAdder_1/vcin Gnd 6.72fF
+C545 fullAdder_1/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C546 fullAdder_0/OR2IN_0/w_n19_n9# Gnd 1.40fF
+C547 fullAdder_0/OR2IN_0/NOT_0/in Gnd 0.42fF
+C548 fullAdder_0/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C549 fullAdder_0/AND2IN_1/NOT_0/in Gnd 0.37fF
+C550 fullAdder_0/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C551 fullAdder_0/XOR2IN_1/vin1 Gnd 3.73fF
+C552 fullAdder_0/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C553 vdd Gnd 18.60fF
+C554 fullAdder_0/AND2IN_0/NOT_0/in Gnd 0.37fF
+C555 fullAdder_0/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C556 fullAdder_0/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C557 fullAdder_0/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
+C558 fullAdder_0/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C559 fullAdder_0/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
+C560 fullAdder_0/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
+C561 fullAdder_0/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C562 fullAdder_0/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C563 XOR2IN_0/vout Gnd 3.62fF
+C564 vina0 Gnd 7.76fF
+C565 fullAdder_0/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C566 vout0 Gnd 0.76fF
+C567 fullAdder_0/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
+C568 fullAdder_0/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C569 fullAdder_0/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
+C570 fullAdder_0/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
+C571 fullAdder_0/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C572 fullAdder_0/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C573 fullAdder_0/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C574 XOR2IN_3/NAND2IN_3/vin1 Gnd 0.54fF
+C575 XOR2IN_3/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C576 XOR2IN_3/NAND2IN_3/vin2 Gnd 0.55fF
+C577 XOR2IN_3/NAND2IN_2/vin2 Gnd 0.80fF
+C578 XOR2IN_3/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C579 XOR2IN_3/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C580 vinb3 Gnd 9.52fF
+C581 XOR2IN_3/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C582 XOR2IN_2/NAND2IN_3/vin1 Gnd 0.54fF
+C583 XOR2IN_2/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C584 XOR2IN_2/NAND2IN_3/vin2 Gnd 0.55fF
+C585 XOR2IN_2/NAND2IN_2/vin2 Gnd 0.80fF
+C586 XOR2IN_2/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C587 XOR2IN_2/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C588 vinb2 Gnd 19.27fF
+C589 XOR2IN_2/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C590 XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
+C591 XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C592 XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
+C593 XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
+C594 XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C595 XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C596 vinM Gnd 20.96fF
+C597 XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C598 XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
+C599 XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C600 XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
+C601 XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
+C602 XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C603 XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C604 vinb1 Gnd 10.50fF
+C605 XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C606 fullAdder_2/OR2IN_0/w_n19_n9# Gnd 1.40fF
+C607 fullAdder_2/OR2IN_0/NOT_0/in Gnd 0.42fF
+C608 fullAdder_2/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C609 fullAdder_2/AND2IN_1/NOT_0/in Gnd 0.37fF
+C610 fullAdder_2/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C611 fullAdder_2/XOR2IN_1/vin1 Gnd 3.73fF
+C612 fullAdder_2/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C613 fullAdder_2/AND2IN_0/NOT_0/in Gnd 0.37fF
+C614 fullAdder_2/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C615 fullAdder_2/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C616 fullAdder_2/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
+C617 fullAdder_2/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C618 fullAdder_2/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
+C619 fullAdder_2/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
+C620 fullAdder_2/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C621 fullAdder_2/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C622 XOR2IN_2/vout Gnd 6.48fF
+C623 vina2 Gnd 15.45fF
+C624 fullAdder_2/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C625 vout2 Gnd 0.77fF
+C626 fullAdder_2/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
+C627 fullAdder_2/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C628 fullAdder_2/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
+C629 fullAdder_2/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
+C630 fullAdder_2/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C631 fullAdder_2/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C632 fullAdder_2/vcin Gnd 6.68fF
+C633 fullAdder_2/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C634 fullAdder_3/OR2IN_0/w_n19_n9# Gnd 1.40fF
+C635 vcout Gnd 0.16fF
+C636 fullAdder_3/OR2IN_0/NOT_0/in Gnd 0.42fF
+C637 fullAdder_3/OR2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C638 fullAdder_3/AND2IN_1/NOT_0/in Gnd 0.37fF
+C639 fullAdder_3/AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C640 fullAdder_3/XOR2IN_1/vin1 Gnd 3.73fF
+C641 fullAdder_3/AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C642 fullAdder_3/AND2IN_0/NOT_0/in Gnd 0.37fF
+C643 fullAdder_3/AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C644 fullAdder_3/AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C645 fullAdder_3/XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
+C646 fullAdder_3/XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C647 fullAdder_3/XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
+C648 fullAdder_3/XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
+C649 fullAdder_3/XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C650 fullAdder_3/XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C651 XOR2IN_3/vout Gnd 6.38fF
+C652 vina3 Gnd 17.76fF
+C653 fullAdder_3/XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C654 vout3 Gnd 0.38fF
+C655 fullAdder_3/XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
+C656 fullAdder_3/XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C657 fullAdder_3/XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
+C658 fullAdder_3/XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
+C659 fullAdder_3/XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C660 fullAdder_3/XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C661 fullAdder_3/vcin Gnd 6.69fF
+C662 fullAdder_3/XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
 
 .tran 1n 480n
 

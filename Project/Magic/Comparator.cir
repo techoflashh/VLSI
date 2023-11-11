@@ -1,0 +1,832 @@
+* SPICE3 file created from Comparator.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+
+.param SUPPLY = 1.8
+
+.global gnd
+
+Vdd vdd gnd 'SUPPLY'
+
+V_in_a3 vina3 gnd PULSE(0 1.8 0ns 100ps 100ps 240ns 480ns)
+V_in_a2 vina2 gnd PULSE(0 1.8 0ns 100ps 100ps 120ns 240ns)
+V_in_a1 vina1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a0 vina0 gnd PULSE(0 1.8 0ns 100ps 100ps 30ns 60ns)
+V_in_b3 vinb3 gnd PULSE(0 1.8 0ns 100ps 100ps 160ns 320ns)
+V_in_b2 vinb2 gnd PULSE(0 1.8 0ns 100ps 100ps 80ns 160ns)
+V_in_b1 vinb1 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 80ns)
+V_in_b0 vinb0 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+
+V_in_en vinEn gnd PULSE(0 1.8 0ns 100ps 100ps 480ns 960ns)
+
+
+M1000 NOT_5/out NOT_5/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=883 ps=795
+M1001 NOT_5/out NOT_5/in vdd NOT_5/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=1517 ps=1223
+M1002 NOT_6/out NOT_6/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1003 NOT_6/out NOT_6/in vdd NOT_6/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1004 NOT_7/out NOT_7/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1005 NOT_7/out NOT_7/in vdd NOT_7/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1006 OR4IN_0/vin2 AND3IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1007 OR4IN_0/vin2 AND3IN_0/NOT_0/in vdd AND3IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1008 AND3IN_0/NOT_0/in vina2 vdd AND3IN_0/w_n14_n10# CMOSP w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1009 AND3IN_0/a_19_n30# NOT_1/out AND3IN_0/a_2_n30# Gnd CMOSN w=4 l=2
++  ad=60 pd=38 as=60 ps=38
+M1010 AND3IN_0/NOT_0/in NOT_1/out vdd AND3IN_0/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 AND3IN_0/NOT_0/in NOT_5/out AND3IN_0/a_19_n30# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1012 AND3IN_0/a_2_n30# vina2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 AND3IN_0/NOT_0/in NOT_5/out vdd AND3IN_0/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 XOR2IN_1/NAND2IN_0/a_n1_n23# vina1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1015 XOR2IN_1/NAND2IN_2/vin2 vina1 vdd XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1016 XOR2IN_1/NAND2IN_2/vin2 vinb1 XOR2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1017 XOR2IN_1/NAND2IN_2/vin2 vinb1 vdd XOR2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1018 XOR2IN_1/NAND2IN_1/a_n1_n23# vina1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1019 XOR2IN_1/NAND2IN_3/vin1 vina1 vdd XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1020 XOR2IN_1/NAND2IN_3/vin1 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1021 XOR2IN_1/NAND2IN_3/vin1 XOR2IN_1/NAND2IN_2/vin2 vdd XOR2IN_1/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 XOR2IN_1/NAND2IN_2/a_n1_n23# vinb1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1023 XOR2IN_1/NAND2IN_3/vin2 vinb1 vdd XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1024 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1025 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_2/vin2 vdd XOR2IN_1/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 XOR2IN_1/NAND2IN_3/a_n1_n23# XOR2IN_1/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1027 NOT_6/in XOR2IN_1/NAND2IN_3/vin1 vdd XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1028 NOT_6/in XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1029 NOT_6/in XOR2IN_1/NAND2IN_3/vin2 vdd XOR2IN_1/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1030 XOR2IN_0/NAND2IN_0/a_n1_n23# vina0 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1031 XOR2IN_0/NAND2IN_2/vin2 vina0 vdd XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1032 XOR2IN_0/NAND2IN_2/vin2 vinb0 XOR2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1033 XOR2IN_0/NAND2IN_2/vin2 vinb0 vdd XOR2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 XOR2IN_0/NAND2IN_1/a_n1_n23# vina0 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1035 XOR2IN_0/NAND2IN_3/vin1 vina0 vdd XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1036 XOR2IN_0/NAND2IN_3/vin1 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1037 XOR2IN_0/NAND2IN_3/vin1 XOR2IN_0/NAND2IN_2/vin2 vdd XOR2IN_0/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 XOR2IN_0/NAND2IN_2/a_n1_n23# vinb0 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1039 XOR2IN_0/NAND2IN_3/vin2 vinb0 vdd XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1040 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1041 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_2/vin2 vdd XOR2IN_0/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1042 XOR2IN_0/NAND2IN_3/a_n1_n23# XOR2IN_0/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1043 NOT_7/in XOR2IN_0/NAND2IN_3/vin1 vdd XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1044 NOT_7/in XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1045 NOT_7/in XOR2IN_0/NAND2IN_3/vin2 vdd XOR2IN_0/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1046 XOR2IN_2/NAND2IN_0/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1047 XOR2IN_2/NAND2IN_2/vin2 vina2 vdd XOR2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1048 XOR2IN_2/NAND2IN_2/vin2 vinb2 XOR2IN_2/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1049 XOR2IN_2/NAND2IN_2/vin2 vinb2 vdd XOR2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1050 XOR2IN_2/NAND2IN_1/a_n1_n23# vina2 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1051 XOR2IN_2/NAND2IN_3/vin1 vina2 vdd XOR2IN_2/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1052 XOR2IN_2/NAND2IN_3/vin1 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1053 XOR2IN_2/NAND2IN_3/vin1 XOR2IN_2/NAND2IN_2/vin2 vdd XOR2IN_2/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1054 XOR2IN_2/NAND2IN_2/a_n1_n23# vinb2 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1055 XOR2IN_2/NAND2IN_3/vin2 vinb2 vdd XOR2IN_2/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1056 XOR2IN_2/NAND2IN_3/vin2 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1057 XOR2IN_2/NAND2IN_3/vin2 XOR2IN_2/NAND2IN_2/vin2 vdd XOR2IN_2/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1058 XOR2IN_2/NAND2IN_3/a_n1_n23# XOR2IN_2/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1059 NOT_4/in XOR2IN_2/NAND2IN_3/vin1 vdd XOR2IN_2/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1060 NOT_4/in XOR2IN_2/NAND2IN_3/vin2 XOR2IN_2/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1061 NOT_4/in XOR2IN_2/NAND2IN_3/vin2 vdd XOR2IN_2/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1062 XOR2IN_3/NAND2IN_0/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1063 XOR2IN_3/NAND2IN_2/vin2 vina3 vdd XOR2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1064 XOR2IN_3/NAND2IN_2/vin2 vinb3 XOR2IN_3/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1065 XOR2IN_3/NAND2IN_2/vin2 vinb3 vdd XOR2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1066 XOR2IN_3/NAND2IN_1/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1067 XOR2IN_3/NAND2IN_3/vin1 vina3 vdd XOR2IN_3/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1068 XOR2IN_3/NAND2IN_3/vin1 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_1/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1069 XOR2IN_3/NAND2IN_3/vin1 XOR2IN_3/NAND2IN_2/vin2 vdd XOR2IN_3/NAND2IN_1/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 XOR2IN_3/NAND2IN_2/a_n1_n23# vinb3 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1071 XOR2IN_3/NAND2IN_3/vin2 vinb3 vdd XOR2IN_3/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1072 XOR2IN_3/NAND2IN_3/vin2 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_2/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1073 XOR2IN_3/NAND2IN_3/vin2 XOR2IN_3/NAND2IN_2/vin2 vdd XOR2IN_3/NAND2IN_2/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1074 XOR2IN_3/NAND2IN_3/a_n1_n23# XOR2IN_3/NAND2IN_3/vin1 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1075 NOT_5/in XOR2IN_3/NAND2IN_3/vin1 vdd XOR2IN_3/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1076 NOT_5/in XOR2IN_3/NAND2IN_3/vin2 XOR2IN_3/NAND2IN_3/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1077 NOT_5/in XOR2IN_3/NAND2IN_3/vin2 vdd XOR2IN_3/NAND2IN_3/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1078 NOR2IN_0/vout voutGreater NOR2IN_0/a_0_1# NOR2IN_0/w_n19_n9# CMOSP w=12 l=2
++  ad=72 pd=36 as=48 ps=32
+M1079 NOR2IN_0/vout voutGreater gnd Gnd CMOSN w=4 l=2
++  ad=60 pd=46 as=0 ps=0
+M1080 NOR2IN_0/a_0_1# voutEqual vdd NOR2IN_0/w_n19_n9# CMOSP w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1081 NOR2IN_0/vout voutEqual gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1082 AND2IN_0/NAND2IN_0/a_n1_n23# vina3 gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1083 AND2IN_0/NOT_0/in vina3 vdd AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1084 AND2IN_0/NOT_0/in NOT_0/out AND2IN_0/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1085 AND2IN_0/NOT_0/in NOT_0/out vdd AND2IN_0/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1086 OR4IN_0/vin1 AND2IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1087 OR4IN_0/vin1 AND2IN_0/NOT_0/in vdd AND2IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1088 AND2IN_2/NAND2IN_0/a_n1_n23# vinEn gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1089 AND2IN_2/NOT_0/in vinEn vdd AND2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1090 AND2IN_2/NOT_0/in OR4IN_0/vout AND2IN_2/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1091 AND2IN_2/NOT_0/in OR4IN_0/vout vdd AND2IN_2/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1092 voutGreater AND2IN_2/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1093 voutGreater AND2IN_2/NOT_0/in vdd AND2IN_2/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1094 AND2IN_1/NAND2IN_0/a_n1_n23# vinEn gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1095 AND2IN_1/NOT_0/in vinEn vdd AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1096 AND2IN_1/NOT_0/in AND4IN_0/vout AND2IN_1/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1097 AND2IN_1/NOT_0/in AND4IN_0/vout vdd AND2IN_1/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1098 voutEqual AND2IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1099 voutEqual AND2IN_1/NOT_0/in vdd AND2IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1100 AND2IN_3/NAND2IN_0/a_n1_n23# NOR2IN_0/vout gnd Gnd CMOSN w=4 l=2
++  ad=72 pd=44 as=0 ps=0
+M1101 AND2IN_3/NOT_0/in NOR2IN_0/vout vdd AND2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1102 AND2IN_3/NOT_0/in vinEn AND2IN_3/NAND2IN_0/a_n1_n23# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1103 AND2IN_3/NOT_0/in vinEn vdd AND2IN_3/NAND2IN_0/w_n16_n4# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1104 voutLess AND2IN_3/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1105 voutLess AND2IN_3/NOT_0/in vdd AND2IN_3/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1106 OR4IN_0/vin4 AND5IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1107 OR4IN_0/vin4 AND5IN_0/NOT_0/in vdd AND5IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1108 AND5IN_0/NOT_0/in NOT_5/out vdd AND5IN_0/w_n26_1# CMOSP w=4 l=2
++  ad=100 pd=90 as=0 ps=0
+M1109 AND5IN_0/NOT_0/in NOT_6/out AND5IN_0/a_36_n32# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=56 ps=36
+M1110 AND5IN_0/a_20_n32# NOT_5/out AND5IN_0/a_4_n32# Gnd CMOSN w=4 l=2
++  ad=56 pd=36 as=56 ps=36
+M1111 AND5IN_0/NOT_0/in NOT_3/out vdd AND5IN_0/w_n26_1# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1112 AND5IN_0/a_4_n32# NOT_3/out AND5IN_0/a_n12_n32# Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=56 ps=36
+M1113 AND5IN_0/NOT_0/in NOT_6/out vdd AND5IN_0/w_n26_1# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 AND5IN_0/a_n12_n32# vina0 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1115 AND5IN_0/NOT_0/in vina0 vdd AND5IN_0/w_n26_1# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1116 AND5IN_0/a_36_n32# NOT_4/out AND5IN_0/a_20_n32# Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1117 AND5IN_0/NOT_0/in NOT_4/out vdd AND5IN_0/w_n26_1# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1118 NOT_0/out vinb3 gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1119 NOT_0/out vinb3 vdd NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1120 NOT_1/out vinb2 gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1121 NOT_1/out vinb2 vdd NOT_1/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1122 AND4IN_0/vout AND4IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1123 AND4IN_0/vout AND4IN_0/NOT_0/in vdd AND4IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1124 AND4IN_0/NOT_0/in NOT_7/out vdd AND4IN_0/w_n14_n10# CMOSP w=4 l=2
++  ad=80 pd=72 as=0 ps=0
+M1125 AND4IN_0/a_19_n30# NOT_6/out AND4IN_0/a_2_n30# Gnd CMOSN w=4 l=2
++  ad=60 pd=38 as=60 ps=38
+M1126 AND4IN_0/NOT_0/in NOT_5/out vdd AND4IN_0/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1127 AND4IN_0/NOT_0/in NOT_6/out vdd AND4IN_0/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1128 AND4IN_0/a_36_n30# NOT_4/out AND4IN_0/a_19_n30# Gnd CMOSN w=4 l=2
++  ad=60 pd=38 as=0 ps=0
+M1129 AND4IN_0/NOT_0/in NOT_5/out AND4IN_0/a_36_n30# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1130 AND4IN_0/a_2_n30# NOT_7/out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1131 AND4IN_0/NOT_0/in NOT_4/out vdd AND4IN_0/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1132 NOT_2/out vinb1 gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1133 NOT_2/out vinb1 vdd NOT_2/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1134 OR4IN_0/vin3 AND4IN_1/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1135 OR4IN_0/vin3 AND4IN_1/NOT_0/in vdd AND4IN_1/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1136 AND4IN_1/NOT_0/in vina1 vdd AND4IN_1/w_n14_n10# CMOSP w=4 l=2
++  ad=80 pd=72 as=0 ps=0
+M1137 AND4IN_1/a_19_n30# NOT_2/out AND4IN_1/a_2_n30# Gnd CMOSN w=4 l=2
++  ad=60 pd=38 as=60 ps=38
+M1138 AND4IN_1/NOT_0/in NOT_4/out vdd AND4IN_1/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1139 AND4IN_1/NOT_0/in NOT_2/out vdd AND4IN_1/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1140 AND4IN_1/a_36_n30# NOT_5/out AND4IN_1/a_19_n30# Gnd CMOSN w=4 l=2
++  ad=60 pd=38 as=0 ps=0
+M1141 AND4IN_1/NOT_0/in NOT_4/out AND4IN_1/a_36_n30# Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1142 AND4IN_1/a_2_n30# vina1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1143 AND4IN_1/NOT_0/in NOT_5/out vdd AND4IN_1/w_n14_n10# CMOSP w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1144 NOT_3/out vinb0 gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1145 NOT_3/out vinb0 vdd NOT_3/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1146 OR4IN_0/vout OR4IN_0/NOT_0/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1147 OR4IN_0/vout OR4IN_0/NOT_0/in vdd OR4IN_0/NOT_0/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+M1148 OR4IN_0/a_6_1# OR4IN_0/vin2 OR4IN_0/a_0_1# OR4IN_0/w_n19_n9# CMOSP w=12 l=2
++  ad=48 pd=32 as=48 ps=32
+M1149 OR4IN_0/a_0_1# OR4IN_0/vin1 vdd OR4IN_0/w_n19_n9# CMOSP w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1150 OR4IN_0/NOT_0/in OR4IN_0/vin1 gnd Gnd CMOSN w=4 l=2
++  ad=112 pd=88 as=0 ps=0
+M1151 OR4IN_0/NOT_0/in OR4IN_0/vin3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1152 OR4IN_0/NOT_0/in OR4IN_0/vin4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1153 OR4IN_0/NOT_0/in OR4IN_0/vin4 OR4IN_0/a_12_1# OR4IN_0/w_n19_n9# CMOSP w=12 l=2
++  ad=120 pd=44 as=48 ps=32
+M1154 OR4IN_0/a_12_1# OR4IN_0/vin3 OR4IN_0/a_6_1# OR4IN_0/w_n19_n9# CMOSP w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1155 OR4IN_0/NOT_0/in OR4IN_0/vin2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1156 NOT_4/out NOT_4/in gnd Gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1157 NOT_4/out NOT_4/in vdd NOT_4/w_n7_n3# CMOSP w=5 l=2
++  ad=30 pd=22 as=0 ps=0
+C0 NOT_0/out NOT_0/w_n7_n3# 0.03fF
+C1 AND2IN_2/NOT_0/in gnd 0.05fF
+C2 vina1 NOT_6/out 0.06fF
+C3 XOR2IN_1/NAND2IN_3/vin2 XOR2IN_1/NAND2IN_3/w_n16_n4# 0.10fF
+C4 NOT_5/out NOT_0/out 0.06fF
+C5 XOR2IN_0/NAND2IN_2/w_n16_n4# XOR2IN_0/NAND2IN_3/vin2 0.08fF
+C6 vina0 vinb0 0.06fF
+C7 vinb3 NOT_0/w_n7_n3# 0.07fF
+C8 NOT_7/out NOT_6/in 0.06fF
+C9 vina0 vdd 0.13fF
+C10 XOR2IN_2/NAND2IN_3/w_n16_n4# NOT_4/in 0.08fF
+C11 NOT_5/w_n7_n3# NOT_5/out 0.03fF
+C12 XOR2IN_1/NAND2IN_0/w_n16_n4# vinb1 0.10fF
+C13 NOT_2/out NOT_2/w_n7_n3# 0.03fF
+C14 XOR2IN_3/NAND2IN_3/vin2 XOR2IN_3/NAND2IN_3/w_n16_n4# 0.10fF
+C15 XOR2IN_3/NAND2IN_0/w_n16_n4# vinb3 0.10fF
+C16 vina0 vina2 0.06fF
+C17 XOR2IN_3/NAND2IN_3/vin1 gnd 0.13fF
+C18 AND3IN_0/NOT_0/in gnd 0.06fF
+C19 XOR2IN_1/NAND2IN_1/w_n16_n4# XOR2IN_1/NAND2IN_3/vin1 0.08fF
+C20 NOT_5/out gnd 0.45fF
+C21 vdd AND2IN_2/NAND2IN_0/w_n16_n4# 0.11fF
+C22 XOR2IN_0/NAND2IN_3/w_n16_n4# XOR2IN_0/NAND2IN_3/vin1 0.10fF
+C23 vdd AND5IN_0/NOT_0/in 0.37fF
+C24 OR4IN_0/vin1 gnd 0.19fF
+C25 XOR2IN_1/NAND2IN_1/w_n16_n4# vdd 0.11fF
+C26 XOR2IN_2/NAND2IN_3/vin2 NOT_4/in 0.06fF
+C27 AND3IN_0/w_n14_n10# vdd 0.19fF
+C28 vdd XOR2IN_2/NAND2IN_3/w_n16_n4# 0.11fF
+C29 AND5IN_0/NOT_0/in NOT_3/out 0.06fF
+C30 vdd AND2IN_0/NOT_0/w_n7_n3# 0.06fF
+C31 NOT_0/out NOT_4/out 0.06fF
+C32 AND3IN_0/w_n14_n10# vina2 0.15fF
+C33 vina0 NOT_6/out 0.06fF
+C34 NOT_5/out AND4IN_0/w_n14_n10# 0.15fF
+C35 vina3 NOT_1/out 0.06fF
+C36 vinb2 XOR2IN_2/NAND2IN_2/vin2 0.39fF
+C37 XOR2IN_0/NAND2IN_1/w_n16_n4# XOR2IN_0/NAND2IN_3/vin1 0.08fF
+C38 vdd XOR2IN_3/NAND2IN_2/vin2 0.08fF
+C39 vdd XOR2IN_2/NAND2IN_1/w_n16_n4# 0.11fF
+C40 vdd AND2IN_1/NOT_0/in 0.08fF
+C41 vina1 vina0 10.42fF
+C42 NOT_1/out NOT_2/out 5.84fF
+C43 NOT_6/in vdd 0.19fF
+C44 vdd XOR2IN_2/NAND2IN_3/vin2 0.08fF
+C45 vina2 XOR2IN_2/NAND2IN_1/w_n16_n4# 0.10fF
+C46 XOR2IN_0/NAND2IN_2/vin2 gnd 0.19fF
+C47 NOT_4/out gnd 0.45fF
+C48 AND5IN_0/NOT_0/in NOT_6/out 0.06fF
+C49 OR4IN_0/NOT_0/in OR4IN_0/w_n19_n9# 0.05fF
+C50 OR4IN_0/vin3 OR4IN_0/NOT_0/in 0.09fF
+C51 NOT_5/out NOT_5/in 0.06fF
+C52 XOR2IN_1/NAND2IN_3/vin2 gnd 0.06fF
+C53 vdd NOT_2/w_n7_n3# 0.06fF
+C54 vinEn gnd 0.25fF
+C55 XOR2IN_0/NAND2IN_2/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C56 NOT_0/out AND2IN_0/NOT_0/in 0.06fF
+C57 vina1 XOR2IN_1/NAND2IN_1/w_n16_n4# 0.10fF
+C58 AND4IN_0/w_n14_n10# NOT_4/out 0.15fF
+C59 AND2IN_3/NAND2IN_0/w_n16_n4# NOR2IN_0/vout 0.10fF
+C60 NOT_4/out NOT_4/w_n7_n3# 0.03fF
+C61 vdd voutGreater 0.10fF
+C62 NOT_0/out gnd 0.14fF
+C63 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_3/vin2 0.06fF
+C64 vdd NOR2IN_0/w_n19_n9# 0.09fF
+C65 XOR2IN_2/NAND2IN_3/vin1 gnd 0.13fF
+C66 AND2IN_0/NOT_0/in gnd 0.05fF
+C67 XOR2IN_3/NAND2IN_1/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.10fF
+C68 AND2IN_2/NOT_0/w_n7_n3# voutGreater 0.03fF
+C69 vinb3 gnd 0.22fF
+C70 AND2IN_2/NAND2IN_0/w_n16_n4# OR4IN_0/vout 0.10fF
+C71 NOT_5/out vina3 0.06fF
+C72 AND2IN_1/NAND2IN_0/w_n16_n4# AND2IN_1/NOT_0/in 0.08fF
+C73 vina3 XOR2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
+C74 OR4IN_0/vin2 vdd 0.22fF
+C75 NOT_5/in NOT_4/out 0.07fF
+C76 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_3/vin2 0.06fF
+C77 XOR2IN_1/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C78 OR4IN_0/vin2 OR4IN_0/w_n19_n9# 0.12fF
+C79 OR4IN_0/vin2 OR4IN_0/vin3 0.18fF
+C80 NOT_5/out AND4IN_1/w_n14_n10# 0.15fF
+C81 vinb2 XOR2IN_2/NAND2IN_2/w_n16_n4# 0.10fF
+C82 NOT_5/out NOT_2/out 0.13fF
+C83 vdd XOR2IN_0/NAND2IN_3/w_n16_n4# 0.11fF
+C84 vdd NOT_1/out 0.06fF
+C85 vdd XOR2IN_3/NAND2IN_2/w_n16_n4# 0.11fF
+C86 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_3/vin1 0.06fF
+C87 vdd XOR2IN_2/NAND2IN_2/vin2 0.08fF
+C88 vdd XOR2IN_0/NAND2IN_1/w_n16_n4# 0.11fF
+C89 XOR2IN_0/NAND2IN_0/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.08fF
+C90 vina3 NOT_4/out 0.06fF
+C91 vinb0 NOT_3/w_n7_n3# 0.07fF
+C92 vdd XOR2IN_0/NAND2IN_3/vin2 0.08fF
+C93 XOR2IN_1/NAND2IN_2/vin2 gnd 0.19fF
+C94 vdd NOT_3/w_n7_n3# 0.06fF
+C95 NOT_5/w_n7_n3# NOT_5/in 0.07fF
+C96 AND3IN_0/NOT_0/w_n7_n3# OR4IN_0/vin2 0.03fF
+C97 voutGreater voutEqual 0.11fF
+C98 AND4IN_0/NOT_0/w_n7_n3# AND4IN_0/vout 0.03fF
+C99 NOT_5/out AND5IN_0/w_n26_1# 0.12fF
+C100 AND4IN_1/w_n14_n10# NOT_4/out 0.15fF
+C101 NOT_3/out NOT_3/w_n7_n3# 0.03fF
+C102 NOT_2/out NOT_4/out 0.06fF
+C103 NOT_5/out NOT_4/in 0.06fF
+C104 vdd AND2IN_2/NOT_0/in 0.08fF
+C105 NOT_6/out NOT_1/out 0.06fF
+C106 XOR2IN_1/NAND2IN_0/w_n16_n4# vina1 0.10fF
+C107 NOT_6/w_n7_n3# vdd 0.06fF
+C108 NOT_5/in gnd 0.07fF
+C109 NOR2IN_0/w_n19_n9# voutEqual 0.16fF
+C110 vinEn AND4IN_0/vout 0.06fF
+C111 OR4IN_0/vin4 gnd 0.19fF
+C112 AND5IN_0/NOT_0/w_n7_n3# OR4IN_0/vin4 0.03fF
+C113 vina1 NOT_1/out 0.06fF
+C114 vinb2 vinb3 0.63fF
+C115 vdd XOR2IN_3/NAND2IN_3/vin1 0.43fF
+C116 XOR2IN_1/NAND2IN_2/w_n16_n4# XOR2IN_1/NAND2IN_3/vin2 0.08fF
+C117 vinb1 gnd 0.22fF
+C118 AND2IN_2/NOT_0/w_n7_n3# AND2IN_2/NOT_0/in 0.07fF
+C119 vdd NOT_0/w_n7_n3# 0.06fF
+C120 XOR2IN_0/NAND2IN_3/w_n16_n4# NOT_7/in 0.08fF
+C121 NOT_7/w_n7_n3# NOT_7/out 0.03fF
+C122 NOT_1/w_n7_n3# NOT_1/out 0.03fF
+C123 XOR2IN_2/NAND2IN_3/vin2 XOR2IN_2/NAND2IN_3/w_n16_n4# 0.10fF
+C124 AND3IN_0/NOT_0/in vdd 0.19fF
+C125 XOR2IN_2/NAND2IN_0/w_n16_n4# vinb2 0.10fF
+C126 XOR2IN_3/NAND2IN_2/w_n16_n4# XOR2IN_3/NAND2IN_3/vin2 0.08fF
+C127 vinEn AND2IN_3/NAND2IN_0/w_n16_n4# 0.10fF
+C128 vina3 vinb3 0.06fF
+C129 NOT_5/out vdd 0.12fF
+C130 vdd XOR2IN_3/NAND2IN_0/w_n16_n4# 0.11fF
+C131 XOR2IN_0/NAND2IN_3/vin1 gnd 0.13fF
+C132 AND5IN_0/w_n26_1# NOT_4/out 0.12fF
+C133 vdd OR4IN_0/vin1 0.21fF
+C134 vinb2 gnd 0.22fF
+C135 NOT_5/out AND4IN_0/NOT_0/in 0.06fF
+C136 NOT_5/out vina2 0.06fF
+C137 OR4IN_0/vin1 OR4IN_0/w_n19_n9# 0.16fF
+C138 NOT_5/out NOT_3/out 0.19fF
+C139 NOT_4/in NOT_4/out 0.06fF
+C140 NOT_6/w_n7_n3# NOT_6/out 0.03fF
+C141 vinb3 NOT_2/out 0.06fF
+C142 XOR2IN_1/NAND2IN_3/w_n16_n4# XOR2IN_1/NAND2IN_3/vin1 0.10fF
+C143 vina3 gnd 0.46fF
+C144 vinb1 XOR2IN_1/NAND2IN_2/vin2 0.39fF
+C145 XOR2IN_0/NAND2IN_3/vin2 NOT_7/in 0.06fF
+C146 XOR2IN_1/NAND2IN_3/w_n16_n4# vdd 0.11fF
+C147 vdd XOR2IN_2/NAND2IN_2/w_n16_n4# 0.11fF
+C148 XOR2IN_3/NAND2IN_3/w_n16_n4# XOR2IN_3/NAND2IN_3/vin1 0.10fF
+C149 AND4IN_0/vout gnd 0.14fF
+C150 AND2IN_3/NOT_0/w_n7_n3# voutLess 0.03fF
+C151 NOT_2/out gnd 0.20fF
+C152 vina0 NOT_1/out 0.06fF
+C153 vinb0 XOR2IN_0/NAND2IN_2/vin2 0.39fF
+C154 vdd AND4IN_0/NOT_0/w_n7_n3# 0.06fF
+C155 vdd XOR2IN_0/NAND2IN_2/vin2 0.08fF
+C156 vdd NOT_4/out 0.12fF
+C157 NOT_0/out AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C158 AND3IN_0/NOT_0/w_n7_n3# AND3IN_0/NOT_0/in 0.07fF
+C159 AND4IN_0/NOT_0/w_n7_n3# AND4IN_0/NOT_0/in 0.07fF
+C160 NOT_7/out gnd 0.20fF
+C161 AND4IN_0/NOT_0/in NOT_4/out 0.06fF
+C162 XOR2IN_3/NAND2IN_1/w_n16_n4# XOR2IN_3/NAND2IN_3/vin1 0.08fF
+C163 vina2 NOT_4/out 0.06fF
+C164 NOT_4/out NOT_3/out 0.13fF
+C165 AND2IN_0/NAND2IN_0/w_n16_n4# AND2IN_0/NOT_0/in 0.08fF
+C166 vina0 XOR2IN_0/NAND2IN_1/w_n16_n4# 0.10fF
+C167 XOR2IN_1/NAND2IN_3/vin2 vdd 0.08fF
+C168 NOT_7/w_n7_n3# vdd 0.06fF
+C169 NOT_5/out vina1 0.13fF
+C170 vdd vinEn 0.13fF
+C171 AND2IN_2/NOT_0/in OR4IN_0/vout 0.06fF
+C172 voutLess gnd 0.07fF
+C173 NOT_7/out AND4IN_0/w_n14_n10# 0.15fF
+C174 AND3IN_0/w_n14_n10# NOT_1/out 0.15fF
+C175 vinb1 vinb2 0.21fF
+C176 XOR2IN_1/NAND2IN_2/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.10fF
+C177 vdd AND2IN_3/NOT_0/w_n7_n3# 0.06fF
+C178 NOT_4/in gnd 0.07fF
+C179 vdd NOT_0/out 0.06fF
+C180 vinb1 vina3 0.10fF
+C181 XOR2IN_3/NAND2IN_2/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.10fF
+C182 OR4IN_0/vin2 OR4IN_0/NOT_0/in 0.08fF
+C183 vdd XOR2IN_2/NAND2IN_3/vin1 0.43fF
+C184 NOT_5/w_n7_n3# vdd 0.06fF
+C185 vina2 NOT_0/out 0.06fF
+C186 vdd AND2IN_0/NOT_0/in 0.08fF
+C187 vdd vinb3 0.06fF
+C188 NOT_5/out AND4IN_1/NOT_0/in 0.06fF
+C189 vinb2 vina3 0.06fF
+C190 vina2 vinb3 0.06fF
+C191 AND2IN_2/NAND2IN_0/w_n16_n4# AND2IN_2/NOT_0/in 0.08fF
+C192 NOR2IN_0/w_n19_n9# voutGreater 0.12fF
+C193 vina1 NOT_4/out 0.06fF
+C194 NOT_4/in NOT_4/w_n7_n3# 0.07fF
+C195 vinb3 NOT_3/out 0.06fF
+C196 vinEn AND2IN_3/NOT_0/in 0.06fF
+C197 vdd XOR2IN_2/NAND2IN_0/w_n16_n4# 0.11fF
+C198 XOR2IN_1/NAND2IN_3/vin1 gnd 0.13fF
+C199 XOR2IN_2/NAND2IN_1/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.10fF
+C200 vinb0 gnd 0.09fF
+C201 NOT_5/out vina0 0.19fF
+C202 vinb1 XOR2IN_1/NAND2IN_2/w_n16_n4# 0.10fF
+C203 vdd gnd 1.01fF
+C204 vina2 XOR2IN_2/NAND2IN_0/w_n16_n4# 0.10fF
+C205 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_3/vin2 0.06fF
+C206 vdd AND5IN_0/NOT_0/w_n7_n3# 0.06fF
+C207 OR4IN_0/vin3 gnd 0.19fF
+C208 vinb2 NOT_2/out 0.06fF
+C209 AND4IN_0/NOT_0/in gnd 0.03fF
+C210 vina2 gnd 0.46fF
+C211 AND2IN_3/NOT_0/w_n7_n3# AND2IN_3/NOT_0/in 0.07fF
+C212 NOT_3/out gnd 0.20fF
+C213 AND2IN_1/NAND2IN_0/w_n16_n4# vinEn 0.10fF
+C214 NOT_0/out NOT_6/out 0.06fF
+C215 vinb0 XOR2IN_0/NAND2IN_2/w_n16_n4# 0.10fF
+C216 NOT_7/w_n7_n3# NOT_7/in 0.07fF
+C217 vdd AND4IN_1/NOT_0/w_n7_n3# 0.06fF
+C218 vdd XOR2IN_0/NAND2IN_2/w_n16_n4# 0.11fF
+C219 vina3 NOT_2/out 0.06fF
+C220 vdd AND4IN_0/w_n14_n10# 0.25fF
+C221 AND4IN_1/NOT_0/w_n7_n3# OR4IN_0/vin3 0.03fF
+C222 vdd NOT_4/w_n7_n3# 0.06fF
+C223 NOT_5/out AND5IN_0/NOT_0/in 0.06fF
+C224 XOR2IN_1/NAND2IN_2/vin2 XOR2IN_1/NAND2IN_3/vin1 0.06fF
+C225 AND4IN_1/NOT_0/in NOT_4/out 0.06fF
+C226 AND3IN_0/NOT_0/in AND3IN_0/w_n14_n10# 0.19fF
+C227 AND4IN_0/NOT_0/in AND4IN_0/w_n14_n10# 0.25fF
+C228 voutGreater NOR2IN_0/vout 0.41fF
+C229 vina1 NOT_0/out 0.06fF
+C230 NOT_2/out AND4IN_1/w_n14_n10# 0.15fF
+C231 AND3IN_0/w_n14_n10# NOT_5/out 0.15fF
+C232 NOT_6/w_n7_n3# NOT_6/in 0.07fF
+C233 XOR2IN_1/NAND2IN_2/vin2 vdd 0.08fF
+C234 XOR2IN_3/NAND2IN_2/vin2 XOR2IN_3/NAND2IN_3/vin1 0.06fF
+C235 AND2IN_0/NOT_0/w_n7_n3# OR4IN_0/vin1 0.03fF
+C236 vina1 vinb3 0.06fF
+C237 vina0 NOT_4/out 0.13fF
+C238 NOT_6/out gnd 0.39fF
+C239 AND2IN_3/NOT_0/in gnd 0.05fF
+C240 NOR2IN_0/w_n19_n9# NOR2IN_0/vout 0.05fF
+C241 XOR2IN_3/NAND2IN_0/w_n16_n4# XOR2IN_3/NAND2IN_2/vin2 0.08fF
+C242 vdd NOT_5/in 0.15fF
+C243 vdd OR4IN_0/vin4 0.06fF
+C244 vina3 AND2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C245 vina1 gnd 0.46fF
+C246 OR4IN_0/vin4 OR4IN_0/w_n19_n9# 0.12fF
+C247 OR4IN_0/vin4 OR4IN_0/vin3 1.01fF
+C248 NOT_6/out AND4IN_0/w_n14_n10# 0.15fF
+C249 AND5IN_0/NOT_0/in NOT_4/out 0.06fF
+C250 vinb1 vdd 0.06fF
+C251 NOT_7/in gnd 0.01fF
+C252 XOR2IN_3/NAND2IN_3/vin2 gnd 0.06fF
+C253 vinb1 vina2 0.06fF
+C254 vinb1 NOT_3/out 0.06fF
+C255 voutEqual gnd 0.34fF
+C256 vdd XOR2IN_0/NAND2IN_3/vin1 0.43fF
+C257 vina0 NOT_0/out 0.06fF
+C258 AND2IN_2/NAND2IN_0/w_n16_n4# vinEn 0.10fF
+C259 vdd vinb2 0.06fF
+C260 XOR2IN_1/NAND2IN_3/w_n16_n4# NOT_6/in 0.08fF
+C261 XOR2IN_0/NAND2IN_3/vin2 XOR2IN_0/NAND2IN_3/w_n16_n4# 0.10fF
+C262 vdd AND2IN_1/NOT_0/w_n7_n3# 0.06fF
+C263 XOR2IN_0/NAND2IN_0/w_n16_n4# vinb0 0.10fF
+C264 XOR2IN_2/NAND2IN_2/w_n16_n4# XOR2IN_2/NAND2IN_3/vin2 0.08fF
+C265 vinb0 vina3 0.10fF
+C266 vina0 vinb3 0.06fF
+C267 vina2 vinb2 0.06fF
+C268 OR4IN_0/vout gnd 0.14fF
+C269 vinb2 NOT_3/out 0.06fF
+C270 AND4IN_1/NOT_0/in gnd 0.03fF
+C271 XOR2IN_0/NAND2IN_0/w_n16_n4# vdd 0.11fF
+C272 vdd vina3 0.13fF
+C273 XOR2IN_3/NAND2IN_3/w_n16_n4# NOT_5/in 0.08fF
+C274 NOT_5/in NOT_6/out 0.06fF
+C275 vdd OR4IN_0/NOT_0/w_n7_n3# 0.06fF
+C276 vina2 vina3 8.60fF
+C277 vina3 NOT_3/out 0.06fF
+C278 vdd AND4IN_1/w_n14_n10# 0.25fF
+C279 vdd AND4IN_0/vout 0.12fF
+C280 AND4IN_1/NOT_0/w_n7_n3# AND4IN_1/NOT_0/in 0.07fF
+C281 vina0 gnd 0.40fF
+C282 vdd NOT_2/out 0.06fF
+C283 XOR2IN_1/NAND2IN_3/vin2 NOT_6/in 0.06fF
+C284 XOR2IN_1/NAND2IN_2/w_n16_n4# vdd 0.11fF
+C285 XOR2IN_2/NAND2IN_3/w_n16_n4# XOR2IN_2/NAND2IN_3/vin1 0.10fF
+C286 vina2 NOT_2/out 0.06fF
+C287 NOT_2/out NOT_3/out 9.15fF
+C288 OR4IN_0/vin2 OR4IN_0/vin1 0.14fF
+C289 AND2IN_0/NOT_0/w_n7_n3# AND2IN_0/NOT_0/in 0.07fF
+C290 NOT_7/out vdd 0.06fF
+C291 vinb1 vina1 0.06fF
+C292 XOR2IN_3/NAND2IN_3/vin2 NOT_5/in 0.06fF
+C293 vdd AND2IN_3/NAND2IN_0/w_n16_n4# 0.11fF
+C294 AND3IN_0/NOT_0/in NOT_1/out 0.06fF
+C295 AND5IN_0/NOT_0/in gnd 0.03fF
+C296 NOT_5/out NOT_1/out 0.06fF
+C297 vina3 NOT_6/out 0.06fF
+C298 AND5IN_0/NOT_0/w_n7_n3# AND5IN_0/NOT_0/in 0.07fF
+C299 vinb3 XOR2IN_3/NAND2IN_2/vin2 0.39fF
+C300 vina1 vinb2 0.06fF
+C301 XOR2IN_2/NAND2IN_1/w_n16_n4# XOR2IN_2/NAND2IN_3/vin1 0.08fF
+C302 vdd voutLess 0.06fF
+C303 vdd AND5IN_0/w_n26_1# 0.34fF
+C304 voutGreater vinEn 0.06fF
+C305 vdd AND2IN_0/NAND2IN_0/w_n16_n4# 0.11fF
+C306 vinb2 NOT_1/w_n7_n3# 0.07fF
+C307 vina1 vina3 0.06fF
+C308 NOT_6/out NOT_2/out 0.06fF
+C309 vdd NOT_4/in 0.15fF
+C310 AND5IN_0/w_n26_1# NOT_3/out 0.12fF
+C311 XOR2IN_3/NAND2IN_2/vin2 gnd 0.19fF
+C312 vina3 XOR2IN_3/NAND2IN_1/w_n16_n4# 0.10fF
+C313 vina1 AND4IN_1/w_n14_n10# 0.15fF
+C314 AND2IN_1/NOT_0/in gnd 0.05fF
+C315 AND2IN_1/NOT_0/w_n7_n3# voutEqual 0.03fF
+C316 NOT_7/out NOT_6/out 0.06fF
+C317 XOR2IN_1/NAND2IN_1/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.10fF
+C318 AND2IN_1/NAND2IN_0/w_n16_n4# AND4IN_0/vout 0.10fF
+C319 NOT_6/in gnd 0.07fF
+C320 AND2IN_3/NAND2IN_0/w_n16_n4# AND2IN_3/NOT_0/in 0.08fF
+C321 XOR2IN_2/NAND2IN_3/vin2 gnd 0.06fF
+C322 vinb1 vina0 0.06fF
+C323 XOR2IN_2/NAND2IN_2/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.10fF
+C324 NOT_1/out NOT_4/out 0.06fF
+C325 OR4IN_0/NOT_0/in gnd 0.36fF
+C326 XOR2IN_1/NAND2IN_3/vin1 vdd 0.43fF
+C327 vinb0 vdd 0.06fF
+C328 AND5IN_0/w_n26_1# NOT_6/out 0.12fF
+C329 vinb0 vina2 0.06fF
+C330 vina0 vinb2 0.06fF
+C331 vdd OR4IN_0/w_n19_n9# 0.11fF
+C332 OR4IN_0/NOT_0/w_n7_n3# OR4IN_0/vout 0.03fF
+C333 vdd OR4IN_0/vin3 0.20fF
+C334 vdd AND4IN_0/NOT_0/in 0.26fF
+C335 vdd vina2 0.13fF
+C336 XOR2IN_0/NAND2IN_1/w_n16_n4# XOR2IN_0/NAND2IN_2/vin2 0.10fF
+C337 NOT_4/in NOT_6/out 0.06fF
+C338 vdd NOT_3/out 0.06fF
+C339 OR4IN_0/vin3 OR4IN_0/w_n19_n9# 0.12fF
+C340 AND4IN_1/NOT_0/in AND4IN_1/w_n14_n10# 0.25fF
+C341 voutGreater gnd 0.14fF
+C342 vina0 XOR2IN_0/NAND2IN_0/w_n16_n4# 0.10fF
+C343 vina0 vina3 0.06fF
+C344 NOT_2/out AND4IN_1/NOT_0/in 0.06fF
+C345 XOR2IN_0/NAND2IN_2/vin2 XOR2IN_0/NAND2IN_3/vin2 0.06fF
+C346 AND3IN_0/NOT_0/in NOT_5/out 0.06fF
+C347 vina2 NOT_3/out 0.06fF
+C348 vdd AND2IN_2/NOT_0/w_n7_n3# 0.06fF
+C349 vina0 NOT_2/out 0.06fF
+C350 vinb3 NOT_1/out 0.06fF
+C351 vinb3 XOR2IN_3/NAND2IN_2/w_n16_n4# 0.10fF
+C352 OR4IN_0/vin2 gnd 0.19fF
+C353 vdd XOR2IN_3/NAND2IN_3/w_n16_n4# 0.11fF
+C354 vdd NOT_6/out 0.12fF
+C355 vdd AND2IN_3/NOT_0/in 0.08fF
+C356 OR4IN_0/vin4 OR4IN_0/NOT_0/in 0.13fF
+C357 NOT_6/out AND4IN_0/NOT_0/in 0.06fF
+C358 XOR2IN_2/NAND2IN_2/vin2 XOR2IN_2/NAND2IN_3/vin1 0.06fF
+C359 AND3IN_0/NOT_0/w_n7_n3# vdd 0.06fF
+C360 vina2 NOT_6/out 0.06fF
+C361 NOT_6/out NOT_3/out 0.06fF
+C362 vina1 vinb0 0.06fF
+C363 vina1 vdd 0.13fF
+C364 NOT_1/out gnd 2.09fF
+C365 vdd AND2IN_1/NAND2IN_0/w_n16_n4# 0.11fF
+C366 vdd XOR2IN_3/NAND2IN_1/w_n16_n4# 0.11fF
+C367 XOR2IN_2/NAND2IN_0/w_n16_n4# XOR2IN_2/NAND2IN_2/vin2 0.08fF
+C368 NOT_5/out NOT_4/out 0.14fF
+C369 AND2IN_1/NOT_0/w_n7_n3# AND2IN_1/NOT_0/in 0.07fF
+C370 vina1 vina2 10.39fF
+C371 vina1 NOT_3/out 0.06fF
+C372 vdd NOT_1/w_n7_n3# 0.06fF
+C373 NOR2IN_0/vout gnd 0.17fF
+C374 vinb1 NOT_2/w_n7_n3# 0.07fF
+C375 vina0 AND5IN_0/w_n26_1# 0.12fF
+C376 vdd NOT_7/in 0.19fF
+C377 vdd XOR2IN_3/NAND2IN_3/vin2 0.08fF
+C378 XOR2IN_2/NAND2IN_2/vin2 gnd 0.19fF
+C379 XOR2IN_1/NAND2IN_0/w_n16_n4# XOR2IN_1/NAND2IN_2/vin2 0.08fF
+C380 vdd voutEqual 0.16fF
+C381 AND2IN_1/NOT_0/in AND4IN_0/vout 0.06fF
+C382 XOR2IN_0/NAND2IN_3/vin2 gnd 0.06fF
+C383 vdd OR4IN_0/vout 0.08fF
+C384 OR4IN_0/NOT_0/w_n7_n3# OR4IN_0/NOT_0/in 0.07fF
+C385 vdd AND4IN_1/NOT_0/in 0.26fF
+C386 AND5IN_0/NOT_0/in AND5IN_0/w_n26_1# 0.24fF
+C387 NOT_4/w_n7_n3# Gnd 0.61fF
+C388 OR4IN_0/w_n19_n9# Gnd 1.95fF
+C389 OR4IN_0/vout Gnd 0.71fF
+C390 OR4IN_0/NOT_0/in Gnd 0.51fF
+C391 OR4IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C392 NOT_3/out Gnd 0.56fF
+C393 NOT_3/w_n7_n3# Gnd 0.61fF
+C394 NOT_4/out Gnd 22.68fF
+C395 AND4IN_1/w_n14_n10# Gnd 2.83fF
+C396 OR4IN_0/vin3 Gnd 1.61fF
+C397 AND4IN_1/NOT_0/in Gnd 0.45fF
+C398 AND4IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C399 NOT_2/out Gnd 0.42fF
+C400 NOT_2/w_n7_n3# Gnd 0.61fF
+C401 AND4IN_0/w_n14_n10# Gnd 2.83fF
+C402 AND4IN_0/vout Gnd 0.68fF
+C403 AND4IN_0/NOT_0/in Gnd 0.45fF
+C404 AND4IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C405 NOT_1/out Gnd 0.43fF
+C406 NOT_1/w_n7_n3# Gnd 0.61fF
+C407 NOT_0/w_n7_n3# Gnd 0.61fF
+C408 NOT_6/out Gnd 1.41fF
+C409 AND5IN_0/w_n26_1# Gnd 1.65fF
+C410 OR4IN_0/vin4 Gnd 1.86fF
+C411 AND5IN_0/NOT_0/in Gnd 0.65fF
+C412 AND5IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C413 voutLess Gnd 0.35fF
+C414 AND2IN_3/NOT_0/in Gnd 0.37fF
+C415 AND2IN_3/NOT_0/w_n7_n3# Gnd 0.61fF
+C416 NOR2IN_0/vout Gnd 0.03fF
+C417 AND2IN_3/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C418 voutEqual Gnd 0.55fF
+C419 AND2IN_1/NOT_0/in Gnd 0.37fF
+C420 AND2IN_1/NOT_0/w_n7_n3# Gnd 0.61fF
+C421 vinEn Gnd 27.03fF
+C422 AND2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C423 voutGreater Gnd 0.65fF
+C424 AND2IN_2/NOT_0/in Gnd 0.37fF
+C425 AND2IN_2/NOT_0/w_n7_n3# Gnd 0.61fF
+C426 AND2IN_2/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C427 AND2IN_0/NOT_0/in Gnd 0.37fF
+C428 AND2IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C429 AND2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C430 NOR2IN_0/w_n19_n9# Gnd 1.37fF
+C431 NOT_5/in Gnd 4.73fF
+C432 XOR2IN_3/NAND2IN_3/vin1 Gnd 0.54fF
+C433 XOR2IN_3/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C434 XOR2IN_3/NAND2IN_3/vin2 Gnd 0.55fF
+C435 XOR2IN_3/NAND2IN_2/vin2 Gnd 0.80fF
+C436 XOR2IN_3/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C437 XOR2IN_3/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C438 vinb3 Gnd 12.28fF
+C439 vina3 Gnd 9.61fF
+C440 XOR2IN_3/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C441 NOT_4/in Gnd 0.67fF
+C442 XOR2IN_2/NAND2IN_3/vin1 Gnd 0.54fF
+C443 XOR2IN_2/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C444 XOR2IN_2/NAND2IN_3/vin2 Gnd 0.55fF
+C445 XOR2IN_2/NAND2IN_2/vin2 Gnd 0.80fF
+C446 XOR2IN_2/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C447 XOR2IN_2/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C448 vinb2 Gnd 8.49fF
+C449 vina2 Gnd 10.04fF
+C450 XOR2IN_2/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C451 XOR2IN_0/NAND2IN_3/vin1 Gnd 0.54fF
+C452 XOR2IN_0/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C453 XOR2IN_0/NAND2IN_3/vin2 Gnd 0.55fF
+C454 XOR2IN_0/NAND2IN_2/vin2 Gnd 0.80fF
+C455 XOR2IN_0/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C456 XOR2IN_0/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C457 vinb0 Gnd 6.30fF
+C458 vina0 Gnd 11.41fF
+C459 XOR2IN_0/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C460 vdd Gnd 5.90fF
+C461 NOT_6/in Gnd 0.86fF
+C462 XOR2IN_1/NAND2IN_3/vin1 Gnd 0.54fF
+C463 XOR2IN_1/NAND2IN_3/w_n16_n4# Gnd 1.16fF
+C464 XOR2IN_1/NAND2IN_3/vin2 Gnd 0.55fF
+C465 XOR2IN_1/NAND2IN_2/vin2 Gnd 0.80fF
+C466 XOR2IN_1/NAND2IN_2/w_n16_n4# Gnd 1.16fF
+C467 XOR2IN_1/NAND2IN_1/w_n16_n4# Gnd 1.16fF
+C468 vinb1 Gnd 4.78fF
+C469 vina1 Gnd 10.51fF
+C470 XOR2IN_1/NAND2IN_0/w_n16_n4# Gnd 1.16fF
+C471 NOT_5/out Gnd 1.69fF
+C472 AND3IN_0/w_n14_n10# Gnd 2.32fF
+C473 OR4IN_0/vin2 Gnd 1.19fF
+C474 AND3IN_0/NOT_0/in Gnd 0.44fF
+C475 AND3IN_0/NOT_0/w_n7_n3# Gnd 0.61fF
+C476 NOT_7/out Gnd 0.42fF
+C477 NOT_7/w_n7_n3# Gnd 0.61fF
+C478 NOT_6/w_n7_n3# Gnd 0.61fF
+C479 NOT_5/w_n7_n3# Gnd 0.61fF
+
+
+
+.tran 1n 600n
+
+.control
+run
+set color0 = rgb:f/f/e
+set color1 = black
+plot  v(vinEn)-2 v(vina0) v(vina1)+2 v(vina2)+4 v(vina3)+6 v(vinb0)+8 v(vinb1)+10 v(vinb2)+12 v(vinb3)+14 v(voutEqual)+16 v(voutGreater)+18 v(voutLess)+20
+hardcopy Comparator_Plot.ps v(vinEn)-2 v(vina0) v(vina1)+2 v(vina2)+4 v(vina3)+6 v(vinb0)+8 v(vinb1)+10 v(vinb2)+12 v(vinb3)+14 v(voutEqual)+16 v(voutGreater)+18 v(voutLess)+20
+.end
+.endc

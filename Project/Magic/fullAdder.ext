@@ -26,25 +26,25 @@ node "m1_n527_n435#" 9 1024.35 -527 -435 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1035 696
 node "m1_n749_n303#" 6 1288.73 -749 -303 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 418 286 259 174 0 0 0 0 0 0 0 0
 node "m1_n596_n107#" 5 537.318 -596 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 540 366 0 0 0 0 0 0 0 0 0 0
 node "vdd" 3 298.23 -843 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 297 204 0 0 0 0 0 0 0 0 0 0
-cap "m1_n814_n406#" "m1_n527_n435#" 63.1773
-cap "m1_n712_n407#" "vcin" 63.1773
-cap "m1_n527_n435#" "vcin" 255.621
-cap "m1_n712_n407#" "m1_n699_n390#" 63.1773
 cap "m1_n704_n365#" "vcin" 63.1773
-cap "m1_n712_n407#" "m1_n527_n435#" 63.1773
-cap "m1_n814_n406#" "vcin" 63.1773
-cap "m1_n814_n406#" "m1_n749_n303#" 63.1773
-cap "vin1" "vin2" 270.688
-cap "m1_n704_n365#" "m1_n527_n435#" 63.1773
-cap "vcin" "gnd" 63.1773
-cap "m1_n699_n390#" "vcin" 63.1773
+cap "gnd" "vcin" 63.1773
+cap "m1_n527_n435#" "m1_n712_n407#" 63.1773
+cap "m1_n814_n406#" "m1_n527_n435#" 63.1773
+cap "m1_n699_n390#" "m1_n712_n407#" 63.1773
 cap "m1_n401_n423#" "m1_n390_n391#" 63.1773
+cap "vin2" "vin1" 270.688
+cap "m1_n712_n407#" "vcin" 63.1773
+cap "m1_n814_n406#" "vcin" 63.1773
+cap "m1_n704_n365#" "m1_n527_n435#" 63.1773
+cap "m1_n814_n406#" "m1_n749_n303#" 63.1773
+cap "m1_n527_n435#" "vcin" 255.621
+cap "m1_n699_n390#" "vcin" 63.1773
 subcap "m1_n814_n406#" -6279.89
 subcap "m1_n712_n407#" -1544.19
 subcap "m1_n699_n390#" -1446.22
-cap "AND2IN_0/gnd" "AND2IN_0/vout" 13.746
+cap "AND2IN_0/vout" "AND2IN_0/gnd" 13.746
 subcap "m1_n390_n391#" -1064.19
-cap "AND2IN_1/vout" "AND2IN_1/gnd" -1.42109e-14
+cap "AND2IN_1/gnd" "AND2IN_1/vout" -1.42109e-14
 subcap "m1_n390_n391#" -273.649
 cap "OR2IN_0/vin1" "OR2IN_0/gnd" 1.06581e-14
 subcap "vcout" -0.0543
@@ -52,18 +52,18 @@ cap "AND2IN_0/gnd" "XOR2IN_0/vin2" 63.1773
 subcap "m1_n699_n390#" -1302.54
 subcap "m1_n704_n365#" -1787.55
 subcap "m1_n749_n303#" -444.545
+cap "AND2IN_0/vdd" "AND2IN_0/NOT_0/w_n7_n3#" 33.9015
 cap "AND2IN_0/vout" "AND2IN_0/gnd" 1.96371
-cap "XOR2IN_0/NAND2IN_2/vin1" "AND2IN_0/vdd" 122.089
-cap "AND2IN_0/NOT_0/w_n7_n3#" "AND2IN_0/vdd" 33.9015
+cap "AND2IN_0/vdd" "XOR2IN_0/NAND2IN_2/vin1" 122.089
 subcap "m1_n390_n391#" -1110.9
-cap "XOR2IN_1/vin2" "m1_n814_n406#" 63.1773
+cap "m1_n814_n406#" "XOR2IN_1/vin2" 63.1773
 cap "AND2IN_1/NAND2IN_0/w_n16_n4#" "AND2IN_1/vdd" 22.8297
 subcap "m1_n390_n391#" -1170.8
 subcap "vcout" -204.605
-cap "XOR2IN_0/vin1" "XOR2IN_0/NAND2IN_0/gnd" 63.1773
+cap "XOR2IN_0/NAND2IN_0/gnd" "XOR2IN_0/vin1" 63.1773
 subcap "m1_n749_n303#" -614.192
-cap "m1_n749_n303#" "XOR2IN_0/m1_n29_n8#" 63.1773
 cap "m1_n749_n303#" "XOR2IN_0/gnd" 97.5423
+cap "m1_n749_n303#" "XOR2IN_0/m1_n29_n8#" 63.1773
 cap "XOR2IN_1/NAND2IN_0/gnd" "XOR2IN_1/vin1" 63.1773
 subcap "m1_n596_n107#" -448.821
 merge "XOR2IN_1/vdd" "XOR2IN_0/NAND2IN_3/vdd" -126.247 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -111 -91 0 0 0 0 0 0 0 0 0 0

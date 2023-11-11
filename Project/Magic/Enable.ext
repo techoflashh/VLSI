@@ -4,8 +4,8 @@ tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 9
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
-use AND4Bit AND4Bit_1 1 0 493 0 1 6
 use AND4Bit AND4Bit_0 1 0 12 0 1 6
+use AND4Bit AND4Bit_1 1 0 493 0 1 6
 node "vinb3" 1 79.8045 849 -23 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0 0 0 0 0 0 0 0 0
 node "vinb2" 1 79.8045 735 -23 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0 0 0 0 0 0 0 0 0
 node "vinb1" 1 79.8045 617 -23 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0 0 0 0 0 0 0 0 0
@@ -27,27 +27,27 @@ node "vouta3" 0 35.529 453 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 26 0 0 0 0 0 0 0
 node "vouta2" 0 35.529 342 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 26 0 0 0 0 0 0 0 0 0 0
 node "vouta1" 0 35.529 226 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 26 0 0 0 0 0 0 0 0 0 0
 node "vouta0" 0 35.529 113 93 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 26 0 0 0 0 0 0 0 0 0 0
-cap "vinEn" "vina3" 63.1773
+cap "vinEn" "vina1" 63.1773
 cap "vina0" "vinEn" 63.1773
-cap "vina1" "vinEn" 63.1773
-cap "vinEn" "vinb2" 63.1773
-cap "vinEn" "vinb3" 63.1773
-cap "vinEn" "vinb0" 63.1773
+cap "vinEn" "vina2" 63.1773
 cap "vinEn" "vinb1" 63.1773
-cap "vina2" "vinEn" 63.1773
+cap "vinEn" "vinb0" 63.1773
+cap "vinEn" "vinb2" 63.1773
+cap "vinEn" "vina3" 63.1773
+cap "vinb3" "vinEn" 63.1773
 subcap "vinEn" -8819.9
 subcap "vdd" -28.3719
 subcap "m1_374_76#" -886.585
-cap "AND4Bit_1/vdd" "AND4Bit_0/AND2IN_3/vout" 41.2191
-cap "AND4Bit_0/AND2IN_3/NOT_0/w_n7_n3#" "AND4Bit_0/AND2IN_3/NOT_0/in" -1.42109e-14
+cap "AND4Bit_0/AND2IN_3/NOT_0/in" "AND4Bit_0/AND2IN_3/NOT_0/w_n7_n3#" -1.42109e-14
+cap "AND4Bit_0/AND2IN_3/vout" "AND4Bit_0/AND2IN_3/vdd" 41.2191
 subcap "vdd" -15.9234
 subcap "m1_374_76#" -827.813
-cap "AND4Bit_1/vdd" "AND4Bit_0/vout3" 52.1982
-merge "AND4Bit_0/AND2IN_3/vdd" "AND4Bit_1/vdd" -227.487 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -138 -104 0 0 0 0 0 0 0 0 0 0
-merge "AND4Bit_1/vdd" "AND4Bit_0/AND2IN_3/NAND2IN_0/vdd"
+cap "AND4Bit_0/vout3" "AND4Bit_0/AND2IN_3/vdd" 52.1982
+merge "AND4Bit_1/vdd" "AND4Bit_0/AND2IN_3/vdd" -227.487 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -138 -104 0 0 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/AND2IN_3/vdd" "AND4Bit_0/AND2IN_3/NAND2IN_0/vdd"
 merge "AND4Bit_0/AND2IN_3/NAND2IN_0/vdd" "m1_374_76#"
-merge "AND4Bit_0/AND2IN_3/NOT_0/gnd" "AND4Bit_1/gnd" -35.6376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0 0 0 0 0 0 0
-merge "AND4Bit_1/gnd" "m1_433_26#"
+merge "AND4Bit_1/gnd" "AND4Bit_0/AND2IN_3/NOT_0/gnd" -35.6376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/AND2IN_3/NOT_0/gnd" "m1_433_26#"
 merge "AND4Bit_1/vout0" "voutb0" -11.9154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -10 0 0 0 0 0 0 0 0 0 0
 merge "AND4Bit_1/vout2" "voutb2" -11.9154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -10 0 0 0 0 0 0 0 0 0 0
 merge "AND4Bit_1/vout1" "voutb1" -11.9154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -10 0 0 0 0 0 0 0 0 0 0

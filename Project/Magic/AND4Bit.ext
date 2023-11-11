@@ -28,18 +28,18 @@ node "vdd" 2 197.873 -12 70 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195 136 0 0 0 0 0 0 0
 node "vout2" 2 445.02 320 36 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 164 116 95 64 0 0 0 0 0 0 0 0
 node "vout1" 2 445.02 204 36 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 164 116 95 64 0 0 0 0 0 0 0 0
 node "vout0" 2 445.02 91 36 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 164 116 95 64 0 0 0 0 0 0 0 0
-cap "m1_287_70#" "vout2" 131.907
-cap "vout1" "m1_168_70#" 131.907
 cap "vdd" "m1_59_70#" 20.619
+cap "vout2" "m1_287_70#" 131.907
+cap "vout1" "m1_168_70#" 131.907
 cap "vout0" "m1_59_70#" 131.907
 subcap "vout0" -388.829
 subcap "vout0" -36.5901
-cap "AND2IN_0/NOT_0/vdd" "AND2IN_1/vdd" 32.9904
+cap "AND2IN_1/vdd" "AND2IN_0/NOT_0/vdd" 32.9904
 cap "AND2IN_1/NAND2IN_0/w_n16_n4#" "AND2IN_1/vdd" 1.42109e-14
 cap "AND2IN_2/vdd" "AND2IN_1/NOT_0/vdd" 107.219
 cap "AND2IN_2/vdd" "AND2IN_2/NAND2IN_0/w_n16_n4#" 1.42109e-14
+cap "AND2IN_2/NOT_0/in" "AND2IN_2/NOT_0/w_n7_n3#" -1.42109e-14
 cap "AND2IN_3/NAND2IN_0/vdd" "AND2IN_3/NAND2IN_0/w_n16_n4#" 1.42109e-14
-cap "AND2IN_2/NOT_0/w_n7_n3#" "AND2IN_2/NOT_0/in" -1.42109e-14
 merge "AND2IN_3/vout" "vout3" -8.9637 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -8 0 0 0 0 0 0 0 0 0 0
 merge "AND2IN_3/NAND2IN_0/vdd" "AND2IN_2/vdd" -65.2632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 -50 0 0 0 0 0 0 0 0 0 0
 merge "AND2IN_2/vdd" "AND2IN_1/vdd"

@@ -1,0 +1,486 @@
+timestamp 1699715518
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use OR2IN OR2IN_0 1 0 -894 0 1 301
+use Decoder Decoder_0 1 0 -1042 0 1 129
+use Enable Enable_0 1 0 -411 0 1 358
+use Enable Enable_1 1 0 578 0 1 358
+use Enable Enable_2 1 0 1559 0 1 358
+use AdderSubtractor AdderSubtractor_0 1 0 -411 0 1 1305
+use Comparator Comparator_0 1 0 3015 0 1 1166
+use AND4Bit AND4Bit_0 1 0 5308 0 1 1112
+use OR3IN OR3IN_0 1 0 566 0 1 1835
+use OR3IN OR3IN_1 1 0 778 0 1 1837
+use OR2IN OR2IN_1 1 0 1188 0 1 1840
+use OR3IN OR3IN_2 1 0 990 0 1 1839
+node "vinSel0" 0 56.1909 -594 48 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51 40 0 0 0 0 0 0 0 0 0 0
+node "vinSel1" 0 56.1909 -633 48 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51 40 0 0 0 0 0 0 0 0 0 0
+node "vinb3" 67 22669.4 437 228 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1516 1018 5980 3988 0 0 0 0 0 0 0 0
+node "vinb2" 67 22784.8 323 219 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 1074 5980 3988 0 0 0 0 0 0 0 0
+node "vinb1" 68 22888.3 205 210 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1672 1122 5980 3988 0 0 0 0 0 0 0 0
+node "vinb0" 68 22980 96 200 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1732 1162 5980 3988 0 0 0 0 0 0 0 0
+node "vina3" 69 23077.7 -44 190 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1798 1206 5980 3988 0 0 0 0 0 0 0 0
+node "vina2" 70 23175.3 -158 180 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1864 1250 5980 3988 0 0 0 0 0 0 0 0
+node "vina1" 70 23261.2 -276 171 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1918 1286 5980 3988 0 0 0 0 0 0 0 0
+node "vina0" 70 23326.3 -385 163 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1951 1308 5980 3988 0 0 0 0 0 0 0 0
+node "m1_1493_384#" 2 230.341 1493 384 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228 158 0 0 0 0 0 0 0 0 0 0
+node "m1_503_384#" 2 230.341 503 384 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228 158 0 0 0 0 0 0 0 0 0 0
+node "m1_n556_157#" 10 1799.1 -556 157 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 926 624 248 166 0 0 0 0 0 0 0 0
+node "m1_n589_227#" 61 24103.1 -589 227 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83 62 6776 4518 0 0 0 0 0 0 0 0
+node "m1_n929_227#" 1 109.322 -929 227 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105 76 0 0 0 0 0 0 0 0 0 0
+node "m1_n820_281#" 13 2749.6 -820 281 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 944 636 527 352 0 0 0 0 0 0 0 0
+node "m1_1471_433#" 3 1083.69 1471 433 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 40 284 190 0 0 0 0 0 0 0 0
+node "m1_2493_456#" 103 11355.3 2493 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11535 7696 0 0 0 0 0 0 0 0 0 0
+node "m1_2012_457#" 115 12713.1 2012 457 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12915 8616 0 0 0 0 0 0 0 0 0 0
+node "m1_2382_457#" 103 12106.5 2382 457 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11285 7530 293 196 0 0 0 0 0 0 0 0
+node "m1_1901_456#" 115 12707.2 1901 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12909 8612 0 0 0 0 0 0 0 0 0 0
+node "m1_2266_458#" 103 11967.5 2266 458 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11321 7554 254 170 0 0 0 0 0 0 0 0
+node "m1_1785_456#" 115 12701.3 1785 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12903 8608 0 0 0 0 0 0 0 0 0 0
+node "m1_2153_456#" 103 11830.3 2153 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11381 7594 209 140 0 0 0 0 0 0 0 0
+node "m1_1672_456#" 115 12710.1 1672 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12912 8614 0 0 0 0 0 0 0 0 0 0
+node "m1_1512_458#" 60 6673.9 1512 458 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6777 4524 0 0 0 0 0 0 0 0 0 0
+node "m1_1401_456#" 63 6936.6 1401 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7044 4702 0 0 0 0 0 0 0 0 0 0
+node "m1_1285_455#" 65 7237.68 1285 455 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7350 4906 0 0 0 0 0 0 0 0 0 0
+node "m1_1172_457#" 68 7500.38 1172 457 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7617 5084 0 0 0 0 0 0 0 0 0 0
+node "m1_1031_456#" 66 7332.13 1031 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7446 4970 0 0 0 0 0 0 0 0 0 0
+node "m1_920_455#" 69 7600.74 920 455 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7719 5152 0 0 0 0 0 0 0 0 0 0
+node "m1_804_458#" 71 7866.39 804 458 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7989 5332 0 0 0 0 0 0 0 0 0 0
+node "m1_691_456#" 73 8137.95 691 456 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8265 5516 0 0 0 0 0 0 0 0 0 0
+node "m1_482_433#" 3 1138.2 482 433 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 40 308 206 0 0 0 0 0 0 0 0
+node "m1_n828_307#" 17 1933.47 -828 307 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1959 1312 0 0 0 0 0 0 0 0 0 0
+node "m1_n700_225#" 117 23816.4 -700 225 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8908 5942 4264 2844 0 0 0 0 0 0 0 0
+node "m1_n891_236#" 106 41766.8 -891 236 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 518 346 11453 7636 0 0 0 0 0 0 0 0
+node "m1_89_668#" 25 2718.62 89 668 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2757 1844 0 0 0 0 0 0 0 0 0 0
+node "m1_67_661#" 22 2432.31 67 661 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2466 1650 0 0 0 0 0 0 0 0 0 0
+node "m1_41_654#" 20 2178.46 41 654 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2208 1478 0 0 0 0 0 0 0 0 0 0
+node "m1_9_647#" 17 1942.33 9 647 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1968 1318 0 0 0 0 0 0 0 0 0 0
+node "m1_n380_640#" 24 2671.4 -380 640 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2709 1812 0 0 0 0 0 0 0 0 0 0
+node "m1_n398_624#" 22 2390.99 -398 624 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2424 1622 0 0 0 0 0 0 0 0 0 0
+node "m1_n418_607#" 20 2184.37 -418 607 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2214 1482 0 0 0 0 0 0 0 0 0 0
+node "m1_n435_587#" 17 1836.07 -435 587 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1860 1246 0 0 0 0 0 0 0 0 0 0
+node "vdd" 30 3294.21 -889 326 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3342 2234 0 0 0 0 0 0 0 0 0 0
+node "m1_5153_1132#" 8 859.053 5153 1132 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 867 584 0 0 0 0 0 0 0 0 0 0
+node "m1_5097_1335#" 10 4005.34 5097 1335 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 40 1088 726 0 0 0 0 0 0 0 0
+node "m1_2602_1384#" 22 2432.31 2602 1384 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2466 1650 0 0 0 0 0 0 0 0 0 0
+node "m1_2610_1426#" 21 4243.83 2610 1426 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1649 1106 725 484 0 0 0 0 0 0 0 0
+node "vcout" 5 587.497 2735 1729 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 591 400 0 0 0 0 0 0 0 0 0 0
+node "m1_1167_1742#" 42 4659.35 1167 1742 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4758 3150 0 0 0 0 0 0 0 0 0 0
+node "m1_1003_1785#" 146 49605.5 1003 1785 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3676 2458 12718 8480 0 0 0 0 0 0 0 0
+node "m1_969_1735#" 25 2887.59 969 1735 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2962 1948 0 0 0 0 0 0 0 0 0 0
+node "m1_791_1783#" 148 55155.1 791 1783 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2064 1378 14811 9792 0 0 0 0 0 0 0 0
+node "m1_771_1752#" 100 40233 771 1752 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 377 236 11028 7346 0 0 0 0 0 0 0 0
+node "m1_757_1729#" 10 1156.21 757 1729 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1205 774 0 0 0 0 0 0 0 0 0 0
+node "m1_578_1769#" 145 54247.8 578 1769 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1796 1198 14522 9682 0 0 0 0 0 0 0 0
+node "m1_561_1748#" 98 27508.4 561 1748 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4689 3112 6359 4240 0 0 0 0 0 0 0 0
+node "gnd" 94 23595.2 -1130 159 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5643 3772 4989 3322 0 0 0 0 0 0 0 0
+node "m1_1054_1803#" 3 336.602 1054 1803 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336 230 0 0 0 0 0 0 0 0 0 0
+node "m1_839_1801#" 3 383.83 839 1801 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 384 262 0 0 0 0 0 0 0 0 0 0
+node "m1_621_1799#" 4 404.492 621 1799 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 405 276 0 0 0 0 0 0 0 0 0 0
+node "m1_1191_1786#" 144 17162 1191 1786 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15692 10468 491 328 0 0 0 0 0 0 0 0
+node "vout3" 3 318.892 1262 1820 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 318 218 0 0 0 0 0 0 0 0 0 0
+node "m1_294_1727#" 9 1286.6 294 1727 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 895 584 134 90 0 0 0 0 0 0 0 0
+node "m1_518_1692#" 6 622.917 518 1692 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 627 424 0 0 0 0 0 0 0 0 0 0
+node "m1_606_1860#" 4 472.381 606 1860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 474 322 0 0 0 0 0 0 0 0 0 0
+node "m1_821_1862#" 4 467.741 821 1862 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 472 318 0 0 0 0 0 0 0 0 0 0
+node "m1_1029_1864#" 4 453.93 1029 1864 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 460 308 0 0 0 0 0 0 0 0 0 0
+node "vout2" 3 551.045 1070 1854 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 305 210 86 58 0 0 0 0 0 0 0 0
+node "vout1" 3 556.948 858 1852 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 311 214 86 58 0 0 0 0 0 0 0 0
+node "vout0" 3 562.852 646 1850 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 317 218 86 58 0 0 0 0 0 0 0 0
+node "a_984_1762#" 108 40203.3 984 1762 pdm12c 0 0 25 20 0 0 0 0 0 0 0 0 0 0 379 246 10997 7332 0 0 0 0 0 0 0 0
+cap "m1_791_1783#" "vout2" 63.1773
+cap "vout3" "m1_791_1783#" 63.1773
+cap "m1_1003_1785#" "m1_1191_1786#" 7609.73
+cap "m1_1003_1785#" "m1_1054_1803#" 63.1773
+cap "m1_1167_1742#" "m1_561_1748#" 74.1564
+cap "m1_9_647#" "m1_n891_236#" 63.1773
+cap "m1_821_1862#" "m1_791_1783#" 74.1564
+cap "m1_2012_457#" "m1_2382_457#" 63.1773
+cap "m1_1901_456#" "m1_2153_456#" 63.1773
+cap "m1_294_1727#" "m1_518_1692#" 63.1773
+cap "m1_1003_1785#" "vcout" 63.1773
+cap "m1_1191_1786#" "vcout" 63.1773
+cap "vinb3" "m1_n589_227#" 141.269
+cap "m1_67_661#" "m1_41_654#" 2391.8
+cap "m1_n380_640#" "m1_9_647#" 371.142
+cap "vina2" "m1_n589_227#" 126.355
+cap "m1_757_1729#" "m1_578_1769#" 74.1564
+cap "vina3" "vinb2" 189.532
+cap "m1_n828_307#" "m1_n820_281#" 63.1773
+cap "vina2" "vinb3" 189.532
+cap "m1_n556_157#" "m1_n700_225#" 63.1773
+cap "vinb0" "m1_n589_227#" 126.355
+cap "m1_2012_457#" "m1_2266_458#" 63.1773
+cap "m1_n380_640#" "m1_n891_236#" 63.1773
+cap "m1_969_1735#" "m1_771_1752#" 74.1564
+cap "vinb3" "vinb0" 189.532
+cap "vina2" "vinb0" 189.532
+cap "vina3" "vinb1" 189.532
+cap "m1_821_1862#" "vout1" 155.963
+cap "vina3" "vina1" 189.532
+cap "m1_561_1748#" "vcout" 63.1773
+cap "m1_606_1860#" "vout0" 155.963
+cap "m1_n828_307#" "m1_n891_236#" 63.1773
+cap "vina3" "vina0" 189.532
+cap "vina3" "m1_n700_225#" 63.1773
+cap "m1_n418_607#" "m1_n891_236#" 63.1773
+cap "m1_791_1783#" "m1_1191_1786#" 63.1773
+cap "m1_1003_1785#" "m1_791_1783#" 63.1773
+cap "m1_n891_236#" "m1_89_668#" 63.1773
+cap "m1_969_1735#" "m1_578_1769#" 74.1564
+cap "m1_n556_157#" "m1_n589_227#" 63.1773
+cap "m1_482_433#" "m1_n700_225#" 63.1773
+cap "m1_839_1801#" "m1_791_1783#" 74.1564
+cap "a_984_1762#" "m1_771_1752#" 7210.39
+cap "m1_969_1735#" "m1_1167_1742#" 7391.91
+cap "m1_1029_1864#" "vout2" 155.963
+cap "m1_791_1783#" "vcout" 63.1773
+cap "m1_757_1729#" "m1_561_1748#" 74.1564
+cap "m1_1901_456#" "m1_2266_458#" 63.1773
+cap "m1_1401_456#" "m1_1285_455#" 12893.7
+cap "vinb2" "vinb1" 1717.25
+cap "vinb2" "vina1" 189.532
+cap "m1_1401_456#" "m1_1512_458#" 14713.7
+cap "vina3" "m1_n589_227#" 126.355
+cap "gnd" "m1_518_1692#" 63.1773
+cap "vina3" "vinb3" 189.532
+cap "m1_920_455#" "m1_1031_456#" 16544.7
+cap "vina3" "vina2" 1519.39
+cap "a_984_1762#" "m1_578_1769#" 7716.76
+cap "vinb2" "vina0" 189.532
+cap "vinb2" "m1_n700_225#" 63.1773
+cap "a_984_1762#" "m1_1167_1742#" 74.1564
+cap "vinb1" "vina1" 189.532
+cap "m1_67_661#" "m1_n891_236#" 63.1773
+cap "m1_n398_624#" "m1_n891_236#" 63.1773
+cap "m1_771_1752#" "m1_578_1769#" 74.1564
+cap "vina3" "vinb0" 1480.61
+cap "m1_n828_307#" "m1_n700_225#" 63.1773
+cap "m1_9_647#" "m1_41_654#" 1494.88
+cap "m1_771_1752#" "m1_1167_1742#" 74.1564
+cap "m1_804_458#" "m1_691_456#" 18054
+cap "m1_969_1735#" "m1_561_1748#" 74.1564
+cap "vinb1" "vina0" 189.532
+cap "vina0" "vina1" 3353.1
+cap "vinb1" "m1_n700_225#" 63.1773
+cap "m1_n700_225#" "vina1" 63.1773
+cap "m1_41_654#" "m1_n891_236#" 63.1773
+cap "m1_n700_225#" "vina0" 63.1773
+cap "vout3" "m1_1003_1785#" 63.1773
+cap "m1_1003_1785#" "m1_1029_1864#" 63.1773
+cap "m1_n556_157#" "m1_n820_281#" 63.1773
+cap "vinb2" "m1_n589_227#" 126.355
+cap "m1_n435_587#" "m1_n891_236#" 63.1773
+cap "m1_969_1735#" "m1_757_1729#" 1635.77
+cap "m1_1167_1742#" "m1_578_1769#" 74.1564
+cap "vinb3" "vinb2" 1724.21
+cap "m1_503_384#" "m1_n700_225#" 63.1773
+cap "a_984_1762#" "vcout" 63.1773
+cap "vina2" "vinb2" 189.532
+cap "m1_n828_307#" "m1_n589_227#" 63.1773
+cap "m1_67_661#" "m1_89_668#" 3360.9
+cap "m1_1285_455#" "m1_1172_457#" 16280.8
+cap "m1_771_1752#" "vcout" 63.1773
+cap "m1_2153_456#" "m1_1785_456#" 63.1773
+cap "vinb2" "vinb0" 189.532
+cap "vinb1" "m1_n589_227#" 126.355
+cap "m1_2012_457#" "m1_2153_456#" 63.1773
+cap "m1_n589_227#" "vina1" 126.355
+cap "m1_771_1752#" "m1_561_1748#" 4875.48
+cap "vinb3" "vinb1" 189.532
+cap "vinb3" "vina1" 189.532
+cap "m1_920_455#" "m1_804_458#" 17270.5
+cap "vina2" "vinb1" 189.532
+cap "vina2" "vina1" 3014.3
+cap "m1_n589_227#" "vina0" 126.355
+cap "vinb3" "vina0" 189.532
+cap "vinb0" "vinb1" 2822.4
+cap "vinb0" "vina1" 189.532
+cap "vinb3" "m1_n700_225#" 63.1773
+cap "vina2" "vina0" 189.532
+cap "vina2" "m1_n700_225#" 63.1773
+cap "m1_n891_236#" "m1_n820_281#" 63.1773
+cap "m1_n700_225#" "m1_691_456#" 23227.3
+cap "vcout" "m1_578_1769#" 63.1773
+cap "vinb0" "vina0" 189.532
+cap "vinb0" "m1_n700_225#" 63.1773
+cap "m1_1031_456#" "m1_1172_457#" 19454
+cap "Decoder_0/vinSel1" "Decoder_0/NOT_0/gnd" 63.1773
+subcap "m1_n929_227#" -111.945
+subcap "m1_n891_236#" -41589.8
+subcap "m1_n700_225#" -23668.7
+subcap "m1_n556_157#" -1351.21
+subcap "m1_n589_227#" -23818.2
+cap "Decoder_0/NOT_1/out" "Decoder_0/NOT_1/gnd" 76.9233
+subcap "m1_n828_307#" -1670.96
+subcap "vdd" -3031.7
+subcap "m1_n820_281#" -2713.25
+subcap "m1_n828_307#" -1870.54
+subcap "m1_482_433#" -127.274
+cap "Enable_0/AND4Bit_1/vout3" "Enable_0/AND4Bit_1/AND2IN_3/vdd" 63.1773
+subcap "m1_691_456#" -7713.64
+subcap "m1_920_455#" -7176.43
+subcap "m1_1031_456#" -7160.88
+subcap "m1_1285_455#" -6813.37
+subcap "m1_1471_433#" -908.087
+subcap "m1_1401_456#" -6512.3
+cap "Enable_1/AND4Bit_1/AND2IN_3/vdd" "Enable_1/AND4Bit_1/AND2IN_3/NAND2IN_0/w_n16_n4#" -1.42109e-14
+cap "Enable_1/AND4Bit_1/vout3" "Enable_1/AND4Bit_1/AND2IN_3/vdd" 63.1773
+subcap "m1_1672_456#" -12643.4
+subcap "m1_1672_456#" -12309.5
+subcap "m1_1785_456#" -12277
+subcap "m1_1901_456#" -12282.9
+subcap "m1_2153_456#" -11341
+subcap "m1_2493_456#" -11349.3
+subcap "m1_691_456#" -8041.9
+subcap "m1_804_458#" -7798.39
+subcap "m1_920_455#" -7504.69
+subcap "m1_1031_456#" -7264.19
+subcap "m1_1172_457#" -7514.28
+subcap "m1_1172_457#" -7404.33
+subcap "m1_1285_455#" -7141.63
+subcap "m1_1401_456#" -6842.86
+subcap "m1_1512_458#" -6605.96
+subcap "m1_1672_456#" -12722.5
+subcap "m1_1672_456#" -12614.1
+subcap "m1_1785_456#" -12605.2
+subcap "m1_1901_456#" -12611.1
+subcap "m1_2012_457#" -12642.1
+subcap "m1_2153_456#" -11734.2
+subcap "m1_2266_458#" -11871.4
+subcap "m1_2266_458#" -11974.4
+subcap "m1_2382_457#" -12035.5
+subcap "m1_2493_456#" -11287.4
+cap "m1_2602_1384#" "Comparator_0/vinEn" 74.1564
+cap "Comparator_0/vina0" "m1_2602_1384#" 63.1773
+cap "Comparator_0/vinb0" "m1_2602_1384#" 63.1773
+cap "gnd" "AdderSubtractor_0/vdd" 63.1773
+cap "AdderSubtractor_0/vina0" "gnd" 63.1773
+cap "AdderSubtractor_0/vinM" "gnd" 63.1773
+cap "AdderSubtractor_0/m1_n12_n185#" "gnd" 63.1773
+subcap "m1_5097_1335#" -3129.04
+cap "Comparator_0/AND5IN_0/vout" "Comparator_0/AND5IN_0/NOT_0/vdd" 63.1773
+cap "Comparator_0/AND5IN_0/NOT_0/vdd" "Comparator_0/AND5IN_0/NOT_0/gnd" 63.1773
+subcap "m1_2602_1384#" -2184.2
+subcap "m1_2610_1426#" -3943.43
+cap "AdderSubtractor_0/fullAdder_3/OR2IN_0/NOT_0/w_n7_n3#" "AdderSubtractor_0/fullAdder_3/OR2IN_0/NOT_0/vdd" 26.1
+cap "AdderSubtractor_0/vcout" "m1_2610_1426#" 63.1773
+cap "Comparator_0/vinEn" "m1_2610_1426#" 74.1564
+subcap "m1_294_1727#" -1212.7
+subcap "m1_518_1692#" -392.576
+subcap "m1_969_1735#" -2586.57
+subcap "vcout" -519.499
+subcap "m1_578_1769#" -54266.5
+subcap "m1_561_1748#" -27081.1
+subcap "m1_621_1799#" -73.6296
+subcap "vout0" -390.619
+cap "OR3IN_0/NOT_0/vdd" "OR3IN_0/vout" 24.7428
+subcap "m1_771_1752#" -40374.7
+subcap "m1_791_1783#" -54649.9
+subcap "m1_771_1752#" -38710.5
+subcap "m1_839_1801#" -10.0644
+subcap "vout1" -392.085
+cap "OR3IN_1/NOT_0/vdd" "OR3IN_1/vout" 24.7428
+subcap "m1_1003_1785#" -49139
+subcap "vout2" -479.454
+subcap "a_984_1762#" -38874.7
+cap "OR3IN_2/vout" "OR3IN_2/NOT_0/vdd" 12.3714
+subcap "m1_1167_1742#" -4349.66
+subcap "vout2" -476.588
+cap "OR3IN_2/vout" "OR3IN_2/NOT_0/vdd" 12.3714
+subcap "m1_1167_1742#" -4558.9
+subcap "m1_1191_1786#" -16685
+subcap "vout3" -153.488
+cap "OR2IN_1/vout" "OR2IN_1/NOT_0/vdd" 16.4952
+subcap "vout3" -363.118
+subcap "m1_606_1860#" -248.382
+subcap "vout0" -109.267
+subcap "m1_821_1862#" -198.287
+subcap "vout1" -109.267
+subcap "m1_1029_1864#" -142.432
+subcap "vout2" -492.567
+subcap "vout2" -97.4604
+cap "vout3" "OR2IN_1/vdd" 8.2476
+merge "AdderSubtractor_0/vinM" "Decoder_0/vout1" -35.4402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 -36 0 0 0 0 0 0 0 0 0 0
+merge "Decoder_0/vout1" "OR2IN_0/vin2"
+merge "OR2IN_0/vin2" "m1_n891_236#"
+merge "OR2IN_1/vout" "vout3" -191.658 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -77 -167 0 0 0 0 0 0 0 0 0 0
+merge "OR2IN_1/gnd" "OR3IN_2/gnd" -23.1003 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -24 0 0 0 0 0 0 0 0 0 0
+merge "OR3IN_2/gnd" "OR3IN_1/gnd"
+merge "OR3IN_1/gnd" "OR3IN_0/NOT_0/gnd"
+merge "OR3IN_0/NOT_0/gnd" "m1_621_1799#"
+merge "m1_621_1799#" "m1_839_1801#"
+merge "m1_839_1801#" "m1_1054_1803#"
+merge "AdderSubtractor_0/vinb2" "Enable_0/voutb2" -20.8791 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -18 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/voutb2" "m1_67_661#"
+merge "AdderSubtractor_0/vina1" "Enable_0/vouta1" -103.527 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -93 -74 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/vouta1" "m1_n418_607#"
+merge "OR2IN_1/vdd" "OR3IN_2/vdd" -382.304 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -376 -264 0 0 0 0 0 0 0 0 0 0
+merge "OR3IN_2/vdd" "OR3IN_1/vdd"
+merge "OR3IN_1/vdd" "OR3IN_0/NOT_0/vdd"
+merge "OR3IN_0/NOT_0/vdd" "m1_606_1860#"
+merge "m1_606_1860#" "m1_821_1862#"
+merge "m1_821_1862#" "m1_1029_1864#"
+merge "AND4Bit_0/vina0" "Enable_2/vouta0" -29.9514 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -28 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/vouta0" "Enable_2/AND4Bit_0/vout0"
+merge "Enable_2/AND4Bit_0/vout0" "m1_1672_456#"
+merge "Enable_1/AND4Bit_0/vina3" "Enable_0/AND4Bit_0/vina3" -106.696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -84 -80 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_0/vina3" "Enable_2/vina3"
+merge "Enable_2/vina3" "Enable_1/vina3"
+merge "Enable_1/vina3" "Enable_0/vina3"
+merge "Enable_0/vina3" "vina3"
+merge "AND4Bit_0/vinb0" "Enable_2/voutb0" -28.056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/voutb0" "Enable_2/AND4Bit_1/vout0"
+merge "Enable_2/AND4Bit_1/vout0" "m1_2153_456#"
+merge "Comparator_0/vinEn" "Enable_1/vinEn" -110.388 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -83 -84 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/vinEn" "Decoder_0/vout2"
+merge "Decoder_0/vout2" "m1_n700_225#"
+merge "AdderSubtractor_0/vinb3" "Enable_0/voutb3" -39.7542 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -34 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/voutb3" "Enable_0/AND4Bit_1/vout3"
+merge "Enable_0/AND4Bit_1/vout3" "m1_89_668#"
+merge "AdderSubtractor_0/vina2" "Enable_0/vouta2" -26.7825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15 -22 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/vouta2" "m1_n398_624#"
+merge "AdderSubtractor_0/vdd" "Enable_0/vdd" -298.729 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -251 -219 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/vdd" "OR2IN_0/NOT_0/vdd"
+merge "OR2IN_0/NOT_0/vdd" "OR2IN_0/vdd"
+merge "OR2IN_0/vdd" "vdd"
+merge "vdd" "Decoder_0/NOT_1/vdd"
+merge "Decoder_0/NOT_1/vdd" "m1_n828_307#"
+merge "AdderSubtractor_0/fullAdder_3/OR2IN_0/NOT_0/gnd" "Comparator_0/NOT_3/gnd" -105.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 376 -224 0 0 0 0 0 0 0 0 0 0
+merge "Comparator_0/NOT_3/gnd" "m1_2602_1384#"
+merge "AND4Bit_0/vinb1" "Enable_2/voutb1" -31.7382 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -26 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/voutb1" "m1_2266_458#"
+merge "AND4Bit_0/vina1" "Enable_2/vouta1" -31.0077 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -30 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/vouta1" "Enable_2/AND4Bit_0/vout1"
+merge "Enable_2/AND4Bit_0/vout1" "m1_1785_456#"
+merge "OR3IN_0/gnd" "AdderSubtractor_0/gnd" -1381.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -77 -86 -346 -234 0 0 0 0 0 0 0 0
+merge "AdderSubtractor_0/gnd" "OR2IN_0/gnd"
+merge "OR2IN_0/gnd" "Decoder_0/NOT_0/gnd"
+merge "Decoder_0/NOT_0/gnd" "gnd"
+merge "AdderSubtractor_0/vina3" "Enable_0/vouta3" -25.1043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -26 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/vouta3" "Enable_0/AND4Bit_0/vout3"
+merge "Enable_0/AND4Bit_0/vout3" "m1_n380_640#"
+merge "AND4Bit_0/vinb3" "Enable_2/voutb3" -33.9594 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -32 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/voutb3" "Enable_2/AND4Bit_1/vout3"
+merge "Enable_2/AND4Bit_1/vout3" "m1_2493_456#"
+merge "OR3IN_0/vin2" "Comparator_0/voutEqual" -4308.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -53 -53 569 -831 0 0 0 0 0 0 0 0
+merge "Comparator_0/voutEqual" "m1_561_1748#"
+merge "AND4Bit_0/vinb2" "Enable_2/voutb2" -29.7342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -24 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/voutb2" "m1_2382_457#"
+merge "OR3IN_2/vin2" "Comparator_0/voutGreater" -3323.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -38 -38 -900 -600 0 0 0 0 0 0 0 0
+merge "Comparator_0/voutGreater" "a_984_1762#"
+merge "OR2IN_0/vin1" "Decoder_0/vout0" -25.0944 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -20 0 0 0 0 0 0 0 0 0 0
+merge "Decoder_0/vout0" "m1_n929_227#"
+merge "Enable_1/AND4Bit_1/vina0" "Enable_0/AND4Bit_1/vina0" -108.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -84 -82 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_1/vina0" "Enable_2/vinb0"
+merge "Enable_2/vinb0" "Enable_1/vinb0"
+merge "Enable_1/vinb0" "Enable_0/vinb0"
+merge "Enable_0/vinb0" "vinb0"
+merge "Comparator_0/vdd" "AdderSubtractor_0/fullAdder_3/OR2IN_0/NOT_0/vdd" -2744.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -492 -340 -603 -405 0 0 0 0 0 0 0 0
+merge "AdderSubtractor_0/fullAdder_3/OR2IN_0/NOT_0/vdd" "m1_2610_1426#"
+merge "OR2IN_1/vin1" "AdderSubtractor_0/vout3" 75.2532 0 0 0 0 0 0 0 0 0 0 0 0 0 0 308 -22 0 0 0 0 0 0 0 0 0 0
+merge "AdderSubtractor_0/vout3" "m1_1167_1742#"
+merge "AND4Bit_0/vina2" "Enable_2/vouta2" -31.0077 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3 -30 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/vouta2" "m1_1901_456#"
+merge "Enable_0/gnd" "Decoder_0/NOT_1/gnd" -124.678 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -26 -9 -9 0 0 0 0 0 0 0 0
+merge "Decoder_0/NOT_1/gnd" "m1_n556_157#"
+merge "Enable_1/AND4Bit_1/vina1" "Enable_0/AND4Bit_1/vina1" -102.905 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72 -80 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_1/vina1" "Enable_2/vinb1"
+merge "Enable_2/vinb1" "Enable_1/vinb1"
+merge "Enable_1/vinb1" "Enable_0/vinb1"
+merge "Enable_0/vinb1" "vinb1"
+merge "Enable_1/vdd" "Enable_0/AND4Bit_1/AND2IN_3/vdd" -122.065 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -39 -30 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_1/AND2IN_3/vdd" "m1_482_433#"
+merge "OR3IN_0/vin3" "AND4Bit_0/vout0" -6916.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14 -22 -1926 -1287 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/vout0" "m1_578_1769#"
+merge "AND4Bit_0/vina3" "Enable_2/vouta3" -31.8468 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -28 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/vouta3" "m1_2012_457#"
+merge "Enable_1/AND4Bit_1/vina2" "Enable_0/AND4Bit_1/vina2" -106.696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -84 -80 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_1/vina2" "Enable_2/vinb2"
+merge "Enable_2/vinb2" "Enable_1/vinb2"
+merge "Enable_1/vinb2" "Enable_0/vinb2"
+merge "Enable_0/vinb2" "vinb2"
+merge "OR3IN_1/vin3" "AND4Bit_0/vout1" -3291.08 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -162 -119 -982 -598 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/vout1" "m1_791_1783#"
+merge "Enable_1/AND4Bit_0/vina1" "Enable_0/AND4Bit_0/vina1" -95.8908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72 -73 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_0/vina1" "Enable_2/vina1"
+merge "Enable_2/vina1" "Enable_1/vina1"
+merge "Enable_1/vina1" "Enable_0/vina1"
+merge "Enable_0/vina1" "vina1"
+merge "OR3IN_0/vdd" "AdderSubtractor_0/fullAdder_1/vdd" -357.373 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -351 -246 0 0 0 0 0 0 0 0 0 0
+merge "AdderSubtractor_0/fullAdder_1/vdd" "m1_518_1692#"
+merge "OR3IN_2/vin3" "AND4Bit_0/vout2" -2896.97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -154 -115 -784 -523 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/vout2" "m1_1003_1785#"
+merge "Enable_1/AND4Bit_1/vina3" "Enable_0/AND4Bit_1/vina3" -106.696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -84 -80 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_1/vina3" "Enable_2/vinb3"
+merge "Enable_2/vinb3" "Enable_1/vinb3"
+merge "Enable_1/vinb3" "Enable_0/vinb3"
+merge "Enable_0/vinb3" "vinb3"
+merge "Enable_2/vinEn" "Decoder_0/vout3" -52.3539 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21 -30 0 0 0 0 0 0 0 0 0 0
+merge "Decoder_0/vout3" "m1_n589_227#"
+merge "Comparator_0/vina0" "Enable_1/vouta0" -22.1526 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 -24 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/vouta0" "Enable_1/AND4Bit_0/vout0"
+merge "Enable_1/AND4Bit_0/vout0" "m1_691_456#"
+merge "OR3IN_1/vin1" "AdderSubtractor_0/vout1" -29.4183 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17 -24 0 0 0 0 0 0 0 0 0 0
+merge "AdderSubtractor_0/vout1" "m1_757_1729#"
+merge "Enable_2/AND4Bit_0/gnd" "Enable_2/gnd" -58.3035 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45 -44 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/gnd" "Enable_1/AND4Bit_1/AND2IN_3/NOT_0/gnd"
+merge "Enable_1/AND4Bit_1/AND2IN_3/NOT_0/gnd" "m1_1493_384#"
+merge "Enable_0/vinEn" "OR2IN_0/vout" -20.0943 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -21 0 0 0 0 0 0 0 0 0 0
+merge "OR2IN_0/vout" "m1_n820_281#"
+merge "Decoder_0/vinSel0" "vinSel0" -14.8671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -12 0 0 0 0 0 0 0 0 0 0
+merge "OR3IN_1/vin2" "Comparator_0/voutLess" -5487.44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -26 -1500 -1000 0 0 0 0 0 0 0 0
+merge "Comparator_0/voutLess" "m1_771_1752#"
+merge "OR2IN_1/vin2" "AND4Bit_0/vout3" -283.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -276 -196 0 0 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/vout3" "m1_1191_1786#"
+merge "AdderSubtractor_0/vinb0" "Enable_0/voutb0" -28.056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/voutb0" "Enable_0/AND4Bit_1/vout0"
+merge "Enable_0/AND4Bit_1/vout0" "m1_9_647#"
+merge "Comparator_0/AND5IN_0/NOT_0/gnd" "AND4Bit_0/gnd" -50.3961 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -39 -38 0 0 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/gnd" "m1_5153_1132#"
+merge "Enable_0/AND4Bit_0/vina0" "Enable_2/vina0" -71.2209 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51 -55 0 0 0 0 0 0 0 0 0 0
+merge "Enable_2/vina0" "Enable_1/vina0"
+merge "Enable_1/vina0" "Enable_0/vina0"
+merge "Enable_0/vina0" "vina0"
+merge "Decoder_0/vinSel1" "vinSel1" -17.8731 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9 -15 0 0 0 0 0 0 0 0 0 0
+merge "OR3IN_2/vout" "vout2" -525.982 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -209 -165 -74 -68 0 0 0 0 0 0 0 0
+merge "Enable_2/vina2" "Enable_1/vina2" -106.696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -84 -80 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/vina2" "Enable_0/vina2"
+merge "Enable_0/vina2" "vina2"
+merge "Comparator_0/vina2" "Enable_1/vouta2" -31.9554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -30 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/vouta2" "m1_920_455#"
+merge "Comparator_0/AND5IN_0/NOT_0/vdd" "AND4Bit_0/vdd" -132.831 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 -32 55 0 0 0 0 0 0 0 0 0
+merge "AND4Bit_0/vdd" "m1_5097_1335#"
+merge "OR3IN_0/vin1" "AdderSubtractor_0/vout0" -35.223 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -32 0 0 0 0 0 0 0 0 0 0
+merge "AdderSubtractor_0/vout0" "m1_294_1727#"
+merge "Comparator_0/vinb0" "Enable_1/voutb0" -27.207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -24 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/voutb0" "m1_1172_457#"
+merge "AdderSubtractor_0/vina0" "Enable_0/vouta0" -32.5872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -30 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/vouta0" "m1_n435_587#"
+merge "Comparator_0/vinb1" "Enable_1/voutb1" -33.2289 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 -36 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/voutb1" "Enable_1/AND4Bit_1/vout1"
+merge "Enable_1/AND4Bit_1/vout1" "m1_1285_455#"
+merge "Comparator_0/vinb2" "Enable_1/voutb2" -25.1043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -26 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/voutb2" "Enable_1/AND4Bit_1/vout2"
+merge "Enable_1/AND4Bit_1/vout2" "m1_1401_456#"
+merge "Comparator_0/vina1" "Enable_1/vouta1" -29.7342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -24 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/vouta1" "m1_804_458#"
+merge "OR3IN_1/vout" "vout1" -392.143 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70 -151 80 -58 0 0 0 0 0 0 0 0
+merge "Comparator_0/vinb3" "Enable_1/voutb3" -38.5893 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27 -30 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/voutb3" "m1_1512_458#"
+merge "Enable_2/vdd" "Enable_1/AND4Bit_1/AND2IN_3/vdd" -117.643 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25 -30 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/AND4Bit_1/AND2IN_3/vdd" "m1_1471_433#"
+merge "Comparator_0/vina3" "Enable_1/vouta3" -25.1043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -26 0 0 0 0 0 0 0 0 0 0
+merge "Enable_1/vouta3" "Enable_1/AND4Bit_0/vout3"
+merge "Enable_1/AND4Bit_0/vout3" "m1_1031_456#"
+merge "AdderSubtractor_0/vinb1" "Enable_0/voutb1" -25.1043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -26 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/voutb1" "Enable_0/AND4Bit_1/vout1"
+merge "Enable_0/AND4Bit_1/vout1" "m1_41_654#"
+merge "AdderSubtractor_0/vcout" "vcout" -12.5571 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11 -16 0 0 0 0 0 0 0 0 0 0
+merge "OR3IN_2/vin1" "AdderSubtractor_0/vout2" -32.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -26 0 0 0 0 0 0 0 0 0 0
+merge "AdderSubtractor_0/vout2" "m1_969_1735#"
+merge "Enable_1/gnd" "Enable_0/AND4Bit_1/AND2IN_3/NOT_0/gnd" -31.8468 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -28 0 0 0 0 0 0 0 0 0 0
+merge "Enable_0/AND4Bit_1/AND2IN_3/NOT_0/gnd" "m1_503_384#"
+merge "OR3IN_0/vout" "vout0" -468.451 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -218 -155 -86 -58 0 0 0 0 0 0 0 0
