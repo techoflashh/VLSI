@@ -20,12 +20,12 @@ Testbench for ALU
 
 Vdd vdd gnd 'SUPPLY'
 
-V_in_a3 node_a3 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a3 node_a3 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
 V_in_a2 node_a2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 V_in_a1 node_a1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 V_in_a0 node_a0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 
-V_in_b3 node_b3 gnd DC 0
+V_in_b3 node_b3 gnd DC 1.8
 V_in_b2 node_b2 gnd DC 0
 V_in_b1 node_b1 gnd DC 0
 V_in_b0 node_b0 gnd DC 0
