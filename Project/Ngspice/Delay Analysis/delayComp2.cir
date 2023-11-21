@@ -30,8 +30,8 @@ V_in_b2 node_b2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 V_in_b1 node_b1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 
-V_in_s1 Sel1 gnd DC 1.8
-V_in_s0 Sel0 gnd DC 0.0
+V_in_Sel1 Sel1 gnd DC 1.8
+V_in_Sel0 Sel0 gnd DC 0
 
 X_ALU CarryOut node_out3 node_out2 node_out1 node_out0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 Sel1 Sel0 vdd gnd ALU
 
@@ -42,19 +42,9 @@ C3 node_out2 gnd 100f
 C4 node_out3 gnd 100f
 C5 CarryOut gnd 100f
 
-.tran 1n 400n
+.tran 1n 200n
 
-
-.measure tran trise 
-+ TRIG v(node_b0) VAL = 'SUPPLY/2' RISE =1
-+ TARG v(node_out1) VAL = 'SUPPLY/2' RISE =1 
-
-.measure tran tfall 
-+ TRIG v(node_b0) VAL = 'SUPPLY/2' FALL =1 
-+ TARG v(node_out1) VAL = 'SUPPLY/2' FALL=1
-
-.measure tran tpd param = '(trise + tfall)/2' goal = 0
-        
+*targetText
 
 .control
 run

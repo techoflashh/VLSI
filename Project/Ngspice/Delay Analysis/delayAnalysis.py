@@ -2,17 +2,15 @@ import os
 import subprocess
 import time
 
-fp3 = open("output_delay.txt",'w')
-fp3.close()
-
 command = "ngspice tempfile.cir"
 
+Lin1 = ["delayAdd1.cir", "delaySub1.cir", "delayComp1.cir", "delayAnd1.cir"]
+Lin2 = ["delayAdd2.cir", "delaySub2.cir", "delayComp2.cir", "delayAnd2.cir"]
+Lout = ["outputDelayAdd.txt" , "outputDelaySub.txt" , "outputDelayComp.txt" , "outputDelayAnd.txt"]
+
 for k in range(4):
-    sel0 = 1.8*(k%2)
-    sel1 = 1.8*int(k/2)
-    search_text2 = "*selectInputs"
-    replace_text2 = f'''V_in_s1 Sel1 gnd DC {sel1}
-V_in_s0 Sel0 gnd DC {sel0}'''
+    fp3 = open(Lout[k],'w')
+    fp3.close()
     for j in range(0,8):
         if j<4:
             s1 = "node_a"+str(j)
@@ -24,12 +22,12 @@ V_in_s0 Sel0 gnd DC {sel0}'''
             s2 = "node_out"+str(i) 
 
             if(j<4):
-                fp1 = open("delay1.cir",'r')
+                fp1 = open(Lin1[k],'r')
             else:
-                fp1 = open("delay2.cir",'r')
+                fp1 = open(Lin2[k],'r')
 
             fp2 =open("tempfile.cir",'w')
-            fp3 = open("output_delay.txt",'a')
+            fp3 = open(Lout[k],'a')
             mode1 = "RISE"
             mode2 = "RISE"
             mode3 = "FALL"
@@ -50,7 +48,6 @@ V_in_s0 Sel0 gnd DC {sel0}'''
 .measure tran tpd param = '(trise + tfall)/2' goal = 0
         '''
             data = data.replace(search_text,replace_text)
-            data = data.replace(search_text2,replace_text2)
             fp2.write(data)
             fp1.close()
             fp2.close()
