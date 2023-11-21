@@ -1,0 +1,49 @@
+Testbench for Comparator
+
+.include TSMC_180nm.txt
+.include ALU.sub
+
+.param SUPPLY = 1.8
+.param LAMBDA = 0.18u
+
+.param wn1 = {10*LAMBDA}
+.param wn2 = {10*LAMBDA}
+.param ln1 = {2*LAMBDA}
+.param ln2 = {2*LAMBDA}
+
+.param wp1 = wn1
+.param wp2 = wn1
+.param lp1 = {LAMBDA}
+.param lp2 = {LAMBDA}
+
+.global gnd
+
+Vdd node_x gnd 'SUPPLY'
+
+V_in_a3 node_a3 gnd PULSE(0 1.8 0ns 100ps 100ps 10ns 50ns)
+V_in_b3 node_b3 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 70ns)
+V_in_a2 node_a2 gnd PULSE(0 1.8 0ns 100ps 100ps 30ns 70ns)
+V_in_b2 node_b2 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 50ns)
+V_in_a1 node_a1 gnd PULSE(0 1.8 0ns 100ps 100ps 40ns 70ns)
+V_in_b1 node_b1 gnd PULSE(0 1.8 0ns 100ps 100ps 30ns 50ns)
+V_in_a0 node_a0 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 50ns)
+V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 10ns 70ns)
+
+V_in_en node_en gnd PULSE(0 1.8 0ns 100ps 100ps 400ns 800ns)
+
+X_Comp Greater Equal Less node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 node_en node_x gnd Comparator
+
+C1 Greater gnd 100f
+C2 Equal gnd 100f
+C3 Less gnd 100f
+
+.tran 1n 800n
+
+.control
+run
+set color0 = rgb:f/f/e
+set color1 = black
+plot  v(node_en)-2 v(node_a0) v(node_b0)+8 v(node_a1)+2 v(node_b1)+10 v(node_a2)+4 v(node_b2)+12 v(node_a3)+6 v(node_b3)+14 v(Greater)+18 v(Equal)+16 v(Less)+20
+hardcopy Comparator_Plot.ps v(node_en)-2 v(node_a0) v(node_b0)+8 v(node_a1)+2 v(node_b1)+10 v(node_a2)+4 v(node_b2)+12 v(node_a3)+6 v(node_b3)+14 v(Greater)+18 v(Equal)+16 v(Less)+20
+.end
+.endc

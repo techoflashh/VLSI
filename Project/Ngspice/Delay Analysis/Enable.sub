@@ -1,0 +1,6 @@
+.include And.sub
+
+.subckt Enable node_ao3 node_ao2 node_ao1 node_ao0 node_bo3 node_bo2 node_bo1 node_bo0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 Ein vdd gnd
+    X1 node_ao3 node_ao2 node_ao1 node_ao0 node_a3 node_a2 node_a1 node_a0  Ein Ein Ein Ein vdd gnd And
+    X2 node_bo3 node_bo2 node_bo1 node_bo0 node_b3 node_b2 node_b1 node_b0  Ein Ein Ein Ein vdd gnd And
+.ends Enable

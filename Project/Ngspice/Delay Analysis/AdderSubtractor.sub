@@ -1,0 +1,18 @@
+.subckt fullAdder Cout S A B Cin vdd gnd
+    X1 S1out A B vdd gnd XOR2IN
+    X2 S S1out Cin vdd gnd XOR2IN
+    X3 C1out A B vdd gnd AND2IN
+    X4 C2out S1out Cin vdd gnd AND2IN
+    X5 Cout C1out C2out vdd gnd OR2IN
+.ends fullAdder
+
+.subckt AdderSubtractor s3 s2 s1 s0 Carry node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 node_m vdd gnd
+    X1 B0 node_m node_b0 vdd gnd XOR2IN
+    X2 B1 node_m node_b1 vdd gnd XOR2IN
+    X3 B2 node_m node_b2 vdd gnd XOR2IN
+    X4 B3 node_m node_b3 vdd gnd XOR2IN
+    X5 Cout0 s0 node_a0 B0 node_m vdd gnd fullAdder
+    X6 Cout1 s1 node_a1 B1 Cout0 vdd gnd fullAdder
+    X7 Cout2 s2 node_a2 B2 Cout1 vdd gnd fullAdder
+    X8 Carry s3 node_a3 B3 Cout2 vdd gnd fullAdder
+.ends AdderSubtractor 
