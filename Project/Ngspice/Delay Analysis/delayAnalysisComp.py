@@ -7,19 +7,49 @@ command = "ngspice tempfile.cir"
 fp3 = open("outputDelayComp.txt",'w')
 fp3.close()
 for j in range(0,8):
+
+    L1 = [0,1,2,3]
+    if (j<4):
+        L1.remove(j)
+    else:
+        L1.remove(j-4)
+    inputPulses1 = f'''V_in_a3 node_a{j} gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+V_in_a2 node_a{L1[2]} gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a1 node_a{L1[1]} gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a0 node_a{L1[0]} gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+
+V_in_b3 node_b{j} gnd DC 1.8
+V_in_b2 node_b{L1[2]} gnd DC 0
+V_in_b1 node_b{L1[1]} gnd DC 0
+V_in_b0 node_b{L1[0]} gnd DC 0
+
+V_in_Sel1 Sel1 gnd DC 1.8
+V_in_Sel0 Sel0 gnd DC 0
+'''
+    inputPulses2 = f'''V_in_a3 node_a{j} gnd DC 1.8
+V_in_a2 node_a{L1[2]} gnd DC 0
+V_in_a1 node_a{L1[1]} gnd DC 0
+V_in_a0 node_a{L1[0]} gnd DC 0
+
+V_in_b3 node_b{j-4} gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+V_in_b2 node_b{L1[2]} gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b1 node_b{L1[1]} gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b0 node_b{L1[0]} gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+
+V_in_Sel1 Sel1 gnd DC 1.8
+V_in_Sel0 Sel0 gnd DC 0
+'''
+    inputPulses = inputPulses1
     if j<4:
         s1 = "node_a"+str(j)
+        inputPulses = inputPulses1
     else:
         s1 = "node_b"+str(j-4)
-
+        inputPulses = inputPulses2
 
     for i in range(0,3):
-        s2 = "node_out"+str(i) 
-        if(j<4):
-            fp1 = open("delayComp1.cir",'r')
-        else:
-            fp1 = open("delayComp2.cir",'r')
-
+        s2 = "node_out"+str(i)     
+        fp1 = open("delayComp.cir",'r')
         fp2 =open("tempfile.cir",'w')
         fp3 = open("outputDelayComp.txt",'a')
         mode1 = "RISE"
@@ -42,6 +72,7 @@ for j in range(0,8):
 .measure tran tpd param = '(trise + tfall)/2' goal = 0
         '''
         data = data.replace(search_text,replace_text)
+        data = data.replace("*inputPulses",inputPulses)
         fp2.write(data)
         fp1.close()
         fp2.close()
