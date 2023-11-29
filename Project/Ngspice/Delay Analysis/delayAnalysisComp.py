@@ -26,7 +26,7 @@ V_in_b0 node_b{L1[0]} gnd DC 0
 V_in_Sel1 Sel1 gnd DC 1.8
 V_in_Sel0 Sel0 gnd DC 0
 '''
-    inputPulses2 = f'''V_in_a3 node_a{j} gnd DC 1.8
+    inputPulses2 = f'''V_in_a3 node_a{j-4} gnd DC 1.8
 V_in_a2 node_a{L1[2]} gnd DC 0
 V_in_a1 node_a{L1[1]} gnd DC 0
 V_in_a0 node_a{L1[0]} gnd DC 0
@@ -88,4 +88,4 @@ V_in_Sel0 Sel0 gnd DC 0
         additional_text = f" input = {s1} output = {s2}\n"
 
         fp3.write(output+additional_text)
-subprocess.run(["rm","tempfile.cir"])
+# subprocess.run(["rm","tempfile.cir"])

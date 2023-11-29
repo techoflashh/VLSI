@@ -20,18 +20,19 @@ Testbench for ALU
 
 Vdd vdd gnd 'SUPPLY'
 
-V_in_a3 vina7 gnd DC 1.8
-V_in_a2 vina2 gnd DC 0
-V_in_a1 vina1 gnd DC 0
-V_in_a0 vina0 gnd DC 0
+V_in_a3 node_a7 gnd DC 1.8
+V_in_a2 node_a2 gnd DC 0
+V_in_a1 node_a1 gnd DC 0
+V_in_a0 node_a0 gnd DC 0
 
-V_in_b3 vinb3 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
-V_in_b2 vinb2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_b1 vinb1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_b0 vinb0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b3 node_b3 gnd PULSE(0 1.8 0ns 100ps 100ps 20ns 40ns)
+V_in_b2 node_b2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b1 node_b1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 
 V_in_Sel1 Sel1 gnd DC 1.8
 V_in_Sel0 Sel0 gnd DC 0
+
 
 X_ALU CarryOut node_out3 node_out2 node_out1 node_out0 node_a3 node_a2 node_a1 node_a0 node_b3 node_b2 node_b1 node_b0 Sel1 Sel0 vdd gnd ALU
 
@@ -44,10 +45,20 @@ C5 CarryOut gnd 100f
 
 .tran 1n 200n
 
+
+.measure tran trise 
++ TRIG v(node_b3) VAL = 'SUPPLY/2' RISE =1
++ TARG v(node_out2) VAL = 'SUPPLY/2' RISE =1 
+
+.measure tran tfall 
++ TRIG v(node_b3) VAL = 'SUPPLY/2' FALL =1 
++ TARG v(node_out2) VAL = 'SUPPLY/2' FALL=1
+
+.measure tran tpd param = '(trise + tfall)/2' goal = 0
+        
+
 .control
 run
-set color0 = rgb:f/f/e
-set color1 = black
-plot v(Sel0)-4 v(Sel1)-2 v(node_a0) v(node_b0)+2 v(node_out0)+4 v(node_a1)+6 v(node_b1)+8 v(node_out1)+10 v(node_a2)+12 v(node_b2)+14 v(node_out2)+16 v(node_a3)+18 v(node_b3)+20 v(node_out3)+22 v(CarryOut)+24
+quit
 .end
 .endc

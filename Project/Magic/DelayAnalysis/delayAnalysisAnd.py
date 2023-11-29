@@ -4,51 +4,56 @@ import time
 
 command = "ngspice tempfile.cir"
 
-fp3 = open("outputDelayAdd.txt",'w')
+fp3 = open("outputDelayAnd.txt",'w')
 fp3.close()
 
 for j in range(0,8):
-    inputPulses1 = f'''V_in_a3 node_a3 gnd DC PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_a2 node_a2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_a1 node_a1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_a0 node_a0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+    L1 = [0,1,2,3]
+    if (j<4):
+        L1.remove(j)
+    else:
+        L1.remove(j-4)
+    inputPulses1 = f'''V_in_a3 vina3 gnd DC PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a2 vina2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a1 vina1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_a0 vina0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 
-V_in_b3 node_b3 gnd DC 0
-V_in_b2 node_b2 gnd DC 0
-V_in_b1 node_b1 gnd DC 0
-V_in_b0 node_b0 gnd DC 0
+V_in_b3 vinb3 gnd DC 1.8
+V_in_b2 vinb2 gnd DC 1.8
+V_in_b1 vinb1 gnd DC 1.8
+V_in_b0 vinb0 gnd DC 1.8
 
-V_in_Sel1 Sel1 gnd DC 0
-V_in_Sel0 Sel0 gnd DC 0
+V_in_Sel1 vinSel1 gnd DC 1.8
+V_in_Sel0 vinSel0 gnd DC 1.8
 '''
     inputPulses2 = f'''
-V_in_a3 node_a3 gnd DC 0
-V_in_a2 node_a2 gnd DC 0
-V_in_a1 node_a1 gnd DC 0
-V_in_a0 node_a0 gnd DC 0
+V_in_a3 vina3 gnd DC 1.8
+V_in_a2 vina2 gnd DC 1.8
+V_in_a1 vina1 gnd DC 1.8
+V_in_a0 vina0 gnd DC 1.8
 
-V_in_b3 node_b3 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_b2 node_b2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_b1 node_b1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
-V_in_b0 node_b0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b3 vinb3 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b2 vinb2 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b1 vinb1 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
+V_in_b0 vinb0 gnd PULSE(0 1.8 0ns 100ps 100ps 60ns 120ns)
 
-V_in_Sel1 Sel1 gnd DC 0
-V_in_Sel0 Sel0 gnd DC 0
+V_in_Sel1 vinSel1 gnd DC 1.8
+V_in_Sel0 vinSel0 gnd DC 1.8
 '''
     inputPulses = inputPulses1
     if j<4:
-        s1 = "node_a"+str(j)
+        s1 = "vina"+str(j)
         inputPulses = inputPulses1
     else:
-        s1 = "node_b"+str(j-4)
+        s1 = "vinb"+str(j-4)
         inputPulses = inputPulses2
 
     for i in range(0,4):
 
-        s2 = "node_out"+str(i) 
-        fp1 = open("delayAdd.cir",'r')
+        s2 = "vout"+str(i) 
+        fp1 = open("delay.cir",'r')
         fp2 =open("tempfile.cir",'w')
-        fp3 = open("outputDelayAdd.txt",'a')
+        fp3 = open("outputDelayAnd.txt",'a')
         mode1 = "RISE"
         mode2 = "RISE"
         mode3 = "FALL"

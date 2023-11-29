@@ -90,4 +90,4 @@ V_in_Sel0 Sel0 gnd DC 1.8
         additional_text = f" input = {s1} output = {s2}\n"
 
         fp3.write(output+additional_text)
-# subprocess.run(["rm","tempfile.cir"])
+subprocess.run(["rm","tempfile.cir"])
